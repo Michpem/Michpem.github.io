@@ -72,7 +72,7 @@ Note: Always assume that the ports are fully sampled, unless specified otherwise
 - Romancing SaGa 3 - The Last Battle [1]
 - SaGa 2 - Dreadful Fight (RS3 Arrangement)
 - SaGa Frontier - Battle 2
-- SaGa Frontier - Trick [1]
+- SaGa Frontier - Trick
 - Secret of Mana - Crystal Forest ~ A Wish [Unsampled]
 - Secret of Mana - Forest ~ Into the Thick of it
 - Secret of Mana - Ice Palace ~ Eight Ringing Bells
