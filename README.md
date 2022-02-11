@@ -16,7 +16,7 @@ The songs will be on different folders depending on what tool they're compatible
   
 Note: Always assume that the ports are fully sampled, unless specified otherwise.
   
-- Bunny Must Die! (2006) - Knightmare Again [1]
+- Bunny Must Die! (2006) - Knightmare Again [3]
 - Castlevania: Aria of Sorrow - Castle Corridor
 - Castlevania: Harmony of Dissonance - Chapel of Dissonance [Unsampled]
 - Castlevania: Legends - Highest Castle Floor (Stage 4) 16-bit Remix [Unsampled]
