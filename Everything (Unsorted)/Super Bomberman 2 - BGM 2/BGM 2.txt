@@ -1,0 +1,370 @@
+;Insert size: 0x1312 (4882)! bytes.
+;Shit's huge, yo.
+;Pinche (Big) Brawler.
+
+#amk 2
+
+#spc
+{
+	#title "BGM 2"
+	#game "Super Bomberman 2"
+	#comment "Don Pepe y los Globos 2"
+}
+
+#path "BGM 2"
+
+#samples
+{
+	#optimized
+"Clavinet.brr"
+"Synth Hit.brr"
+"Sine Organ.brr"
+"Synth Brass.brr"
+"Drawbar Organ.brr"
+"Sine.brr"
+"Finger Bass.brr"
+"Octave Square.brr"
+"Snare.brr"
+"HighQ.brr"
+"Closed Hi-Hat.brr"
+"Open Hi-Hat.brr"
+"Kick.brr"
+}
+
+#instruments
+{
+"Clavinet.brr" $ff $72 $b8 $01 $80
+"Synth Hit.brr" $8f $e0 $b8 $02 $de
+"Sine Organ.brr" $fd $b0 $b8 $03 $00
+"Synth Brass.brr" $fe $af $b8 $03 $00
+"Drawbar Organ.brr" $ff $56 $b8 $03 $02
+"Sine.brr" $ff $54 $b8 $03 $01
+"Finger Bass.brr" $ff $b1 $b8 $16 $f0
+"Octave Square.brr" $fe $ae $b8 $03 $02
+"Snare.brr" $8f $e0 $b8 $05 $49
+"HighQ.brr" $8f $e0 $b8 $01 $d5
+"Closed Hi-Hat.brr" $8f $e0 $b8 $05 $f0
+"Open Hi-Hat.brr" $8f $e0 $b8 $05 $a0
+"Kick.brr" $8f $e0 $b8 $04 $a7
+}
+
+;(!100)[@30]
+;(!101)[$fa$01$9f]
+;(!102)[@31]
+;(!103)[@32]
+;(!104)[@33]
+;(!105)[@34]
+;(!106)[@35]
+;(!107)[@36]
+;(!108)[@37]
+;(!109)[@38]
+
+"Cla=@30 $ee$00"
+"Hit=@31 $ee$08"
+"SOrg=@32 $ee$0a"
+"Bra=@33 $de$0a$16$45 $ee$00"
+"Branv=@33 $ee$00"
+"Org=@34 $df $ee$00"
+"Sin=@35 $df $ee$04"
+"Bas=@36 $ee$00"
+"Squ=@37 $ee$00"
+
+"Sn=@38"
+"HQ=@39"
+"CH=@40"
+"OH=@41"
+"Ki=@42"
+
+"POn=$ec$00$03$02"
+"Off=$ec$00$00$00"
+
+#0 t41 w225
+
+$ef $0a $2e $21 
+$f1 $03 $23 $01
+$f4 $02
+
+r32 Cla  y9 v121
+o2e16e16e16e16r16e16r16e16r16e16r16e16e16e16e16r32
+>>/
+
+[[ [Cla y11 v136 $fa$03$00 g16g16f+16g16r8.g16r16f+16r8..>Hit $f4$03 y6 v118 $fa$03$18 a6
+r24r96< Cla y11 v136 $fa$03$00 $f4$03 g16f+16g16r8.g16r16f+16] r16.>Hit $f4$03 y6 v118 $fa$03$18 a16a8.. $f4$03]]4
+* r8r32 Hit $f4$03 y6 v118 $fa$03$18 a16a16a16.
+< Cla y11 v136 $fa$03$00 $f4$03
+[g16g16f+16g16r8.g16r16f+16r4..
+g16f+16g16r8.g16r16f+16] r4.
+* Hit $f4$03 y10 v131 $fa$03$18 r8b24>c24<f+24a24g24d+24 $f4$03
+
+[Cla y11 v136 $fa$03$00 g16g16f+16g16r8.g16r16f+16r8..>Hit $f4$03 y6 v118 $fa$03$18 a6
+r24r96< Cla y11 v136 $fa$03$00 $f4$03 g16f+16g16r8.g16r16f+16 r8^32;r16.
+>Hit $f4$03 y6 v118 $fa$03$18 a16a8^32 $f4$03]2
+
+[Cla y11 v136 $fa$03$00 <a+16a+16a16a+16r8.a+16r16a16r8..>Hit $f4$03 y6 v118 $fa$03$18 c6
+r24r96< Cla y11 v136 $fa$03$00 $f4$03 a+16a16a+16r8.a+16r16a16r8r32] >Hit $f4$03 y6 v118 $fa$03$18 c16c8^32 $f4$03
+* Hit $f4$03 y6 v118 $fa$03$18 c16c16c16. $f4$03
+Cla y11 v136 $fa$03$00
+[c16c16<b16>c16r8.c+16r16c+16r4..
+<g16e16g16r8.f+16r16f+16r4.
+g+16g+16g16g+16r8.a16r16a16r4..
+d+16c16d+16r8.d16r16d16r4.]2
+[e16d16e16d16r8.e16r16e16r4<b16>d16
+<e16>e16d16e16r8.e16r16e16r4.]2
+g16f16g16f16r8.g16r16g16r4d16g16
+<g16>g16f16g16r8.g16r16g16r4.
+*
+>
+SOrg y4 v76 $f4$03
+[b16f+16<b16>b16f+16<b16>b16f+16>c16<g16c16>c16<g16c16>c16<g16]3
+>c+16<g16c+16>c+16<g16c+16>c+16<g16>d+16<a+16d+16>d+16r16d+16d+16d+16
+r16e16<b16>e16d16<b16a16g16a16g16e32g32e32d32e16r8.
+
+
+#1
+r1/
+r1
+r2.
+r16
+
+o4 
+(10)[Bra y10 v123
+e16g16b16>e16r8c16r8<a+8.b16r8. 
+Org y6 v107 $fa$03$1d
+g+16a16>e16r16<g+16a16d+16r16<g+16a16>d+16<g+16a16g+16d+16r16>]
+(11)[Bra y10 v123 $fa$03$00
+e16g16b16>e16r8c16r8a8.c16r8.
+Org y6 v107 $fa$03$1d
+<g+16a16>e16r16<g+16a16d+16r16<g+16a16d+16r16g+16a16>e16r16]
+(10)
+Bra y10 v123 $fa$03$00
+e16g16b16>e16r8c16r8a8.>c16r8.
+Org y6 v107 $fa$03$1d
+<<g+16a16>e16r16<g+16a16d+16r16<g+16a16d+16r16g+16a16>e16
+r4
+[SOrg y4 v76 $fa$03$00 d+16e16>e16<d+16e16>e16<d+16e16>d+16<d+16e16a+16r16> Hit y14 v126 a8.]
+SOrg y4 v76 $fa$03$00 <d+16e16>e16<d+16e16>e16<d+16e16>d+16c16r8 Hit y14 v126 a16a8.
+*
+SOrg y4 v76 $fa$03$00 <d+16e16>e16<d+16e16>e16<d+16e16>a24g24f+24e24d24c24r16
+(10)(11)
+<
+Bra y10 v123 
+e16g16b16>g16r8g16r8c+8.d16r8.
+Org y6 v107 $fa$03$1d
+<b16>c16f+16r16<b16>c16<f+16r16<b16>c16f+16<b16>c16<b16f+16r16>
+Bra y10 v123
+g16b16>d16g16r8g16r8c+8.e16r8.
+Org y6 v107 $fa$03$1d
+<b16>c16f+16r16<b16>c16<f+16r16<b16>c16f+16r16<f16f+16>c16r4r16
+SOrg y4 v76 $fa$03$00 
+>
+(12)[>c16d16e16a16c16r8.<a16b16>c+16<a16r4]2
+[f16g16g+16>c16<f16r8.d16e16f16] d16r4
+* a16f16d48e48d48c16
+Cla y10 v137 $f4$03 <<<a16>>>> SOrg y4 v76 $f4$03 c16d16e16a16c16r8 Cla y10 v137 $f4$03 <<<<f+16>>> SOrg y4 v76 $f4$03 a16b16>c+16<a16r4
+(12)
+[f16g16g+16>c16<f16r8.d16e16f16]d16r4
+* a16f16d16r16
+Sin y11 v133 POn <b16r16>d16r16<b16r16a16g16.r16.e16g16r16 Branv y10 v120 Off b16a16b16
+(13)[Sin y11 v133 POn b16b16>d16r16<b16r16a16g16r16 Branv y10 v120 Off b16a16b16a16b16a16b16]>
+(14)[Sin y11 v133 POn <b16r16>d16r16<b16r16a16r16g16r16e16g16r16 Branv y10 v120 Off b16a16b16]
+(13)
+Sin y11 v133 POn >d16r16f16r16d16r16c16<a+16.r16.g16a+16r16 Branv y10 v120 Off a16g+16a16
+Sin y11 v133 POn >d16d16f16r16d16r16c16<a+16r16 Branv y10 v120 Off a16g+16a16g+16a16g+16a16
+(14)(13)
+$de$0a$16$45 v143
+[d+16d+16d+16d+3r24e16e16f16g16f32g32f16e16]2
+v120
+>d+16d+16c+16d+16r16d+16<b16>d+16e16e16d+16e16r16e16<b16>e16
+g16g16g16g16r16g16c+16g16a16f+16a16f+16a16<d+16>a16a16
+r16b16f+16b16a16f+16e16d16e16d16<b32>d32<b32a32b16r8.
+
+
+#2 Bas  y10 v120
+o1e16e16e16e16r16e16r16e16r16e16r16e16e16e16e16r16/
+
+(20)[Cla v137 y10 o2a16r2.>>> Hit $f4$03 y14 v126 a8.
+r2r8.a16a4 $f4$03]4
+Cla v137 y10 <<<a16r2.>>> Hit $f4$03 y14 v126 a8.
+r2.a16a16a8
+Squ y15 v78
+[d24d+24e24f24e24d+24]14
+d24d+24e24f24f+24g24g+24a24a+24b24>c24c+24
+$f4$03
+[Cla v137 y10 o2a16r2.>>> Hit $f4$03 y14 v126 a8.r2.a16a8. $f4$03]2
+[Cla v137 y10 <<c16r2.>> Hit $f4$03 y14 v126 c8.]
+r2.c16c8. $f4$03
+*
+r2. y11 v125 c16c16c8
+y14 v107 $fa$03$0f
+[a8a16a8a8a16a8a16a16a8a16a16]8
+<<<
+Cla v137 y10 $fa$03$00 $f4$03
+[e16r1
+r4..
+>e16r4..]2
+<g16r1....
+e16r1
+r4..
+>e16r4..
+Hit y11 v125 $fa$03$0d $f4$03
+>
+[b8.b8.b8a8.a8.a8]3
+g8.g8.g8f+16f+16f+8b16b16b16b16
+>e8.e8.e8e8e8e4 $f4$03
+
+
+#3
+r1/
+r1
+r2.
+r16 	;bdc
+(30)[Bra y10 v123 $fa$03$00 o4b16>c16e16b16r8a16r8d+8.e16r8.
+Org y6 v107 $fa$03$1d d16d+16a16r16d16d+16<a16r16d16d+16a16d16d+16d16<a16r16]
+(31)[Bra y10 v123 $fa$03$00 o4b16>c16e16b16r8a16r8>d+8.<f+16r8.
+Org y6 v107 $fa$03$1d d16d+16a16r16d16d+16<a16r16d16d+16<a16r16>d16d+16a16r16]
+(30)
+Bra y10 v123 $fa$03$00 o4b16>c16e16b16r8a16r8>d+8.f+16r8.
+Org y6 v107 $fa$03$1d <d16d+16a16r16d16d+16<a16r16d16d+16<g+16r16>d16d+16a16
+r4
+[SOrg y4 v76 b16>c16b16<b16>c16b16<b16>c16a16<b16>c16f+16r16. Hit y6 v118 $fa$03$0c a8^32]
+SOrg y4 v76 $fa$03$00 <b16>c16b16<b16>c16b16<b16>c16a16f+16r8r32 Hit y6 v118 $fa$03$0c a16a8^32
+*
+SOrg y4 v76 $fa$03$00 <b16>c16b16<b16>c16b16<b16>c16 Hit y10 v131 a24g24f+24e24d24c24r16
+(30)(31) <
+Bra y10 v123 $fa$03$00 b16>c16e16>d16r8c16r8<f+8.g16r8.
+Org y6 v107 $fa$03$1d f16f+16>c16r16<f16f+16c16r16<f16f+16>c16<f16f+16f16c16r16
+Bra y10 v123 $fa$03$00 >d16d+16g16>d16r8c16r8<f+8.a16r8.
+Org y6 v107 $fa$03$1d f16f+16>c16r16<f16f+16c16r16<f16f+16>c16r16<<b16>c16f+16r16
+Bra y10 v143 $fa$03$00
+b16>
+[c16d16
+e4r16c16r16<a16r4.>c16d16
+e16r16e16c16r16c16<a16r4..
+a16b16
+>c4r16<g+16r16f16r4.a16b16
+>c16r16c16<g+16r16g+16f16]r4..
+* r8
+$df Sin y9 v133 POn
+f16a16>d16<a16>d16f16a16
+e16r16g16r16e16r16d16<b16.r16.a16b16r16> Branv y10 v120 Off e16d16e16
+Sin y9 v133 POn e16e16g16r16e16r16d16<b16r16> Branv y10 v120 Off e16d16e16d16e16d16e16
+[Sin y9 v133 POn e16r16g16r16e16r16d16r16<b16r16a16b16r16> Bra y10 v120 Off e16d16e16
+Sin y9 v133 POn e16e16g16r16e16r16d16e16r16 Branv y10 v120 Off e16d16e16d16e16d16e16]
+Sin y9 v133 POn g16r16a+16r16g16r16f16d16.r16.c16d16r16 Bra y10 v120 Off d16c+16d16
+Sin y9 v133 POn g16g16a+16r16g16r16f16d16r16 Branv y10 v120 Off d16c+16d16c+16d16c+16d16
+*
+v143 $de$0a$16$45
+[<b16b16a16b3r24>c16c16d16e16d32e32d16c16]2
+b16b16a16b16r16b16f+16b16>c16c16<b16>c16r16c16<g16>c16
+c+16c+16<b16>c+16r16c+16<g16>c+16d+16d16d+16d16d+16<b16>d+16f+16
+r16e16<b16>e16d16<b16a16g16a16g16e32g32e32d32e16r8.
+
+
+#4 Cla  y14 v134
+o2e16e16e16e16r16e16r16e16r16e16r16e16e16e16e16r16/
+y9 v136
+>>
+[[ [e16e16d+16e16r16<a16r16>e16r16d+16r4d+16e16
+<a16>e16d+16e16r16<a16r16>e16r16d+16] r4.]]6
+* r8 SOrg y4 v76 b24>c24<f+24a24g24d+24
+Cla y9 v136
+[e16e16d+16e16r16<a16r16>e16r16d+16r4d+16e16
+<a16>e16d+16e16r16<a16r16>e16r16d+16r4.]2
+[g16g16f+16g16r16c16r16g16r16f+16r4f+16g16
+c16g16f+16g16r16c16r16g16r16f+16] r4.
+* r8<c16c16c16r16
+(40)[>a16a16e16a16r16<a16r16>a16r16a16r4f+16<f+16]
+a16>e16c16e16r16<a16r16>c+16r16c+16r4.
+(41)[f16f16c16f16r16<f16r16>f16r16f16r4d16<d16]
+f16>c16<g+16>c16r16<f16r16a16r16a16r4.
+(40)
+<a16>>e16c16e16r16<a16<f+16>>c+16r16c+16r4.
+(41)
+<f16>>c16<g+16>c16r16<f16<d16>a16r16a16r4.
+[b16b16b16b16r16e16r16b16r16b16r8.e16d16e16
+<e16>b16b16b16r16e16r16b16r16b16d16e16d16e16d16e16]2
+>d16d16d16d16r16<g16r16>d16r16d16r8.<d16c+16d16
+<g16>>d16d16d16r16<g16r16>d16r16d16<c+16d16c+16d16c+16d16
+*
+<b8r4.a2
+b2a4..r16
+b2a2
+g2f+8.r16b16b16b16b16
+e16>e16<e16>e16r16<e16r16>e16<e16e16e16r16e16r8.
+
+#5 Sn y10 v162
+o4d16d16d16d16r16d16r16d16r16d16r16d16d16d16d16r16/
+Bas v120 $ee$20
+[o1a16a16>c16<a16>d+16e16c16<a16r16a16>c16<a16>d+16e16<b16>c16
+<a16a16>c16<a16>d+16e16c16<a16r16a16>c16<a16>d+16e16d+16e16]9
+[c16c16d+16c16f+16g16d+16c16r16c16d+16c16f+16g16d16d+16
+c16c16d+16c16f+16g16d+16c16r16c16d+16c16f+16g16f+16g16]2
+[<a16a16b16a16>c16<a16>d16<f+16r16f+16g+16f+16>f+16<f+16>c+16<f+16
+a16a16b16a16>c16<a16>f+16<f+16r16f+16g+16f+16a16f+16>c+16<f+16
+f16f16g16f16g+16f16>c16d16r16d16e16d16f16d16g16d16
+<f16f16g16f16g+16f16>d16d16r16d16e16d16f16d16g16f16]2
+<[e16e16g16e16a+16b16g16e16r16e16g16e16a+16b16f+16g16
+e16e16g16e16a+16b16g16e16r16e16g16e16a+16b16a+16b16]2
+[g16g16a+16g16>c+16d16<a+16g16r16g16a+16g16>c+16d16] <a16a+16
+* >c+16d16
+<[e16e16g16e16a+16b16g16e16r16e16g16e16a+16b16] f+16g16
+* a+16b16
+[b16b16>b16<b16b16>b16<b16b16>a16<a16a16>a16r16<a16] a16>a16
+* a16<a16
+b16b16>b16<b16b16>b16<b16b16>a16<a16a16>a16r16<a16>a16<a16
+g16g16>g16<g16g16>g16<g16g16>f+16<f+16f+16>f+16r16<b16>b16<b16
+e16>e16<e16>e16r16<e16r16>e16<e16e16e16r16e16r8.
+
+#6 HQ y10 v162
+o4e16e16e16e16r16e16r16e16r16e16r16e16e16e16e16r16/
+y9
+[CH v161 $fa$03$08 c16 v93 $fa$03$e9 c16 OH v161 $fa$03$08 c16 CH v93 $fa$03$e9 c16 v161 $fa$03$08 c16 OH c16 
+CH v145 $fa$03$0a c16 v93 $fa$03$e9 c16 OH v161 $fa$03$08 c16 CH v93 $fa$03$e9 c16 v145 $fa$03$0a c16 OH v161 $fa$03$08 c16 
+CH c16 v93 $fa$03$e9 c16 OH v161 $fa$03$08 c16 CH v93 $fa$03$e9 c16]42
+;12 1d: v145 $fa$03$0a
+;17 24: v161 $fa$03$08
+;0d 15: v93 $fa$03$e9
+Sn y10 $fa$03$00
+v162 d16 v123 d16 v147 d16 v123 d16r16d16r16d16 v162 d16r16d16r16d16 v123 d16 v147 d16 v123 d16
+;d = v162
+;a = v123
+;g+ = v147
+
+
+#7
+o4
+
+;c = v162
+;e = ^
+;f = v123
+;a = ^
+;g+ = v147
+
+Ki y10 v162 c16 v123 c16 v162 c16 v123 c16r16c16r16c16r16c16r16c16 v162 c16 v123 c16 v162 c16r16/y10
+(70)[Ki v162 c16 HQ e16 Ki c16r16 Sn d16r16 Ki c16 v123 c16r16 Sn d16 Ki v162 c16 v123 c16 Sn v162 d16 HQ e16 Ki c16 v123 c16]4
+(71)[Ki v162 c16 HQ e16 Ki c16r16 Sn d16r16 Ki c16 v123 c16r16 Sn d16 Ki v162 c16 v123 c16 Sn v162 d16r16 Ki c16 v123 c16]
+(70)
+(72)[Ki v162 c16 HQ e16 Ki c16 HQ e16 Sn d16r16 Ki c16 v123 c16r16 Sn d16 Ki v162 c16 v123 c16 Sn v162 d16 HQ e16 Ki c16 v123 c16]3
+Ki v162 c16 HQ e16 Ki c16 HQ e16 Sn d16r16 Ki c16 v123 c16r16 Sn d16 Ki v162 c16 Sn v123 d16 v162 d16 v123 d16 v147 d16 Ki v123 c16
+(73)[Ki v162 c16 HQ e16 Ki c16r16 Sn d16r16 Ki c16 v123 c16 HQ e16 Sn v123 d16 Ki v162 c16 v123 c16 Sn v162 d16r16 Ki v162 c16 v123 c16]
+(70)
+(73)
+Ki v162 c16 HQ e16 Ki c16r16 Sn d16r16 Ki c16 v123 c16r16 Sn d16 Ki v162 c16 v123 c16 Sn v162 d32 v123 d32d16 v147 d16 v123 d16
+(70)2
+(71)
+(70)
+(72)3
+Ki v162 c16 HQ e16 Ki c16 HQ e16 Sn d16r16 Ki c16 v123 c16r16 Sn v123 d16 Ki v162 c16 Sn v123 d16 v162 d16 v123 d16 v147 d16 Ki v123 c16
+(73)
+(74)[Ki v162 c16r16c16r16 Sn d16r16 Ki c16 v123 c16r16 Sn d16 Ki v162 c16 v123 c16 Sn v162 d16r16 Ki c16 v123 c16]2
+Ki v162 c16r16c16r16 Sn d16r16 Ki c16 v123 c16r16 Sn d16 Ki v162 c16 v123 c16 Sn v162 d16 v123 d16 v147 d16 Ki v123 c16
+(74)3
+Ki v162 c16r16c16r16 Sn d16r16 Ki c16c16r16 Sn d16 Ki c16c16 Sn d16d16d16d16
+(74)4
+[Ki v162 c16r16c16 HQ e16 Sn d16r16 Ki c16 v123 c16r16 Sn d16 Ki v162 c16 v123 c16 Sn v162 d16 HQ e16 Ki c16 v123 c16]3
+Ki v162 c16r16c16 HQ e16 Sn d16r16 Ki c16 v123 c16r16 Sn v162 d32 v123 d32 v147 d16 v123 d16 v162 d32 v123 d32d16 v147 d16 v123 d16
+[Sn v162 d16 HQ e16e16 Sn v123 d16 HQ v162 e16e16 Sn d16 HQ e16 Sn d16 HQ e16e16 Sn v123 d16 HQ v162 e16e16 Sn d16 HQ e16]2
+[Sn v162 d16 HQ e16 Sn d16 HQ e16 Sn d16 HQ e16 Sn d16 HQ e16 Sn d16 HQ e16 Sn d16 HQ e16 Sn d16] HQ e16 Sn d16 HQ e16
+* v123 d16 v147 d16 v123 d16
+Ki v162 c16 v123 c16 v167 c16 v123 c16 CH y9 v161 $fa$03$08 c16 Ki v123 $fa$03$00 c16 CH y9 v161 $fa$03$08 c16 Ki v123 $fa$03$00 c16 
+v167 c16 CH v93 $fa$03$e9 c16 Ki v162 $fa$03$00 c16 OH v161 $fa$03$08 c16 Ki v162 $fa$03$00 c16 CH y9 v161 $fa$03$08 c16 OH c16 CH c16

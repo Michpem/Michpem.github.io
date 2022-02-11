@@ -1,0 +1,147 @@
+;Insert size: 0x095F (2399) bytes
+
+#amk 2
+#samples
+{
+	"optimized/00 SMW @0.brr"
+	"optimized/01 SMW @1.brr"
+	"optimized/02 SMW @2.brr"
+	"optimized/03 SMW @3.brr"
+	"optimized/04 SMW @4.brr"
+	"EMPTY.brr"
+	"optimized/06 SMW @22.brr"
+	"optimized/07 SMW @5.brr"
+	"optimized/08 SMW @6.brr"
+	"EMPTY.brr"
+	"optimized/0A SMW @9.brr"
+	"optimized/0B SMW @10.brr"
+	"optimized/0C SMW @13.brr"
+	"EMPTY.brr"
+	"optimized/0E SMW @29.brr"
+	"EMPTY.brr"
+	"EMPTY.brr"
+	"EMPTY.brr"
+	"optimized/12 SMW @15.brr"
+	"EMPTY.brr"
+"Strange Medicine/Marimba.brr"
+"Strange Medicine/Guitar Harmonics.brr"
+"Strange Medicine/Electric Finger Bass.brr"
+"Strange Medicine/Pan Flute.brr"
+"Strange Medicine/Tambourine.brr"
+"Strange Medicine/Kick.brr"
+"Strange Medicine/Snare.brr"
+}
+
+#instruments
+{
+"Strange Medicine/Marimba.brr" $ff $f5 $00 $04 $7e
+"Strange Medicine/Guitar Harmonics.brr" $fe $e9 $00 $04 $96
+"Strange Medicine/Electric Finger Bass.brr" $ff $eb $00 $21 $29
+"Strange Medicine/Pan Flute.brr" $fe $e6 $00 $04 $27
+"Strange Medicine/Tambourine.brr" $ff $f6 $00 $07 $a8
+"Strange Medicine/Kick.brr" $ff $e0 $00 $07 $a8
+"Strange Medicine/Snare.brr" $ff $e0 $00 $07 $a8
+}
+
+"Mar=@30"
+"GiHa=@31"
+"Bas=@32"
+"PaFlu=@33"
+"Tam=@34"
+"K=@35"
+"S=@36"
+
+#0 $f4 $02 @0 v0c64/ t53 w180 y10 v0
+
+$ef $3e $45 $45
+$f1 $05 $38 $01
+$f5 $20 $0c $10 $0c $20 $0c $0c $0c
+y10
+o4 K
+[v255 $fa$03$0e c8. v227 $fa$03$00 c8.c8 v255 $fa$03$0e c8. v174 $fa$03$00 c16 v227 c8c8
+v255 $fa$03$0e c8. v227 $fa$03$00 c8.c8 v255 $fa$03$0e c8. v174 $fa$03$00 c16 v255 $fa$03$0e c16 v227 
+$fa$03$00 c8 v174 c16
+v255 $fa$03$0e c8. v227 $fa$03$00 c8.c8 v255 $fa$03$0e c8. v174 $fa$03$00 c16 v227 c8c8]
+v255 $fa$03$0e c8. v227 $fa$03$00 c8.c8  v255 $fa$03$0e c8c16 v174 $fa$03$00 c16 v227 $fa$03$00 c16
+v255 $fa$03$0e c16r16 v174 $fa$03$00 c16
+*1 v255 $fa$03$0e c8 S c8c24 K v244 $fa$03$00 c24 v227 c24c16c16 v255 $fa$03$0e c32c32 S c16c16c16c4
+$e6$00
+[v255 $fa$03$0e K c16r8. S c8.r16 K c16r8 v208 $fa$03$00 c16 S v255 $fa$03$0e c8 K c16r16
+c16r8. S c8. K c16r16c16r8 S c8.r16
+K c16r8. S c8.r16 K c16r8 v208 $fa$03$00 c16 S v255 $fa$03$0e c8 K c16r16]
+c16r8. S c8. K c16r4 S c8.r16 *1
+K v237 $fa$03$00 c24c24c24 v255 $fa$03$0e c8 S c16c8 K c16c16r8. S c8.r16
+(1)[K v255 $fa$03$0e c16r8 v208 $fa$03$00 c16 S v255 $fa$03$0e c8 K c16r16c16r8. S c8. K c16]
+(2)[r16 K c16r8 S c8.r16 K c16r8. S c8.r16]
+(1)
+r4 S c8.r16 K c16r8. S c8.r16
+(1)(2)
+K c16r8c16 S c8 K c16r16 v237 $fa$03$00 c24c24c24 v255 $fa$03$0e c8 S c16c8 K c16
+$e6$01
+[v255 $fa$03$0e c4c8. v194 $fa$03$00 c16 v255 $fa$03$0e c4 v210 $fa$03$00 c4]
+v255 $fa$03$0e c4c8. v194 $fa$03$00 c8. v255 $fa$03$0e c8 v210 $fa$03$00 c4 *1
+v255 $fa$03$0e c4c8. v194 $fa$03$00 c8. v255 $fa$03$0e c8 c32 v227 $fa$03$00 c32c32c32 S v255 $fa$03$0e c8
+[v255 $fa$03$0e K c16r8. S c8. K v210 $fa$03$00 c16 v255 $fa$03$0e c16r8. S c4
+K c4 S c8. K c16r8c16r16 S c4]3
+v255 $fa$03$0e K c16r8. S c8. K v210 $fa$03$00 c16 v255 $fa$03$0e c16r8. S c4
+K c4 S c8 K v210 $fa$03$00 c16 v244 c16r16 v210 c16 S v255 $fa$03$0e c16 K c16 
+S c32c32c16 K v227 $fa$03$00 c16 v210 $fa$03$00 c16
+
+#1 r64/Tam v196 y10
+o4
+[c4]28 c8c8c16c8c32c32c16c16c16c16c16r8. (10)[c16]28 (11)[c32]4 $e6$00 (10)30 (11)8 (10)28 (11)4 (10)18 (11)4
+(10)34 (11)4 $e6$02 (10)30 (11)8 (10)28 (11)4 (10)18 (11)4 c16c16c32c32c16c16c16 [c16r8.]15 c16r16c24c24c24
+$e6$00 (10)28 (11)4 (10)30 (11)8 $e6$01
+
+#2 r64/ Mar y9 v138 $fa$03$ab
+o4
+[d16a16>d16<a16>c16<g16f+16>d+16d16<a16>c16<g16a+16f+16d+16c16
+d16a16>d16<a16>c16<g16f+16>d+16d16<a16>c16<g16a+16f+8d+16
+d16a16>d16<a16>c16<g16f+16>d+16d16<a16>c16<g16a+16f+16d+16c16
+d16a16>d16<a16>c16<g16f+16>d+16d16<a16]>c16<g16a+16a16g16d+16 *1 g16f+16d16r8.
+v138 $fa$03$8f <$e6 $00
+[g8a8g16a8g16a16r8g16r8a16r16g8a8g16a8g16r8<a16r16a16a8r16>g8a8g16a8g16a16r8g16r8a16r16g8a8g16a8] g16r2
+*1 b16>c8d8c16d8c16 [d16r8c16r8d16r16c8d8c16d8c16r8<d16r16d16d8r16>c8d8c16d8c16d16r8c16r8d16r16c8d8c16d8c16]
+r2c8d8c16d8c16 *1 $e6 $01 v138 $fa$03$ab 
+d4r1r1r1.. v183 $fa$03$10 <[a4.g8a4.g8a16r16a16a+16r16g16a2g8a4.g8a4.g8a16r16a16a+16r16>c16<a2g8]2
+
+#3 r64/Mar y11 v138 $fa$03$ab
+o4
+$e6$00 d16 [a16]15 $e6$06 d16 *12 r8.
+< $e6$00
+[d16a16>d16<a16>c16<g16f+16>d+16d16<a16>c16<g16a+16f+16d+16c16
+d16a16>d16<a16>c16<g16f+16>d+16d16<a16>c16<g16a+16f+8d+16
+d16a16>d16<a16>c16<g16f+16>d+16d16<a16>c16<g16a+16f+16d+16c16]
+d16a16>d16<a16>c16<g16f+16>d+16d16<a16>c16<g16a+16a48a+48a48g16d+16 *1
+d16a16>d16<a16>c16<g16a16b16g16>d16g16d16f16c16<b16>g+16
+[g16d16f16c16d+16<b16g+16f16g16>d16g16d16f16c16<b16>g+16
+g16d16f16c16d+16<b8g+16g16>d16g16d16f16c16<b16>g+16g16d16f16c16d+16<b16g+16f16g16>d16g16d16f16c16]<b16>g+16
+g16d16f16c16d+16d48d+48d48c16<g+16g16>d16g16d16f16c16<b16>g+16 *1 <g+16f16 $e6$01 d4r1r1r1..
+GiHa > $e6$00
+[v154 $fa$03$18 d16 v118 $fa$03$28 d16 v154 $fa$03$18 d+16d16 v118 $fa$03$28 d16
+v154 $fa$03$18 d+16d16 v118 $fa$03$28 d16 v87 $fa$03$00 d16 v154 $fa$03$18 c16d16 v118 $fa$03$28 d16
+v154 $fa$03$18 d+16f16d+16c16
+d16 v118 $fa$03$28 d16 v154 $fa$03$18 d+16d16 v118 $fa$03$28 d16 v154 $fa$03$18 d+16d16 v118 $fa$03$28 d16]r2
+*1 r4> v118 $fa$03$28 d16<d+8. $e6$01
+
+#4 r64/GiHa y8 v150
+o4
+[a4.g16r16a4.g16r16a16r16a16>c8c32<a+32a16g16a16a+48>c48<a+48a16g16>c+16<a+8.a4.g16r16a4.g16r16
+a16r16a16>c8c32<a+32a16g16a16a+48>c48<a+48a16g16]f+16d+16f+16g+16 *1 a16r8.
+Bas y10 v217 
+<<$e6$00
+[c8d8c16d8c16d16r8c16r8d16r16c8d8c16d8c16r8<d16r16d16d8r16>c8d8c16d8c16d16r8c16r8d16r16c8d8c16d8]c16r2
+*1 e16f8g8f16g8f16 [g16r8f16r8g16r16f8g8f16g8f16r8<g16r16g16g8r16>f8g8f16g8f16g16r8f16r8g16r16f8g8f16g8f16]
+r2f8g8f16g8f16 *1 $e6$01 [c8d8c16d8c16d16r8c16r8d8c8d8c16d8c16] r4<d4 *1 r2 >
+[d16d16d16d16d16>d16<d16d16>d16<d16d16d16d16>c16d16<d+16
+d16d16d16d16d16>d16<d16d16>d16<d16d16d16d16>d16<d+16d+16]4
+
+#5 r64/GiHa y12 v150
+o4
+[d4.c16r16d4.c16r16d16r16d16f8f32d+32d16c16d16d+48f48d+48d16c16f+16d+8.d4.c16r16d4.c16r16
+d16r16d16f8f32d+32d16c16d16d+48f48d+48d16c16]<a+16g16a+16>c+16 *1 d16 [r2]30 r8.
+PaFlu y10 v184
+[d2^8d+8f+8g8a2^8d+8g8a+8a4g4f+8g24f+24d+24f+8d+8] d8d+24d24c24d4.d8d+8c8 *1 d8d+16f+16g16a16a+16b16>c2^8
+d8<a+8g+8g2^8f8g8g+8a+4>c4<a+4g+4a+8>c24<a+24g+24g4.f8g8g+8a+2^8>c24d24c24<a+16g+16f16g+16g2^8f8g8g+8a+4>c4
+d8d+16d16c24d24c24<g+8a+8>c24<a+24g+24g16f16d16<a+16
+[r2]25

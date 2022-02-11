@@ -1,0 +1,110 @@
+;Insert size: 0x059a (1434) bytes
+
+#amk 1
+
+#SPC
+{
+	#game	"Donkey Kong Land"
+	#title	"Flooded Ruins (Kremlantis)"
+}
+
+
+#path "Flooded Ruins"
+
+#samples
+{
+	#optimized
+"ToP_OrchestralHarp.brr"
+"ToP_StringEnsemble.brr"
+"RS3_Vibraphone.brr"
+"ToP_Bass.brr"
+"ToP_AhhChoir.brr"
+"ToP_Timpani.brr"
+"ToP_Cabasa.brr"
+}
+
+#instruments
+{
+"ToP_OrchestralHarp.brr" $fe $f0 $00 $02 $1c
+"ToP_StringEnsemble.brr" $ff $e7 $00 $03 $08
+"RS3_Vibraphone.brr" $fe $f5 $00 $04 $00
+"ToP_Bass.brr" $fd $ea $00 $04 $00
+"ToP_AhhChoir.brr" $f7 $e8 $00 $02 $00
+"ToP_Timpani.brr" $ff $f0 $00 $04 $00
+"ToP_Cabasa.brr" $ff $f1 $00 $01 $00
+}
+
+"Har=@30 h-1 $ee $03"
+"Str=@31 h-1 $ee $02"
+"Vib=@32 h-1 $ee $fa"
+"Bas=@33 h2"
+"Ahh=@34 h-1"
+"T=@35 $ee $00 h-1 q7f o2 $fa $03 $ff v255"
+"C=@36 $ee $f8 h0 o6 $fa $03 $00 v220"
+
+
+#0 r128 $f4$02/ y17 w200 t32
+
+$ef $ff $3a $3a
+$f1 $07 $53 $01
+
+Har
+[v180 $dc $80 $03 $e8 $80 $d2 o4d16e16d16<a16>d16e16d16<a16> $dc $80 $11 $e8 $80 $5a d16e16d16<a16>d16e16d16<a16]2
+[v180 $dc $80 $03 $e8 $80 $d2 o4d16e16g16e16d16e16g16e16 $dc $80 $11 $e8 $80 $5a d16e16g16e16d16e16g16e16]2
+v230 Str y10 $dc $01 $0a $e8 $00 $e6
+b8>c8<b8>c8<b4g8e4.r4e8.f8.g8g4..r16f4e8c4.r8<b16>c16d2>c4^16d8.<b4^16>c8.<a4^16b8.g4^16r8. q7e g8.f8.e8g4.r8
+g8.f8.e8c16<a16f16>c16d16<b16g16>d16
+q7f Har v210 y17
+[$dc $80 $03 o4g16<b16>d16f16<b16>d16e16<g16> $dc $80 $10 c16<b16>c16g16>c16<b16>c16g16]2
+[$dc $80 $03 o4g16<a16>d16f16<a16>d16e16<a16> $dc $80 $10 c16] d16<g16>c16d16<g16>c16d16
+* <a16f16>c16d16<b16g16>d16 
+Vib v230 $dc $01 $0a
+[e8a16b8>c8<f8r16a16b8>c8r16<g8b16>c8d8r16<f16g16a16>c16<g16>c16d16g16]2
+Har
+[[ v180 y17 $dc $80 $03 $e8 $ff $d2 [<a16e16d16c16<a16>d16e16g16] $dc $a0 $11 $e8 $ff $5a * $dc $80 $03 * $dc $80 $11 * ]]2
+
+#1 r128/ y10
+
+;I wish I could loop this channel better, but for some reason AMK doesn't like when you call a label loop and use qXY to lower
+;the volume.
+
+q7b
+r16^32
+v180 o3 Har
+[v180 $dc $80 $03 $e8 $80 $d2 o4d16e16d16<a16>d16e16d16<a16> $dc $80 $11 $e8 $80 $5a d16e16d16<a16>d16e16d16<a16]2
+[v180 $dc $80 $03 $e8 $80 $d2 o4d16e16g16e16d16e16g16e16 $dc $80 $11 $e8 $80 $5a d16e16g16e16d16e16g16e16]2
+v230 Str y10 $dc $01 $0a $e8 $00 $e6
+b8>c8<b8>c8<b4g8e4.r4e8.f8.g8g4.^16.r16f4e8c4.r8<b16>c16d2>c4^16d8.<b4^16>c8.<a4^16b8.g4^16r8. q79 g8.f8.e8g4.r8
+g8.f8.e8c16<a16f16>c16d16<b16g16>d16
+q7b Har v210 y17
+[$dc $80 $03 o4g16<b16>d16f16<b16>d16e16<g16> $dc $80 $10 c16<b16>c16g16>c16<b16>c16g16]2
+[$dc $80 $03 o4g16<a16>d16f16<a16>d16e16<a16> $dc $80 $10 c16] d16<g16>c16d16<g16>c16d16
+* <a16f16>c16d16<b16g16>d16
+Vib v230 $dc $01 $0a
+[e8a16b8>c8<f8r16a16b8>c8r16<g8b16>c8d8r16<f16g16a16>c16<g16>c16d16g16]2
+Har
+[[ v180 y17 $dc $80 $03 $e8 $ff $d2 [<a16e16d16c16<a16>d16e16g16] $dc $a0 $11 $e8 $ff $5a * $dc $80 $03 * $dc $80 $11 * ]]2
+
+#2 r128/ Bas v255 y10
+o3f1f4f8f16f16f8f4.b1b4b8b16b16b8b4.
+[[ [v255 a16>e16g16g16 v190 <a16>e16g16g16]4 [v255 <f16>c16e16e16 v190 <f16>c16e16e16]2 [v255 <g16>d16f16f16 v190 <g16>d16f16f16]2
+]]2
+v255 $fa $03 $40
+< [e8e16e16e16e16e16e16a8a16a16a16a16a16a16]2 [d8d16d16d16d16d16d16g8g16g16g16g16g16g16]2
+[a16a16a16a16a16a16a16a16d16d16d16d16d16d16d16d16e16e16e16e16e16e16e16e16f16f16f16f16g16g16g16g16]2
+$fa $03 $00
+[a1a4a8a16a16a8a4.]2
+
+#3 r128/ Ahh v170 y10
+o4
+<a1a4a8a16a16a8a4.>d1d4d8d16d16d8d4.<a1^4a4a4a4>c1d2<b2a1^4a4a4a4g1>d1 v210 e2a2e2a2f2g2f2g2 [e2f2g2a4b4]2
+v170
+[e1e4e8e16e16e8e4.]2 r16.
+
+#4 r128/ Ahh v170 y10
+o4
+<c1c4c8c16c16c8c4.g1g4g8g16g16g8g4. [r2]16 v200 g2>c2<g2>c2<a2>d2<a2b2 [a2a2>c2c4d4]2 v170 <[a1a4a8a16a16a8a4.]2 r16.
+
+#5 r128/ v255 y10
+(50)[q7f T c4 q7e C c16 q7c c16 q7f T c8c4 q7e C c16 q7c c16 q7a c8]12
+[q7f T c8 q7e C c16 q7f T c16c8 q7e C c16 q7a c16 q7f T c8 q7e C c16 q7f T c16c8 q7e C c16 q7c c16]8 (50)4

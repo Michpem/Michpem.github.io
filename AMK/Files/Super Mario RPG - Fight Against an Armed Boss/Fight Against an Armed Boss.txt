@@ -1,0 +1,163 @@
+;Insert size: 0x0df4 (3572) bytes
+
+#amk 2
+#path "Armed Boss"
+#spc
+{
+	#title "Fight Against an Armed Boss"
+	#game "Super Mario RPG"
+	#author "Yoko Shimomura"
+	#comment "Big boss battle theme"
+}
+
+#samples
+{	
+	"../optimized/00 SMW @0.brr"
+	"../optimized/01 SMW @1.brr"
+	"../optimized/02 SMW @2.brr"
+	"../optimized/03 SMW @3.brr"
+	"../optimized/04 SMW @4.brr"
+	"../EMPTY.brr"
+	"../optimized/06 SMW @22.brr"
+	"../optimized/07 SMW @5.brr"
+	"../optimized/08 SMW @6.brr"
+	"../EMPTY.brr"
+	"../optimized/0A SMW @9.brr"
+	"../optimized/0B SMW @10.brr"
+	"../optimized/0C SMW @13.brr"
+	"../EMPTY.brr"
+	"../optimized/0E SMW @29.brr"
+	"../optimized/0F SMW @21.brr"
+	"../optimized/10 SMW @12.brr"
+	"../EMPTY.brr"
+	"../optimized/12 SMW @15.brr"
+	"../EMPTY.brr"
+"Bass Clarinet.brr"
+"Brass Section.brr"
+"Fretless Bass.brr"
+"Soft Snare.brr"
+"Snare.brr"
+"Pedal Hi-Hat.brr"
+"Clap.brr"
+"Percussion Loop.brr"
+"Tom.brr"
+"Kick.brr"
+}
+
+#instruments
+{
+"Bass Clarinet.brr" $ff $e0 $b8 $04 $7b
+"Brass Section.brr" $ff $e0 $b8 $06 $0e
+"Fretless Bass.brr" $ff $ee $b8 $03 $c0
+"Soft Snare.brr" $ff $e0 $b8 $07 $a8
+"Snare.brr" $ff $e0 $b8 $07 $a8
+"Pedal Hi-Hat.brr" $ff $e0 $b8 $07 $a8
+"Clap.brr" $ff $e0 $b8 $04 $4c
+"Percussion Loop.brr" $ff $e0 $b8 $05 $6d
+"Tom.brr" $ff $e0 $b8 $04 $8d
+"Kick.brr" $ff $e0 $b8 $04 $8c
+}
+
+"Cla=@30 $ee$03"
+"Bra=@31 $ee$00"
+"Bas=@32"
+"SS=@33 y9 v126 $fa$03$23"
+"S=@34 y11 v126 $fa$03$23"
+"P=@35 y10 v167 $fa$03$00"
+"C=@36 y10 v225 $fa$03$00 $f4$03"
+"SSS=@33"
+"CC=@36 y10 $fa$03$00 $f4$03"
+"SSSS=@33 y10 v243 $fa$03$00 $f4$03"
+"S1=@34 y11 v109 $fa$03$e9"
+"Lo=@37"
+"T=@38"
+"K=@39 y10 v255 $fa$03$18"
+"Bra2=@31 $ee$00 y12 v204 $fa$03$00"
+"Cla2=@30 $ee$03 y12 v145 $fa$03$00"
+"Bra3=@31 $ee$00 $fa$03$00"
+
+#0 w187 t58
+
+$ef $79 $10 $10 
+$f1 $06 $68 $01
+$f4 $02
+
+r1.. Cla v154 y10 o5f16g16a24r48a+24r48/$de $32 $15 $44
+[>c8r16<g16f+16r16g16r16a+3r24a16a+24r48] a16r16a16g24r48f+16r16f+16r16g4.r8 * >c16r16c16<a+24r48a16r16a+16r16g4.r8
+[>d+8r16<a+16a16r16a+16r16>c+3r24c16c+24r48] c16r16c16<a+24r48a16r16a16r16a+4.r8 * >d+16r16d+16c+24r48c16r16c+16r16<a+4.r8
+Bra y12 v204 $df
+<c24r4.r3 f16 $e8$0c$90 ^16 $e8$18$cf ^8 v204 c24r2r3 v207 c32r32c32r32 v204 c24r4.r3 f16 $e8$0c$90 ^16 $e8$18$cf ^8
+c24r2..r12 y10 v251 g8g+16g24r48f+16r16d16r16f8.d+16r3c16r48d16r48d+12g+16r48g24r24f+2
+Cla y12 v137
+<f+2>d2v130 >c2..r8
+Bra y10 v251
+<f8f+16f24r48e16r16c16r16d+8.c+16r3<a+16r48>c16r48c+12f+16r48f24r24e2
+Cla y12 v137
+<e2>c2v130a+2..r8 d2 v119 a+1^4.r8 v130 c2 v119 g+1^4.r8 y10 v162 >g8g+16g16f+16r16d16r16f8g16f16d+16r16c16r16
+<g+8.a+16>c16r48d16r48d+16r48f+4g16r8.>c8r16<g16f+16r16g16r16a+8.r16a16r16g+16r16 y11 v148
+g8g+24r48g24r48f16r48d+24r24d24r24c16r8.>c16r1.... v154 y10 <f16g16a24r48a+24r48
+
+#1 r1... Bas y10 v255 $fa$03$61 o3f+32r32g32r32/
+(10)[o4c8r16<g16f+16r16g8>c8r16<g16f+16r16g8]4 [o4d+8r16<a+16a16r16a+8>d+8r16<a+16a16r16a+8]4
+[o4c8r16<g16f+16r16g16r16a+8r16f16e16r16f16r16>c8r16<g16f+16r16g16r16>c+8r16<g+16g16r16g+16r16]2 (10)4
+[o3a+8r16f16e16r16f8a+8r16f16e16r16f8]4 [o3g+8r16>d+16d16r16d+8<g+8r16>d+16d16r16d+8]2 [o3f+8r16>c+16c16r16c+8<f+8r16>c+16c16r16c+8]2
+(10) o3g+8r16>d+16d16r16d+8c8r16<g16f+16r16g8 [o4c8r16<g16f+16r16g8] o3a+8r16f16d+16r16f8 * o4c16r8.>c24r12<<f+32r32g32r32 (10)2
+
+#2
+o4 (20)[SS c16 S c16 P c16 S c16 C c8 $f4$03 P c16 S c32 v109 $fa$03$2f c32 
+SSS y9 v118 $fa$03$c5 c16 S c16 P c16 S c16 C c16 $f4$03 SS c16 P c16 SSS y9 v138 $fa$03$8f c16]2
+/
+[[ (20)3 (23)[SS c16 S c16 P c16 S c16 C c8 $f4$03 P c16 S c32 v109 $fa$03$2f c32 
+SSS y9 v118 $fa$03$c5 c16 S c16 P c16 S c16 C c16 $f4$03 SS c16 P c16 CC v206 c16 $f4$03] ]]2
+(21)[SS c16 S c16 P c16 S c16 SSSS c8 $f4$03 P c16 S c32 v109 $fa$03$2f c32
+SSS y9 v118 $fa$03$c5 c16 S c16 P c16 SS c32c32 SSSS c16 $f4$03 S1 c16 P c16 SSS c16]
+(22)[SS c16 S c16 P c16 S c16 SSSS c8 $f4$03 P c16 S c32 v109 $fa$03$2f c32
+SSS y9 v118 $fa$03$c5 c16 S c16 P c16 SS c32c32 SSSS c16 $f4$03 S1 c16] P c16 S c16 (21) (22) P c16 S c32 v109 $fa$03$2f c32
+[[ (20)3(23) ]]4 (20)2
+
+#3 y10 v182
+Lo [o3c1]2/
+*30
+
+#4 
+r1r1/
+r8 Bra y8 v213 $fa$03$00
+o4 (40)[g24r48g32r8r32g24r6r24]2 (41)[f24r48f32r8r32f+24r6r24] (40)3 a24r48a32r8r32g+24r6r24 (40) (42)[a+24r48a+32r8r32a+24r6r24]2
+(43)[g+24r48g+32r8r32a24r6r24] (42)3 >c24r48c32r8r32<b24r6r24a+24r48a+32r8r32 v222 $fa$03$07 g+32r32g+32r32
+v204 $fa$03$00 g24r4.r3a+16 $e8$0c$8e ^16 $e8$18$cc ^8 v222 $fa$03$07 g24r2r3g32r32 v204 $fa$03$00 g32r32
+g24r4.r3a+16 $e8$0c$8e ^16 $e8$18$cc ^8 g24r2r3 v222 $fa$03$07 g32r32g32r8r32 
+Cla  v145 $fa$03$00
+>>[c24r6r24c24r6r24c24r6r24c24] r6r24 * r3 v137 <<c2a2v130 >a2^8r8r8 v145 [a+24r6r24a+24r6r24a+24r6r24a+24]r6r24 * r3
+v137 <<a+2>g2 v130 >g2^8r4.<g+2> v113 f1^8 r4. v130 <f+2> v113 d+1^8r4
+Bra v213
+<(40)2(43)(40)2 f24r48f32r8r32f24r12 y9 v221 $fa$03$04<g8g+24r48g24r48f16r48d+24r24d24r24c16r8.>c16r1^1^8.
+
+#5 o3 T
+[y6 v191 $fa$03$44 a8. y8 v215 $fa$03$1e e16 y9 v194 $fa$03$83 d+8 y8 v215 $fa$03$1e e8]4/
+*60
+
+#6 o3 T
+[y12 v215 $fa$03$34 a4.a8a4^48 y14 v214 $fa$03$18 e6^16]2/
+*30
+
+#7 K
+o4 (70)[a4]7 a8a8/
+[K a8 Bra2 $f4$03 c24r48c32r32 K $f4$03 a8 Bra2 $f4$03 c24r12 K $f4$03 a8 Bra2 $f4$03 c24r48c32r32 K $f4$03 a8 Bra2 $f4$03 c24r12]
+K $f4$03 a8 Bra2 $f4$03 <a+24r48a+32r32> K $f4$03 a8 Bra2 $f4$03 c24r12 K $f4$03 a8 Bra2 $f4$03 c24r48c32r32 K $f4$03 a8 
+Bra2 $f4$03 c24r12 $f4$03 *
+K $f4$03 a8 Bra2 $f4$03 d24r48d32r32 K $f4$03 a8 Bra2 $f4$03 d24r12 K $f4$03 a8 Bra2 $f4$03 c24r48c32r32 K $f4$03 a8 
+Bra2 $f4$03 c24r12
+[K $f4$03 a8 Bra2 $f4$03 d+24r48d+32r32 K $f4$03 a8 Bra2 $f4$03 d+24r12 K $f4$03 a8 Bra2 $f4$03 d+24r48d+32r32 K $f4$03 a8 
+Bra2 $f4$03 d+24r12]
+K $f4$03 a8 Bra2 $f4$03 c+24r48c+32r32 K $f4$03 a8 Bra2 $f4$03 d+24r12 K $f4$03 a8 Bra2 $f4$03 d+24r48d+32r32 K $f4$03 a8 
+Bra2 $f4$03 d+24r12 *
+K $f4$03 a8 Bra2 $f4$03 f24r48f32r32 K $f4$03 a8 Bra2 $f4$03 f24r12 K $f4$03 a8 Bra2 $f4$03 d+24r48d+32r32 K $f4$03 a8 
+Bra2 $f4$03 c32r32c32r32 K $f4$03 (70)15 a8 Bra2 $f4$03 c32r32c32r32
+[K $f4$03 a8> Cla2 $f4$03 d+24r12 K $f4$03 <a8> Cla2 $f4$03 d+24r12 K $f4$03 <a8> Cla2 $f4$03 d+24r12 K $f4$03 <a8> 
+Cla2 $f4$03 d+24r12]2 < K $f4$03 (70)7 a8a8
+[K  a8> Cla2 $f4$03 c+24r12 K $f4$03 <a8> Cla2 $f4$03 c+24r12 K $f4$03 <a8> Cla2 $f4$03 c+24r12 K $f4$03 <a8> 
+Cla2 $f4$03 c+24r12 $f4$03]2 < K (70)7 a8a8
+a4a8 Bra3 $f4$03 y19 v193 a+32r32a+32r32 K $f4$03 a4a8 Bra3 $f4$03 y2 v194 a+32r32a+32r32 K $f4$03 a4a4a4a4
+a4a8> Bra3 $f4$03 y19 v193 c32r32c32r32 K $f4$03 <a4a8> Bra3 $f4$03 y2 v194 c32r32c32r32 K $f4$03 <a4a4a4a8a8
+[K a8 Bra2 $f4$03 c24r48c32r32 K $f4$03 a8 Bra2 $f4$03 c24r12 $f4$03]5
+K a8 Bra2 $f4$03 <a+24r48a+32r32> K $f4$03 a8 Bra2 $f4$03 <a+24r12> K $f4$03 [a4a4a4a8a8] a4a4a4a4 *

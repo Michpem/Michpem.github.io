@@ -1,0 +1,103 @@
+;Tamaño: 0x05be (1470) bytes
+#amk 2
+#SPC
+{
+	#title "Biting Cold"
+	#game "Tales of Phantasia"
+	#author "Motoi Sakuraba"
+}
+
+#instruments
+{
+@3 $fd $ee $00 $03 $00			;Celesta
+@1 $f0 $e7 $00 $05 $f8			;String Ensemble (High)
+@8 $fe $aa $00 $1e $00			;Finger Bass
+@22 $ff $e0 $00 $07 $00			;Ride Cymbal
+@1 $fa $e0 $00 $03 $00			;String Ensemble
+}
+
+"Cel=@30"
+"Str=@31"
+"Bas=@32"
+"R=@33"
+"Str2=@34"
+
+#0 r192 $f4 $02/ Cel w200 t41 v180 y9,0,1
+
+$ef $ff $20 $20
+$f1 $05 $70 $01
+
+(00)[o5c4.<b4.g4a4.e2^8>c4.<b4.g8a8e2>c4<b4>d4.<b4.g4d1b8.>c8.d8<b1.]
+(01)[a8.e8.>c8<b8.g8.a8e1]2
+(02)[>g8.<b8.>d8<b8.>c8.<b8>g2f8.e8.d8c4.<b2^8g2a4>e4]
+(03)[c4.<a2^8a1]2
+(04)[b4>c8<a4b8g2
+a4b4a4>c4.<b4.g2..a4b8a1>a1a16b16g16a16e16g16d16e16c16d16<b16>c16<a16b16g16b16a1
+>g16a16f16g16e16f16d16e16c16d16<b16>c16<a16b16g16b16g1b2>c4d4<g1]
+>
+y11,0,1 v150
+(05)[q7f a8 q7d a8 q7f e8 q7d e8<q7f a8 q7d a8>q7f e8 q7d e8]4 (06)[q7f g8 q7d g8 q7f d8 q7d d8<q7f g8 q7d g8>q7f d8 q7d d8]4
+(07)[q7f a16c16e16f16a16c16e16f16a16c16e16f16a16c16e16f16]2 (08)[g+16<b16>d16e16g+16<b16>d16e16g+16<b16>d16] 
+(09)[e16g+16<b16>d16e16] (08) (10)[g+16b16g+16]b16>e16
+
+#1 r192/ Str v90 y9,0,1 p20,40
+o5
+[a1^1^1^1g1^1^1^1]4
+o4 Str2 v100
+[a16e16a16>c16<b16g16e16b16]8 [g16d16g16>c16<b16g16d16b16]8
+Str v110
+>>e1<a2>e6^24d6c8<b1>d2e2
+
+#2 r192/ Bas v160 y10
+o1a1^1a1^1g1^1g1^4.>$f4$01 g16a16g8 $f4$01 ^8d4<a4.>a1e2^8<a4.>a1 $f4$01 a16b16a8 $f4$01 ^8e4<g1>g4.d2^8<g2.>d4g1
+<a4.>a2 $f4$01 a16b16a8 $f4$01 ^4 e2^8<a2.>e4a1<g4.>g2^8<g1g4.>d4.<g4>g4. $f4$01 g16a16g8 $f4$01 ^8d4<a4.>a1e2^8
+<a4.>e2<a8>a4.e4.a4g4.d4.<g4>d4.<g8>$f4$01 g16a16g16 $f4$01 ^16d8g8<g4.>d4.<g4>g1<a2..e8a2^8>$f4$01 c16d16c16 $f4$01 ^16<b8
+a2..e8a2a8.b8.>c8<g4.> $ec$02$15$02 d2^8 $ec$00$00$00 <g1g2b8.>c8.d8<g4.>$ec$02$15$02 g2^8 $ec$00$00$00 <f1f1e1g+2b2
+
+#3 r192/ Cel v140 y11,0,1
+[[ (30)[o4a8>a8d8e8]8 (31)[o4g8>g8c8d8]8 ]]4
+y13,0,1
+[o5 v125 b32 v105 >c32]192
+
+#4 r192/
+[r2]18
+o4
+Cel
+[[ v190 y0,0,1 $dc$c0$14 $e8$c0$30 (40)[q7f a24 q76 a24 q7a a24]8 r1 ]]2
+[[ v190 y0,0,1 $dc$c0$14 $e8$c0$30 (41)[q7f g24 q76 g24 q7a g24]8 r1 ]]2
+[[ v190 y0,0,1 $dc$c0$14 $e8$c0$30 (40)8 r1 ]]2
+[[ v190 y0,0,1 $dc$c0$14 $e8$c0$30 (41)8 r1 ]]2
+[[ v190 y0,0,1 $dc$c0$14 $e8$c0$30 (40)8 r1 ]]2
+v190 y0,0,1 $dc$c0$14 $e8$c0$30
+(41)8 r1
+v190 y0,0,1 $dc$c0$14 $e8$c0$30
+(41)8
+>
+y10,0,1 v150
+[q7f e8 q7d e8 q7f c8 q7d c8 q7f <e8 q7d e8> q7f c8 q7d c8]4 [o5 q7f d8 q7d d8< q7f b8 q7d b8 q7f d8 q7d d8 q7f b8 q7d b8]4
+v180
+r4>q7f c4<b4a4f2f8.g8.a8g+1b2b2
+
+#5 r192/ v130 y9,0,1 R
+o4
+[[ [q7f c8 q7a c16 q7f c8 q7a c16 q7f c16 q7a c8 q7f c8 q7a c16 q7f c8 q7a c16 q7f c16]
+q7a c16 q7f c8 q7a c16 q7f c8 q7a c16 q7f c16 q7a c16 q7f c32 q7a c32 q7f c16 q7a c8 q7f c16 q7a c16 q7f c16 *
+q7a c16 q7f c8 q7a c16 q7f c8 q7a c16 q7f c16 q7a c16. q7f c16 q7a c16. q7f c24 q7a c24 q7f c12^48 q7a c16 ]]8
+[q7f c4. q7d c2^8q7f c8. q7d c8. q7f c2^8]4 r4
+o5 Cel v180 y9,0,1
+e4d4c4<a2a8.b8.>c8<b1>d2e2
+
+#6  r192/
+r8 Cel y13,0,1 v110
+(00)(01)2 (02)(03)2 (04)
+v100 y6,0,1
+(05)4 (06)4 (07)2 (08)(09)(08) (10)
+
+#7 r192/
+r8 Cel y6,0,1 v90
+[[ (30)8 (31)8 ]]3
+(30)8 (31)7 o4g8>g8c8
+r8 v255 Str y9,0,1
+[a24r12a24r6r24a24r8r48a24r8r48a24r6r24]4 [g24r12g24r6r24g24r8r48g24r8r48g24r6r24]3 g24r12g24r6r24g24r8r48g24r8r48g24r12
+v130 y9,0,1 R
+o4[q7f c4. q7d c2^8q7f c8. q7d c8. q7f c2^8]2

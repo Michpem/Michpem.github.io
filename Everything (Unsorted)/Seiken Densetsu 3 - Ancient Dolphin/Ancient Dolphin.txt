@@ -1,0 +1,214 @@
+;Insert size: 0x0458 (1112) bytes
+;Length: 2:43.
+
+#amk 2
+#path "Ancient Dolphin"
+#spc
+{
+	#title "Ancient Dolphin"
+	#game "Seiken Densetsu 3"
+	#author "Hiroki Kikuta"
+	#comment "comfy palace"
+}
+
+
+#samples
+{
+	#optimized
+"Marimba.brr"
+"Pan Flute.brr"
+"Ahh Choir.brr"
+"Tubular Bell.brr"
+"Nylon Guitar.brr"
+}
+
+
+#instruments
+{
+"Marimba.brr" $ff $f0 $b8 $06 $02
+"Pan Flute.brr" $fe $e6 $b8 $04 $28
+"Ahh Choir.brr" $f6 $e9 $b8 $04 $8c
+"Tubular Bell.brr" $ff $cb $b8 $05 $83
+"Nylon Guitar.brr" $ff $ed $b8 $04 $8a
+}
+
+
+"Mar=@30"
+"Flu=@31"
+"Ahh=@32"
+"Bel=@33"
+"Gui=@34"
+
+
+#0 $f4 $02 / w180 t52
+
+$ef $3f $47 $47
+$f1 $05 $38 $01 
+$f5 $20 $0c $10 $0c $20 $0c $0c $0c
+
+Mar y12 v149
+[[ [o2r8g2r8>e2
+e4.e4.]4
+$fa $02 $05
+*4
+$fa $02 $08
+*4
+$fa $02 $07
+*4
+$fa $02 $03
+*4
+$fa $02 $00]]2
+
+Flu y8 v161
+o3
+[[ [g8r8g4.g8r4
+g8g8g8] r8d+4d+8d+8
+* g8d+4.d+8]]2
+
+
+
+#1 Mar y12 v149
+[[ o3
+[r4.d2f2^8
+<g4.g8]3
+r4.>d2f2^8
+<g4.f8
+
+[r4.>g2a+2^8
+c4.c8]4
+$fa $02 $03
+*4
+$fa $02 $02
+*4
+$fa $02 $fe
+*4
+$fa $02 $00
+]]2
+
+[[ [r16c2...
+r16c4..] r16<a+4..]]3
+* r4a+4
+
+
+
+#2 Mar y12 v149
+
+[[
+[o2d2f2
+>g4.c4.c4]4
+$fa $02 $05
+*4
+$fa $02 $08
+*4
+$fa $02 $07
+*4
+$fa $02 $03
+*4
+$fa $02 $00
+]]2
+
+[[ [r32<a2....
+r32a+4...] r32g4...]]3
+* r8g4.
+
+
+
+#3 Mar y12 v149
+[[
+[r4o2a4.a2a2..]4
+[r4>d4.c2d2..]4
+$fa $02 $03
+*4
+$fa $02 $02
+*4
+$fa $02 $fe
+*4
+$fa $02 $00
+]]2
+
+[[ [o2g1
+g2] d+2]]3
+* d+4.d+8
+
+
+
+#4 Ahh y8 v191 $fa $03 $05
+[[
+o4
+[d1^1^1^1]2
+$fa $02 $02
+*2
+$fa $02 $03
+*2
+$fa $02 $02
+*2
+$fa $02 $01
+*2
+$fa $02 $00
+]]2
+
+Flu y8 v161
+(40)[c8r8c4.c8r4]
+(41)[c8c8c8r8<a+4a+8a+8]
+(40)
+>c8c8c8c8<a+4.a+8
+(40)
+(41)
+(40)
+>c8c8c8c8<a+4a8g8
+
+
+
+#5
+
+Bel y8 v229
+[o2 q7f d1^8 q7c d1^8 q79 d1^8 q77 d2^8]2
+$fa $02 $05
+*2
+$fa $02 $08
+*2
+$fa $02 $07
+*2
+$fa $02 $03
+*2
+$fa $02 $00
+r1
+
+Gui y10 q7f
+o4
+v214 d4. v222 e4. v253 c4
+v184 c8 v216 d4 v241 g1^1^2^8
+v244 d4. v222 e4. v253 c4
+v184 c8 v216 d4 v241 g1^1^16
+v184 f32g32 v244 f8 v231 e8 v246 f8 v223 g8
+v190 f4.... v177 d64 v244 a+8 v223 a8 v227 g8 v231 d8
+v225 f4. v248 g4. v225 d4.
+v227 f4^32 v196 c16 v198 d32 v204 e4 v220 c8 v194 <b8
+v225 a+1^4....
+v174 >a64 v227 a+8a8 v255 $fa $03 $0a g8 v237 $fa $03 $00 d8
+v246 f4. v220 g4. v231 d4.
+v225 f4. v208 e4 v202 c4
+v210 <f1.
+v208 a+8> v212 c8 v231 c+8 v204 d+8
+v208 g+1.
+v225 c+8 v223 c8 v216 <g+8 v214 f8
+v220 a+1.
+v204 a+8 v223 >c8 v220 c+8d+8
+v216 g+4. v222 >c4. v216 <g+4.
+v204 d+1...
+[[v214 a4. v210 b4. v212 g4
+v152 g8 v218 a4 v222 >d1^1^2^8]]2
+[v214 <f4. v210 g4. v212 d+4
+v152 d+8 v218 f4 v222] a+1^1^2^8
+* a+1.^8
+
+Flu y8 v161
+<
+(50)[a8r8a+4.a8r4]
+(51)[a+8a+8a8r8g4f8g8]
+(50)
+a+8a8a+8a8g4.f8
+(50)
+(51)
+(50)
+a+8a8a+8a8g4f8r8

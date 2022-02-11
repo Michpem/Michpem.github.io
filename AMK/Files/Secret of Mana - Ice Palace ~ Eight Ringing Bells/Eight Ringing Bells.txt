@@ -1,0 +1,110 @@
+#amk 1
+#path "Eight Ringing Bells"
+#samples
+{ #optimized #AMM
+"JazzGuitar.brr"
+"Kick.brr"
+"Snare.brr"
+"StringEnsemble.brr"
+"AhhChoir.brr"
+"FretlessBass.brr"
+"Piccolo.brr"
+"MusicBox.brr"
+}
+#instruments
+{
+"JazzGuitar.brr" $ff $ee $00 $03 $fa
+"Kick.brr" $ff $e0 $00 $03 $e6
+"Snare.brr" $ef $d0 $00 $04 $42
+"StringEnsemble.brr" $ff $e0 $00 $03 $5d
+"AhhChoir.brr" $fe $e0 $00 $04 $04
+"FretlessBass.brr" $ff $e5 $00 $02 $fd
+"Piccolo.brr" $ff $e0 $00 $04 $82
+"MusicBox.brr" $f7 $ec $00 $03 $fb
+}
+
+"JaGui=@30 $ee $04"
+"K=@31 v193 $fa $03 $00 $ee $00"
+"S=@32 v255 $fa $03 $a9"
+"Str=@33"
+"Ahh=@34"
+"Bas=@35"
+"Pic=@36"
+"MuBo=@37 $ee $02"
+
+#0 v0c64 $f4 $02/ w255 t61
+$ef $ff $40 $40
+$f1 $06 $00 $01
+[r2]32
+JaGui y4
+[o6 v158 e4 v114 e4 v101 e4 v84 e4 v158 e4 v114 e8 v158 f4 v101 f8 v158 g4 o6 v158 e4 v114 e4 v101 e4 v84 e4
+v158 e4 v114 e8 v158 f4 v101 f8 v158 g4 v158 d4 v114 d4 v101 d4 v84 d4 v158 d4 v114 d4 v101 d4 v84 d2.]1
+<v158 a4 v114 a4 v158 b4 v114 b4>v158 d4 v101 d4 *1 <v158 b4 v114 b4>v158 c4 v114 c4 v158 d4 v114 d4
+y10 o5 [K c4r4 S c4r4 K c4r8c8 S c4r4 K c4r4 S c4r4 K c4r8c8 S c4 K c4]4 K c4r4 S c4r4 K c4r8c8 S c8c8 K c4
+
+#1 r64/ Str v171 y4
+o4e1^1^1^1d1^1^1^1e1^1^1^1d1^1^1^1
+y12 v155 $fa $03 $1f
+[e8r8e8r8e4d8g8e4d8g8e4d8r8e8r8e8r8e4d8g8e4d8g8e4d8r8e2b8>c8<b8g8]1
+e4e8f+8e4d4e2f+2g2f+4.r8 *1 e4g8a8b4.a8g2.f+8g8e2.r4
+y7 v161 $fa $03 $00
+[f4e8c8f4e8c8f8r8g8r8f4e8c8f4e8c8f8r8g8r8f4e8c8f8r8g8r8a4g8e8a4g8e8a8r8>c8r8<b4g8e8]1
+a4g8e8a8r8>c8r8<b4g8e8a8r8g8r8 *1 a8r8g1..g8r8f1..
+
+#2 r64/Str y9 v131 $fa $03 $8c
+o3b1.>c2<b1>c1<a1.b2a1b1b1.>c2d2c2<b2>c2<a1.b2a1^1
+y13 v170 $fa $03 $00
+[>c8r8c8r8c4<a8>d8c4<a8>d8c4<a8r8>c8r8c8r8c4<a8>d8c4<a8>d8c4<a8r8g2a2]1 b4b8>c+8<b4a4b2>c+2d2<b4.r8 *1
+b4>d8e8f+4.e8d2.c+8d8<b2.r4
+v150 Ahh
+[o4r4a8r8a8r4g8r4a8r8a8r8b8g8r4a8r8a8r4g8r4a8r8a8r8a8b8r4>c8r8c8r4<b8r4>c8r8c8r8d8<b8]1
+r4>c8r8c8r4<b8r4>c8r8c8r8d8e8 *1 r4c8r8c8r8<b8r4.>c8r8c8r8<b8r4.a8r8a8r8g8r4.a8r8a8r8g8r8
+
+#3 r64/Str y9 v131 $fa $03 $8c $ee $05
+o3a1^1^1^1g1^1^1^1a1^1^1^1g1^1^1^1
+Bas v184 y10 $fa $03 $00 $ee $00
+[o4f8g8>c8e8f2.e8c8f8e8c8<g8f8g8>c8e8f2.e8c8g8e8c8<f8e1.f+8e8d4] e1^1 *1 e1.
+S o5 c2 
+Bas v184 y10 $fa $03 $00
+o3[f8f8r2r8e8f8f8r8e8f8g8>c8e8f8f8r2r8e8f8f8r8e8g8e8c8<b8a8a8r2r8g8a8a8r8g8a8>c8e8g8a8a8r2r8g8a8a8r8g8b8g8e8<a8]2
+f8f8r2r8>e8f8f8r8e8c8<a8f+4
+
+#4 r64/Str v160 y10
+o3f1^1^1^1e1^1^1^1f1^1^1^1e1^1^1^1
+Pic y8 v137 $fa $03 $14
+[o4e8r8e8r8e4d8g8e4d8g8e4d8r8e8r8e8r8e4d8g8e4d8g8e4d8r8b8>c8<b8g8e2.] g8a8g4f+4g2a2b2..r8 *1 b8>c8d4.c8<b2.a8b8
+g2.r4
+y13 v150 $fa $03 $00 Ahh
+[<f8>c8f8c8f8c8<f8>e8<f8>c8f8c8f8c8g8e8<f8>c8f8c8f8c8<f8>e8<f8>c8f8c8f8c8f8g8<a8>e8a8e8a8e8<a8>g8
+<a8>e8a8e8a8e8b8g8]1 <a8>e8a8e8a8e8<a8>g8<a8>e8a8e8a8e8b8>c8 *1 < [<a8>e8a8e8a8e8g8e8]2 [<f8>c8f8c8f8c8e8c8]2
+
+#5 r64/$df Str y11 v131 $fa $03 $8c
+o2a1^1^1^1g1^1^1^1a1^1^1^1g1^1^1^1
+Pic y8 v137 $fa $03 $14
+[o4c8r8c8r8c4.r8c4.r8c4r4]2 <b1^1^1...r8 *2 b1^1^1..r4
+o5 y10 v137 $fa $03 $00
+[c4r4c4r4c8r8d8r8c4r4c4r4c8r8d8r8c4r4c8r8d8r8e4r4e4r4e8r8g8r8e4r4]1 e4r4e8r8g8r8e4r4e8r8d8r8 *1
+$de $2c $0d $10 e8r8d1.^6
+r12d8r8c1..
+
+#6 r64/MuBo y13 v95 $de $0d $0b $0f
+[o6e1<a1>e1g1d1<g1>d1g1]2
+Pic $df y8 v143
+[o3f8r8f8r8f4.r8f4.r8f4r4f8r8f8r8f4.r8f4.r8f4r4]1 e1^1^1...r8 *1 e1^1^1..r4
+y10 v137
+[o4g4f8r8g4f8r8g8r8a8r8g4f8r8g4f8r8g8r8a8r8g4f8r8g8r8a8r8b4a8r8b4a8r8b8r8>d8r8<b4a8r8]1
+b4a8r8b8r8>d8r8<b4a8r8b8r8a8r8 *1 $de $2c $0d $10 b8r8b1.^6r12b8r8a1..
+
+#7 r64/MuBo $de $0d $0b $0f v98 y14 $dc$01$0e
+r2[o5g1>d1<a1>c1<e1>c1<g1]1 >d1 *1 d2 
+$df JaGui
+r8 [v115 e4 v110 e4 y16 v90 e4 v78 y15 e4 v115 e4 v110 e8 v115 f4 v110 f8 v115 g4
+v115 e4 v110 e4 y16 v90 e4 v78 y15 e4 v115 e4 v110 e8 v115 f4 v110 f8 v115 g4
+v115 d4 v110 d4 y16 v90 d4 v78 y15 d4 v115 d4 v110 d4 y16 v90 d4 v78 y15 d2.]1
+<v115 a4 v110 a4 v115 b4 v110 b4>v115 d4 v110 d4 *1 <v115 b4 v110 b4 >v115 c4 v110 c4 v115 d4 v110 d8
+v150 y10 < [$dc$80$14 <f8>c8<b8>c8 $dc$80$0a <a8>c8<g8>c8 $dc$80$00 <f8>c8<b8>c8 $dc$80$0a <a8>c8<g8>d8
+$dc$80$14 <f8>c8<b8>c8 $dc$80$0a <a8>c8<g8>c8 $dc$80$00 <f8>c8<b8>c8 $dc$80$0a <a8>c8<g8>d8
+$dc$80$14 <a8>e8d8e8 $dc$80$0a c8e8<b8>e8 $dc$80$00 <a8>e8d8e8 $dc$80$0a c8e8<b8>g8]1
+$dc$80$14 <a8>e8d8e8 $dc$80$0a c8e8<b8>e8 $dc$80$00 <a8>e8d8e8 $dc$80$0a c8e8<b8>g8 *1
+$dc$80$14 <a8>e8d8e8 $dc$80$0a c8e8<b8g8 $dc$80$00 a8>e8d8e8 $dc$80$0a c8e8<b8g8
+$dc$80$14 f8>c8<b8>c8 $dc$80$0a <a8>c8<g8e8 $dc$80$00 f8>c8<b8>c8 $dc$80$0a <a8>c8<g8c8

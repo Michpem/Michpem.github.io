@@ -1,0 +1,83 @@
+;Insert Size: 0x02d7 (727) bytes.
+#path "At a Place Nobody Knows"
+
+#spc
+{
+	#title "At a Place Nobody Knows"
+	#game "Mega Man Legends"
+}
+
+#amk 2
+#option smwvtable
+
+"Str=@30 h-2"					;String Ensemble - Romancing SaGa 2
+"SStr=@31 h-2 v190 $ec $00 $00 $00"		;Same String Ensemble but with slow ADSR
+"Bas=(!100, -1)"				;Electric Finger Bass - Rudra no Hihou
+"Hit=@15 $ed $7e $e0 $ec $04 $0c $01"		;Orchestra Hit - SMW
+"Cra=@33 h-5"					;Crash Cymbal - Romancing SaGa 2
+"CHat=@34 h1"					;Closed Hihat - Chrono Trigger
+"OHat=@35 h-2"					;Open Hihat - Rudra no Hihou
+"Sn=@36 o5 h-4 v210 $fa $03 $00"		;Snare Drum - Mighty Morphin' Power Rangers (Fighting Edition)
+"Ki=@21 h0 $ee $00 v255 $fa $03 $90"		;Kick Drum - SMW
+
+#samples
+{ 
+#optimized
+"RS2_StringEnsemble.brr"
+"RnH_ElectricFingerBass.brr"
+"RS2_CrashCymbal.brr"
+"CT_ClosedHihat.brr"
+"RnH_OpenHat.brr"
+"MMPR_Snare.brr"
+}
+
+#instruments
+{ 
+"RS2_StringEnsemble.brr" $f9 $e0 $00 $03 $3b
+"RS2_StringEnsemble.brr" $f4 $e0 $00 $03 $3b
+"RnH_ElectricFingerBass.brr" $9f $e0 $b8 $03 $bc
+"RS2_CrashCymbal.brr" $9f $f0 $00 $03 $83
+"CT_ClosedHihat.brr" $9f $e0 $00 $05 $6a
+"RnH_OpenHat.brr" $9f $e0 $00 $04 $4b
+"MMPR_Snare.brr" $9f $e0 $00 $02 $6e
+}
+
+(!100)[@32]
+(!101)[$fa$01$b9]
+
+#0 Str v170 y10 w230 t47
+$ef $3d $40 $40
+$f1 $05 $50 $01
+[o3c1d1d+1d1c1<g1g+1g1]4
+
+#1 Bas v190 y10
+(!101, 3);$fa $05 $b9
+$e6 $00
+(10)[o4c16r16]8 (11)[d16r16]8 [d+16r16]8 (11)8 (10)8 (12)[o3g16r16]8 [g+16r16]8 (12)8
+$e6 $03
+
+#2 Str $ed $79 $f0 q7e
+r2
+[y10 v190 o5c16g16>c16r16 y6 v150 <c16g16>c16r16 y14 v120 <c16g16>c16r16 y6 v90 <c16g16>c16r1^16]16
+
+#3
+[o3 y9 Hit q7f v230 c2 >q7d v180 SStr d+2d2<b2g2>d+2f2d2d+2g2f2g+2g2>c2<b2<b2]4
+
+#4 v190 y11 q7d
+[o4 Hit c2 SStr g2f2d2c2g2g+2b2>c2d+2d2f2d+2g+2g2<g2]4
+
+#5
+$e6 $00
+o5 q7f Cra v150 y10 c1 [r1]7 c2 y11 SStr v160 q7d g2g+2g2f2d2d+2d2d+2g2f2g+2g2>c2<b2g2
+$e6 $01
+
+#6 v140 y10
+o5
+[y10 CHat q7f c8 CHat q7d c8 CHat q7f c8 CHat q7d  c8 CHat q7f c8 CHat q7d c8 CHat q7e c16 CHat q7f c16 OHat y12 c8
+y10 CHat c8 CHat q7d c8 CHat q7f c8 CHat q7d c8 CHat q7e c16 CHat q7f c16 y8 OHat c8 CHat y10 q7e c16 CHat q7f c16 OHat y12 c8]16
+
+#7 y10
+o5[Ki c4]64 [Ki c4 $f4 $03 Sn c4 $f4 $03 Ki c8c8 $f4 $03 Sn c4
+$f4 $03 Ki c4 $f4 $03 Sn c4 $f4 $03 Ki c8c8 $f4 $03 Sn c8 $f4 $03 Ki c8]7
+Ki c4 $f4 $03 Sn c4 $f4 $03 Ki c8c8 $f4 $03 Sn c4
+$f4 $03 Ki c4 $f4 $03 Sn c4 $f4 $03 Ki c8c8 $f4 $03 Sn c8c16c16 $f4 $03

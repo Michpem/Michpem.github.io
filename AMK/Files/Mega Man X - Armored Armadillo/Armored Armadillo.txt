@@ -1,0 +1,160 @@
+;Insert Size: 0x11ed (4589) bytes
+
+#amk 2
+#path "desArmadillo"
+#spc
+{
+	#title "Armored Armadillo"
+	#game "Mega Man X"
+	#author "idk, someone from Capcom"
+}
+
+
+#samples
+{
+	#optimized
+"Hi-hat.brr"
+"Kick.brr"
+"Marimba.brr"
+"Overdriven Guitar.brr"
+"Snare.brr"
+"Splash Cymbal.brr"
+"String Ensemble.brr"
+"Synth Bass.brr"
+"Synth Brass.brr"
+}
+
+#instruments
+{
+"Synth Brass.brr" $ff $e0 $b8 $04 $05
+"Overdriven Guitar.brr" $ff $e0 $b8 $03 $00
+"Marimba.brr" $ff $e0 $b8 $04 $00
+"String Ensemble.brr" $ff $e0 $b8 $03 $00
+"Synth Bass.brr" $ff $ed $b8 $09 $00
+"Snare.brr" $ff $e0 $b8 $05 $c6
+"Hi-hat.brr" $ff $f3 $b8 $04 $ba
+"Kick.brr" $ff $e0 $b8 $06 $d2
+"Splash Cymbal.brr" $ff $f1 $b8 $04 $e8
+"Snare.brr" $ff $e0 $b8 $06 $d2
+}
+
+"SyB=(!100, -1)"
+"OGui=(!102, -1)"
+"Mar=(!103, -1)"
+"Str=(!104, -1)"
+"Bas=(!105, -1)"
+"S=(!106, -1)"
+"H=(!107, -1) y11 v82 $fa$03$2b"
+"H2=(!107, -1) y9 v82 $fa$03$2b"
+"K=(!108, -1) y11 v98 $fa$03$e4"
+"Cy=(!109, -1) y10 v152 $fa$03$00"
+"S2=(!110, -1) y10 v123 $fa$03$00"
+
+(!100)[@30]
+(!101)[$fa $01 $b8]
+(!102)[@31]
+(!103)[@32]
+(!104)[@33]
+(!105)[@34]
+(!106)[@35]
+(!107)[@36]
+(!108)[@37]
+(!109)[@38]
+(!110)[@39]
+
+#0 w220 t57
+
+$ef $f3 $9d $63 
+$f1 $03 $44 $01 
+$f5 $34 $33 $00 $d9 $e5 $01 $fc $eb
+$f4 $02 r128/
+
+r4.
+SyB v123 y10 (!101, 3)
+o4 
+$de$30$0e$a0
+
+o4
+(1)[$f4$01 g+64a32 $f4$01 ^64>c16r16<g16r16g+16r16a4...r16.<g16g+16r16a16r16>c16r16<a4...
+r16.>$f4$01 g+64a32 $f4$01 ^64>c16r16<g16r16g+16r16a4...]
+(2)[r8..<a16>c16d16d+16d16c16e12r24 $eb$00$05$fc e12r24 $eb$00$00$00 <b12r24g12r24>]
+(1) (3)[$df r16. $f4$01 e8 $eb$00$15$f4 e8 $f4$01 ^16 $eb$00$00$00 r8. <a16>c16d16g16g+16a16>c16<b16r8 $de $30 $0e $a0]
+(4)[q7f <a16>c16r16d8c16 $f4$01 d32d+16 $f4$01 ^32d16c8 $f4$01 d+64e16 $f4$01 ^32r64g16a8g8d64d+16.r64 q5f e2^6r12]
+(5)[q7f <a16>c16r16d8c16 $f4$01 d32d+16 $f4$01 ^32d16c8< $f4$01 f+64g16. $f4$01 ^64 g+16a8g8 $f4$01 b32>c16 $f4$01 ^32< q5f a2^6r12]
+(4) (6)[q7f a16>c16r16d8c16 $f4$01 g+32a16 $f4$01 ^32 g16e8<$f4$01 a+32b16 $f4$01 ^32>c16d8<b8 $f4$01 f+32g16 $f4$01 ^32 q5f a2^6r12
+q7f >$f4$01 g+64a32 $f4$01 ^64g8d16d+16e16g16.r32a16.r32>c8<a16r16>d8c8<b8 q5f e2^6r12 q7f d+64e16..b8a8g8
+b64>c16..<b8>d8<b64>c16..<b8g8 q5f a2^6r12 q7f >$f4$01 g+32a16 $f4$01 ^32 $eb$00$03$fe a8 $eb$00$00$00 d8d+64e16..
+g8e8<b8>d8c8<b8> $de$07$0e$a0 $f4$01 d+32 e2 $f4$01 ^16.r8 $df <e8g8b8>e8d8c8<b8>c8r16<b8r16 $de$00$0e$a0 a4 $df
+>e16d16c16<b16>c16<b16]
+OGui v97
+(7)[g16a16e16g16g+16a16>d16<b16>c16d16c16d+16e16<b16>c16e16a16g16e16a16g16e16a16g16e16a16
+g16e16a16g16 $de$00$0e$a0 e16.r32 $df e16c16<a16>e16c16<a16>e16c16<a16>e16
+c16<a16>e16c16<$de$00$0e$a0 a16.r8r32 $df >c16<b16g16e6r48g16g+16$de$18$0e$a0 a4.> $de$24$0e$a0 a4. $df e4.b8>c8d8<b8g8e8d8
+<b8>c8<a8d+8.d+8.d+8d+8.d8.c8g+48a8...] $fa $01 $b8 ^4.
+
+#1 r128/ v110 y14
+Mar (!101, 3)
+o3a8>c8d8d+8.d+8.d+8d+8.d8.c8<a8.r2r8 [a16>c16d16d+8.d+8.d+8d+8.d8.c8<a8.r2] r8a16>e16d16>c8.c8.c8c8.c8.c8<<a8.r2r8 * r4r16
+OGui y14 v89
+[f16>c16f16<f16>c16f16<f16>c16f16<f16>c16f16<f16>c16f16<f16a16>e16a16<a16>e16a16<a16>e16a16<a16>e16a16<a16>e16a16<a16]2
+Str v110 > f2....r32e2....r32f2....r32e2....r32>c2....r32d2....r32<b2....r8r32a16b16>c16d16e16c16d16<b16>c16<a16b16g16a16e16>c2....
+r32d2....r32<b2....r32a4...r8r32v96a8>c8d8<f2.... [r32a2....r32f2....]3 r32a4..^24r8.
+
+#2 r128/Bas v123 y10 (!101, 3)
+r4.o2
+[[ (50)[f12r24f24r48f12r24f24r48f12r24f12r24f24r48f12r24f24r48g12r24] a12r24a24r48a12r24a24r48a12r24a12r24a24r48a12r24a24r48g12r24
+]]3
+(50) a12r12r48<a12r8...r96>>> S v97 c24r48c24r48c12r24c12r24c24r48c32r64<<
+Bas v123
+[[ (51)[f12r24f24r48f12r24f24r48f12r24f12r24f24r48f12r24f24r48f12r24a12r24a24r48a12r24a24r48a12r24] a12r24a24r48a12r24a24r48a12r24
+]]3
+(51) a6r12g6r12 (52)[f12r24f24r48f12r24f24r48f12r24f12r24f24r48f12r24f24r48f12r24
+g12r24g24r48g12r24g24r48g12r24g12r24g24r48g12r24g24r48g12r24] (53)[e12r24e24r48e12r24e24r48e12r24e12r24e24r48e12r24e24r48e12r24]
+a12r24a24r48a12r24a24r48a12r24a12r24a24r48a12r24a24r48g12r24 (52)(53) a8r16a8r16a12r24a12r24
+[a24r48a12r24a24r48e12r24f12r24f24r48f12r24f24r48f12r24f12r24 f24r48f12r24f24r48g12r24a12r24a24r48a12r24a24r48a12r24] a12r24 *
+a6r12g6r12f12r24f24r48f12r24f24r48f12r24f12r24f24r48f12r24f24r48g12r24a12r24a24r48a12r24a24r48a12r24a12r24a24r48a12r24a24r48
+g12r24f12r24f24r48f12r24f24r48f12r24f12r24f24r48f12r24f24r48g12r24a12r12r48<a12r4.
+
+#3 r128/ (!101, 3)
+r8o4 H y10 v123 $fa$03$00 c96r32c96r32c96r32d8 (40)[K c8 H d32r32 K c16 H d32r32 K c16 H d16r16]6 K c8r16c8c16 H d16r16 (40)5
+(41)[K c8 H d32r32 K c16 H d32r32 K c16 H d32r32 K c16 H d16r16 K c8 H d32r32 K c16 H d16r16 K c8.]c2.^16 (40)6
+K c8r16c16 H d32r32 K c16 H d16r16 (40)7 (42)[K c8.c8c16 H d16r16 K c4c4] (40)6 K c8.c8c16 H d16r16 (40)7 K c8.c8.c8 (40)7(42)(40)4
+(41) K c4r8.
+
+#4 r128/(!101, 3)
+r8o4 H y10 v123 $fa$03$00 c96r32c96r32c96r32d8 Cy c8 S2 c8 H2 d16r16 S2 c8 H2 d16r16 S2 c8 H2 d16r16 S2 c8 H2 d16r16
+(30)[S2 c8 H2 d16r16 S2 c8 H2 d16r16 S2 c8 H2 d16r16 S2 c32c16. Cy c8]
+(31)[S2 c8 H2 d16r16 S2 c8 H2 d16r16 S2 c8 H2 d16r16 S2 c8 Cy c8]
+(33)[S2 c16 Cy c8. S2 c8 H2 d16r16 S2 c8 H2 d16r16 S2 c32c16. Cy c8] (31)(30)
+S2 c8 H2 d16r16 S2 c8 H2 d32r32 S2 c16 H2 d16r16 S2 c8 H2 d32r32 S2 c16 Cy c8 S2 c16 Cy c4r16 S2 v152 c16c16c8c8c16c16 Cy c8
+(32)[S2 c8 H2 d16r16 S2 c8 H2 d16r16 S2 c8 H2 d16r16 S2 c8 H2 d16r16
+S2 c8 H2 d16r16 S2 c8 H2 d16r16 S2 c8 H2 d16r16 S2 c32c16. Cy c8] (31)(30)(32)(31) S2 c16 Cy c8. S2 c8 Cy c4c4c8
+(31)(30)(31)(33)(31)(30)(31) S2 c16 Cy c8 S2 c16 Cy c4 S2 c8 H2 d16r16 S2 c32c16. Cy c8 (32)(31)
+S2 c16 Cy c8. S2 c8 Cy c4c8 S2 c32c16. Cy c8 (31)(30) S2 c8 H2 d16r16 S2 c8 H2 d32r32 S2 d16 H2 d16r16 S2 c8c16c16 Cy c8
+S2 c16 Cy c4.
+
+#5 r128/ SyB y5 v114 $fa$03$2f (!101, 3)
+o4[a16r16>c16r16d16r16d+8r16d+8r16d+8d+8r16d8.c16r16<a8r2]2 a16r16>e16r16d16r16c8r16c8r16c8c8r16<b8.g16r16e8r2
+a16r16>c16r16d16r16d+8r16d+8r16d+8d+8r16d8.c16r16e8r16e8.r2r8
+OGui y4 v87 $fa$03$00 < 
+[f16>c16f16<f16>c16f16<f16>c16f16<f16>c16f16<f16>c16f16<f16a16>e16a16<a16>e16a16<a16>e16a16<a16>e16a16<a16>e16a16<a16]4
+> Str v110 f2....r32g2....r32e2....r8r32a16b16>c16d16e16c16d16<b16>c16<a16b16g16a16e16f2....r32g2....r32b2....r32a2r8
+v87 <a8>c8d8<a2....[r32>c2....r32<a2....]3 r32>c2r8
+
+#6 r128/SyB y6 v122 (!101, 3)
+o4 [a16r16g+16r16g16r16f8r16f8r16f8f8r16f8r16g8a8r2]2 a16r16>c16r16<b16r16f8r16f8r16f8f8r16f8r16g8a8r2a16r16g+16r16g16r16
+f8r16f8r16f8f8r16f8r16g8a8r16>a8.r8
+OGui v100 <<a16>c16d16g16g+16a16>c16<b16r8 [<a16>c16r16d8c16 $f4$01 d32d+16 $f4$01 ^32d16c8d+96e12^32g16a8g8d96d+12^32 q5f e2^6r12]
+q7f <a16>c16r16d8c16 $f4$01 d32d+16 $f4$01 ^32d16c8< $f4$01 f+96g12 $f4$01 ^32g+16 a8g8 $f4$01 b32>c16 $f4$01 ^32< q5f a2^6r12 q7f *
+a16>c16r16d8c16 $f4$01 g+32a16 $f4$01 ^32g16e8< $f4$01 a+32b16 $f4$01 ^32>c16d8<b8 $f4$01 f+32g16 $f4$01 ^32 q5f a2^6r12 q7f 
+SyB $de$30$0e$a0 >$f4$01 g+64a32 $f4$01 ^64g8d16d+16e16g12r24a12r24>c8<a16r16>d8c8<b8 q5f e2^6r12
+q7f d+96e12^32b8a8g8b96>c12^32<b8>d8<b96>c12^32<b8g8 q5f a2^6r12 q7f v89 >$f4$01 g+32a16 $f4$01 ^32 $eb$00$03$fe a8 $eb$00$00$00 
+d8d+96e12^32g8e8<b8>d8c8<b8> $de$07$0e$a0 $f4$01 d+32e2 $f4$01 ^6 r24r96 v110 $df <e8g8b8>e8d8c8<b8>c8r16<b8r16 $de$00$0e$a0 a4
+OGui $df e8g8a8
+Str v89 [c2....r32e2....r32]3c2....r32e4....r8
+
+#7 r128/
+r4.r64 SyB (!101, 3) $de$30$0e$a0 $ee$10 y11 v93 $fa$03$d2
+(1)(2)(1)(3)(4)(5)(4)(6)
+OGui y11 v93 $fa$03$18
+(7) $fa $01 $b8 ^4.

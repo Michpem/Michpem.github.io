@@ -1,0 +1,135 @@
+;Insert Size: 0x07b4 (1972) bytes
+
+#amk 2
+#samples
+{ 
+	"optimized/00 SMW @0.brr"
+	"optimized/01 SMW @1.brr"
+	"optimized/02 SMW @2.brr"
+	"optimized/03 SMW @3.brr"
+	"optimized/04 SMW @4.brr"
+	"EMPTY.brr"
+	"optimized/06 SMW @22.brr"
+	"optimized/07 SMW @5.brr"
+	"optimized/08 SMW @6.brr"
+	"EMPTY.brr"
+	"optimized/0A SMW @9.brr"
+	"optimized/0B SMW @10.brr"
+	"optimized/0C SMW @13.brr"
+	"EMPTY.brr"
+	"optimized/0E SMW @29.brr"
+	"EMPTY.brr"
+	"EMPTY.brr"
+	"EMPTY.brr"
+	"optimized/12 SMW @15.brr"
+	"EMPTY.brr"
+"Culex/StringEnsemble.brr"
+"Culex/PickBass.brr"
+"Culex/Kick.brr"
+"Culex/Snare.brr"
+"Culex/BrassSection.brr"
+"Culex/Oboe.brr"
+"Culex/OpenHihat.brr"
+"Culex/ClosedHihat.brr"
+"Culex/OrchestralCymbal.brr"
+}
+
+#instruments
+{
+"Culex/StringEnsemble.brr" $ff $e0 $00 $04 $88
+"Culex/PickBass.brr" $ff $f3 $00 $04 $7c
+"Culex/PickBass.brr" $ff $ef $00 $04 $7c
+"Culex/Kick.brr" $ff $e0 $00 $07 $a8
+"Culex/Snare.brr" $ff $e0 $00 $03 $d4
+"Culex/BrassSection.brr" $ff $e0 $00 $04 $8d
+"Culex/BrassSection.brr" $ff $f3 $00 $04 $8d
+"Culex/Oboe.brr" $ff $e0 $00 $05 $fa
+"Culex/OpenHihat.brr" $ff $e0 $00 $07 $a8
+"Culex/ClosedHihat.brr" $ff $e0 $00 $07 $a8
+"Culex/OrchestralCymbal.brr" $ff $f3 $00 $03 $d4
+}
+
+"Str=@30"
+"Bas=@31"
+"Bas2=@32"
+"K=@33"
+"S=@34"
+"BrSe=@35"
+"BrSe2=@36"
+"Obo=@37"
+"OH=@38"
+"CH=@39"
+"OC=@40"
+
+#0 Str w187 t70 y10
+$f4 $02
+$ef $39 $13 $13
+$f1 $07 $5c $01
+o3 v228 c+24e24g24 v198 a+24>c+24e24 v214 g24a+24> v228 c+24e24 v243 q3f g16r1 r4.. v198 q7f <<g16a16
+a+16>c16d16e16f16f+16/
+v222 [g4>g4f+2.d8d+8f4d+8d8d+8c2..c4d4d+4a+4a1^1^1.r8f+8g16r16d+16r16d8c16r1r4..<f+8g16r16d+16r16d4c8] r1.r8
+* r1^8d+16f16g16g+16 v228 a+16>c16 v243 c+16d+16 v228 f4g+4g4g+4>c8<g+8g8g+8g4f4 v214 <a+8>c8c+2^8d+8f4.f+8g+8
+f+8f8f+8g+4>c1^1^1..v188 <f+1^1d+1^1d1.d4e4f1.f4g4g+1^1 v228 [g12r6^8]4 g12r6g12r8^24
+
+#1 Bas y10 v196
+r4^6o4
+[g8g8g8g8g8g8f8f8]2/
+[o4c8>c8<b8>c8<d+8>c8<d8>c8]24 [o4c+8c+8r4]4 v206 Bas2 [o4f+4.>c+4f+8c8c+8]2 [o4f4.>c4f8<b8>c8]4
+v196 [<f+8>f+16r16]7 <f8>f16r16 [<d+8>d+16r16]8 Bas [<d8>d16r16]7 <e8>e16r16 [<f8>f16r16]7 <g8>g16r16
+[<g+8>g+16r16]8 <g4>d8g4g+8g8d8<g8>c8d8g4g+8g4r3r4
+
+#2 y10
+r4^6
+v255 $fa$03$04 o4 K [c4]6 $fa$03$2c S c8 $fa$03$04 K c8 $fa$03$00 v254 S c8 v255 $fa$03$04 K c8/
+[v255 K $fa$03$04 c4 $fa$03$00 v254 S c4]48 [v255 K $fa$03$04 c8c8 $fa$03$00 v254 S c4]4
+[v255 K $fa$03$04 c4 $fa$03$00 v254 S c8 v255 K $fa$03$04 c4c8 $fa$03$00 v254 S c4
+v255 K $fa$03$04 c4 $fa$03$00 v254 S c8 v255 K $fa$03$04 c4c8 $fa$03$00 v254 S d8 v255 K $fa$03$04 c8]3
+[v255 K $fa$03$04 c4 $fa$03$00 v254 S c4 v255 K $fa$03$04 c8c8 $fa$03$00 v254 S c4
+v255 K $fa$03$04 c8c8 $fa$03$00 v254 S c8 v255 K $fa$03$04 c4c8 $fa$03$00 v254 S c4]5
+[$fa$03$00 v254 S c8 v255 K $fa$03$04 c8c8]4
+$fa$03$00 v254 S c8 v255 K $fa$03$04 c8 $fa$03$00 v254 S c8 v255 K $fa$03$04 c8
+
+#3 BrSe v206 y10
+o2g24a+24>c+24e24g24a+24>c+24e24g24a+24>c+32r1...../
+y15 v162 $fa$03$17
+<
+[BrSe2 d+12r24d+12r6d+12r24d+12r24d+12r6d+12r24d+12r24d+12r6d+12r24f12r24f12r6f12r24d+12r24d+12r6d+12r24d+12
+r24d+12r6d+12r24 BrSe v152 $fa$03$21 d+4d4d+4a+4>c1<b1a+1a1r1^1 
+v189 $fa$03$15 BrSe c4<b16r16>c16r16d4c16r16d16r16d+4d16r16d+16r16f4d+16r16f16r16]2
+v162 $fa$03$17
+c+16r16c+16r4^16 v162 $fa$03$17 c+16r16c+16r4^16c+16r16c+16r4^16c+16r16c+16r4^16<a+1>c+2<a+4>c+4f1^1^1
+Obo v162 $fa$03$89 g+4>c2. BrSe v189 $fa$03$15
+<f+4a+4g+4a+4>c+8<a+8g+8a+8g+4f+4d+4f+4f4f+4a+8f+8f8f+8f4d+4f+8g+8a1^4a4b4>c1.c4d4d+1^1
+v152 $fa$03$21 <[g12r6^8]4g12r6g12r2.
+
+#4 y10 v206 BrSe
+o2e24g24a+24>c+24e24g24a+24>c+24e24g24a+32r1...../
+y15 v162 $fa$03$17
+[BrSe2 o4c12r24c12r6c12r24c12r24c12r6c12r24c12r24c12r6c12r24d12r24d12r6d12r24c12r24c12r6c12r24c12
+r24c12r6c12r24
+BrSe v152 $fa$03$21
+c4<b4>c4d+4f+1f1e1d+1r1^1 v162 $fa$03$17 <g2f2d+2d2]2
+v152 $fa$03$21
+f16r16f16r4^16g16r16g16r4^16g+16r16g+16r4^16g16r16g16r4^16f+1f+2f+4f+4g+1^1
+Obo v162 $fa$03$89
+>>c4f1.. BrSe v180 $fa$03$13 <[f+32r16.f+32r32f+32r32]22 v171 $fa$03$1a f+4f+4 v152 $fa$03$21 f1. f4f4d+1.
+v189 $fa$03$15 d+16 v180 $fa$03$13 f16g16g+16a+16>c16d16d+16 v171 $fa$03$1a [f12r6^8]4 f12r6f12r2.
+
+#5
+r1^1^4^6/ Str y5
+[v226 o4c12r24d+12r24d12r24d+12r24f+12r24d+12r24d12r24d+12r24c12r24d+12r24d12r24d+12r24c12
+r24f12r24d+12r24f12r24c12r24d+12r24d12r24d+12r24f+12r24d+12r24d12r24d+12r24
+v206 $fa$03$04 c8.r16 v189 $fa$03$00 f4g4>d+4d+1d1c+1c1<f+8g16r1..r16 v162 <g4g8] r1.r8 *1 r1^8
+>v177 c16c+16d+16 f16 v189 g16g+16 v198 a+16>c16 v162 c+2d+2f2d+2<f+1a+1>c1f4g+1^1^2. v134 <a+1^1f+1^1a1.a4
+b4>c1.c4d4d+1^1 v177 [d12r6^8]4 d12r6d12r2.
+
+#6
+r4^6
+o4 y13 v125
+OH c4c4c4c4c4c4 v136 c8 v97 CH c8 v136 OH c8 v97 CH c8/y13
+[v97 CH c8c16c16 v125 OH c8 CH v97 c16c16]48
+r4 OC y10 v255 $fa$03$1e $f4$03 c+2c+2c+2c+4 $f4$03
+CH v97 y13 [c4]24 OH v125 c8 CH v97 c8 OH v125 c8 CH v97 c8
+[CH v97 c8c8 OH v125 c8 CH v97 c8 OH v125 c8 CH v97 c8 OH v125 c8 CH v97 c8]9
+CH v97 c8c8 OH v125 c8 CH v97 c8 
+OC y10 v214 $f4$03 c+4.c+4.c+4.c+4.c+4c+4 $f4$03

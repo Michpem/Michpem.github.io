@@ -1,0 +1,105 @@
+;title=Rose and Ghost (Pandora)
+;Insert Size: 0x04BC (1212) bytes
+#path "Rose and Ghost"
+#amk 1
+#samples
+{ 
+#optimized
+"SoM_StringEnsemble.brr"
+"SoM_SynthString.brr"
+"SoM_MusicBox.brr"
+"SoM_Piano.brr"
+"SoM_Flute.brr"
+"SoM_AhhChoir.brr"
+"SoM_JazzGuitar.brr"				;Not sure if this is a jazz guitar... but it kinda sounds like one.
+}
+
+#instruments
+{
+"SoM_StringEnsemble.brr" $f6 $e7 $00 $03 $00
+"SoM_SynthString.brr" $f7 $e6 $00 $03 $07
+"SoM_MusicBox.brr" $ff $ec $00 $04 $39
+"SoM_Piano.brr" $ff $ec $00 $04 $06
+"SoM_Flute.brr" $f8 $e7 $00 $04 $03
+"SoM_AhhChoir.brr" $fe $e6 $00 $04 $03
+"SoM_JazzGuitar.brr" $ff $ee $00 $04 $38
+}
+
+"Str=@30 h2 $df"
+"SStr=@31 h2"
+"Mus=@32 h-1"
+"Pia=@33 h-5"
+"Flu=@34 h2 $ea $20 $de $2a $1a $20"
+"Ahh=@35 h0"
+"JaGi=@36 h-1"
+
+#0 w255 t34
+$ef $ff $3a $3a
+$f1 $08 $58 $01
+r1^1/[r1]6
+o4
+Str y13 v155 $fa $03 $25
+a1^1 a1 $fa $03 $00 a+1 $fa $03 $25 a1^1
+SStr y11 v151 $fa $03 $12
+<[g1^1f1^1]2 r1^1
+Mus y10 v111 $fa $03 $00
+o6c8<b8a8g8a8f+8g8a8g8f+8e4c4
+
+#1
+r1^1/[r1]6
+o4
+Str y8 v164 $fa $03 $00
+e1^1e1 v155 f1 v164 f1^1
+Pia y9 v131 $fa $03 $5e
+(10)[f8g8>d8<b8]4 [e8f8>c8<a8]4 (10)4 [o4f8g8>f8e8]4 
+Flu y8 v137 $fa $03 $14
+<a8g8e4.e8g8f8d8e8d4<b4>c1^1
+
+#2
+r1^1/
+Flu y10 v137
+[o5d8e8g4.a8e8]1 c8d8e8e2. *1 o4a8>c8d8d2c8d8e1^1
+Str y11 v154 $fa $03 $18
+o4c1^1c1 $fa $03 $00 d1 $fa $03 $18 c1^1
+$ed $78 $e6 y10 v160 $fa $03 $00
+[o5d8c8d8e8f4.e8]1 d4.c8e4<b8a8b4e1.. *1 >d2e4g4a1^1
+Flu y8 v137
+f8e8c4.c8e8d8<b8>c8<b4g4a1^1
+
+#3
+r1^1/
+o4 Ahh y8 v164 $fa $03 $1b
+[d8e8g4.a8e8]1 c8d8e8e2. *1 o3a8>c8d8d2c8d8e1^1
+y10 v174 $fa $03 $00
+[o5d8e8g4.a8e8]1 c8d8e8e2. *1 <a8>c8d8d2c8d8e1^1 y6 v151 $fa $03 $2b <(30)[d8e8f8a8]4 [c8d8e8g8]4 (30)4 [f8g8a8b8]4
+y10 v155 $fa $03 $00 <g8>c8g4.g8b8a8f+8g8f+8e8d8<b8a1^1
+
+#4
+o4 JaGi y12 v178 $fa $03 $0c
+[r4.a4.d4]2
+/ JaGi y12 v178 $fa $03 $0c
+*3
+r4.a+4.g4 [r4.f4.e4]2 [r4.a4.b4]3 r4.a+4.>c4r4.<f4.e4r4.f4.e4
+Ahh y14 v151 $fa $03 $2b
+[<b8>c8d8e8]4 [<a8b8>c8d8]4 [<b8>c8d8e8]4 [d8e8f8g8]4
+r4.> JaGi y12 v178 $fa $03 $0c d2f8
+e8d8<b8a8g8e8r4.a4.b4r4.a4.b4
+
+#5
+o3 JaGi y12 v178 $fa $03 $0c
+[a2.g4]2
+/
+*3 a+2.a+8g8 *5 a+2.a+8g8 *2 > (50)[g8a8b8e8]4 [f8g8a8e8]4 (50)4 [a8b8>c8<f8]4 c2>e4.<e8<b2b4a2.b4a2.b4
+
+#6
+o4 JaGi y12 v183
+[r8d4.>c4<b4]2
+/
+*3 r8d4.>d4c4r8<c=120<b4r8>c=120<b4r8>d4.>c4<c4 [r8d4.>c4<c4]2 r8d4.>d4<d+8d8r8c=120<b4r8>c=120<b4
+>[e2d4r4]3 f2g4r4 [e4a4c4r4]2 r1^1^8g=120g4r8e4.d4r8d4.>c4<d4r8d4.>c4<d4
+
+#7
+o4 JaGi y12 v183
+[r4e2c4]2
+/
+*3 r4f2d+8d8 [r4e4a4c4]2 [r4e2d4]3 r4f2g4 [r4e4a4c4]2 [r1]8 r4>c4.c4.<b8>c8<g4r2f+2g4r4f+2g4

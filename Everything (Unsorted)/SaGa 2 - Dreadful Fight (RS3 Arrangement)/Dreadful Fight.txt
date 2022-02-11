@@ -1,0 +1,180 @@
+;Insert size: 0x0786 (1926) bytes
+
+#amk 2
+
+#spc
+{
+	#title "Dreadful Fight (RS3 Arr.)"
+	#game "SaGa 2"
+}
+
+#samples
+{
+	"optimized/00 SMW @0.brr"
+	"optimized/01 SMW @1.brr"
+	"optimized/02 SMW @2.brr"
+	"optimized/03 SMW @3.brr"
+	"optimized/04 SMW @4.brr"
+	"EMPTY.brr"
+	"optimized/06 SMW @22.brr"
+	"optimized/07 SMW @5.brr"
+	"optimized/08 SMW @6.brr"
+	"EMPTY.brr"
+	"optimized/0A SMW @9.brr"
+	"optimized/0B SMW @10.brr"
+	"optimized/0C SMW @13.brr"
+	"EMPTY.brr"
+	"optimized/0E SMW @29.brr"
+	"EMPTY.brr"
+	"EMPTY.brr"
+	"EMPTY.brr"
+	"optimized/12 SMW @15.brr"
+	"EMPTY.brr"
+"Dreadful Fight/Oboe.brr"
+"Dreadful Fight/Harp.brr"
+"Dreadful Fight/Vibraphone.brr"
+"Dreadful Fight/French Horn.brr"
+"Dreadful Fight/Trumpet.brr"
+"Dreadful Fight/String Ensemble.brr"
+"Dreadful Fight/Pick Bass.brr"
+"Dreadful Fight/Timpani.brr"
+"Dreadful Fight/Crash Cymbal.brr"
+"Dreadful Fight/Snare.brr"
+}
+
+#instruments
+{
+"Dreadful Fight/Oboe.brr" $ff $e0 $00 $03 $00
+"Dreadful Fight/Harp.brr" $ff $f4 $00 $03 $00
+"Dreadful Fight/Vibraphone.brr" $af $30 $00 $03 $ff
+"Dreadful Fight/French Horn.brr" $ff $e0 $00 $04 $83
+"Dreadful Fight/Trumpet.brr" $fe $ec $00 $04 $8c
+"Dreadful Fight/String Ensemble.brr" $ff $e0 $d7 $02 $7c
+"Dreadful Fight/Pick Bass.brr" $ff $ed $00 $06 $40
+"Dreadful Fight/Timpani.brr" $ff $e0 $00 $03 $45
+"Dreadful Fight/Crash Cymbal.brr" $ff $f1 $00 $04 $4B
+"Dreadful Fight/Snare.brr" $ff $f5 $00 $04 $8c
+}
+
+"Obo=@30"
+"Har=@31"
+"Vib=@32"
+"Hor=@33"
+"Tru=@34"
+"Str=@35"
+"Bas=@36"
+"Tim=@37"
+"Cym=@38"
+"Sn=@39"
+
+#0 w200 t64 
+$f4 $02
+$ef $ff $41 $41		;41
+$f1 $03 $64 $00
+
+r2/
+
+Obo v160 y9 $de $30 $0a $20
+o4e16g16f+16g16e16g16f+16g16f+16a16g16a16f+16a16g16a16g16b16a16b16g16b16a16b16
+g+16b16a16b16g+16b16a16b16a16>c16<b16>c16<a16>c16<b16>c16<f+16a16g16a16f+16a16g16a16v140d+2
+Har v110 y3 $dc $50 $0f $df
+<<b16>f+16b16>c+16d+16f+16b16>d+16
+[Vib y10 v70 e3r24<b4>e8f+8g8a8g16a16g8f+16g16f+8e16f+16e8d16e16d3r24c16<b16a2r8
+Hor v150
+f+8g8a8g8f+8e8d8
+Obo v180 y9
+c16d16e16d16e16f+16g16f+16g8>e8d8<b8a16b16>c16<b16a16g16f+16g16a8g16a16b8a16b16>c8<b8>c8d8e8g8f+8e8] 
+d+8c+8d+8e8f+8a8g8f+8 *1 $de $30 $0a $20 d+4<b8..r32>b8a8g8f+8g2r8
+Tru v130 y11 $de $30 $0d $40
+f+16g16a16g16f+16e16d+4e16f+16g16a16b2
+
+#1 r4
+Str y10 v140 y10
+o4d+16e16f+16a16/$df Str y10 v140 y10 g16b16a16b16g16b16a16b16
+a16>c16<b16>c16<a16>c16<b16>c16<b16>d16c16d16<b16>d16c16d16
+<b16>d16c16d16<b16>d16c16d16c16e16d16e16c16e16d16e16<a16>c16<b16>c16<a16>c16<b16>c16<a2r4
+[Tru v130 y11 $de $30 $0d $40
+a16b16>c+16d+16e3r24<b4>e8f+8g8a8g16a16g8f+16g16f+8e16f+16e8d16e16d3r24c16<b16a2
+Str y9 v90 $df
+>a4.g16a16b2r1r1r1r4
+Hor v130 y10
+<<b8..r32>b4]2 f+4
+Str y9 v100 $f4$01
+>a+1b16>c16<b16a16g16a16g16f+16e16f+16e16d+16c16<b16a16f+32 $f4$01 ^32
+
+#2 Sn v120 y10 $f4$03
+o5
+q7e c16 q7b c16 q7e c16 q7b c16 q7f c4/q7e c8c4c16 q7b c16
+[q7e c8c4c16 q7b c16 q7e c8c4c16 q7b c16]2
+q7e c8c4c16 q7b c16 q7e c8 q7b c8 q7e c8 q7b c8 q7e c8 q7b c8 q7e c16c16 q7b c8
+[q7e c16 q7b c16 q7e c16 q7b c16 q7e c8c16 q7b c16
+q7e c16 q7b c16 q7e c8c16 q7b c16c16 q79 c16 q7e c16 q7b c16 q7e c16 q7b c16 q7e c8c16 q7b c16
+q7e c16 q7b c16 q7e c8c16 q7b c16c16 q79 c4^16 q7e c16 q7b c16 q7e c16 q7b c4^16
+q7e c16 q7b c16 q7e c16 q7b c8.c8 q7e c8 q7b c8 q7e c8 q7b c8 q7e c16c16 q7b c8 q7e c8c4c16 q7b c8.
+q7e c16 q7b c8. q7e c16 q7b c16 q7e c8c4c16 q7b c8.q7e c16 q7b c8. q7e c16 q7b c16 q7e c8] c4c16 q7b c8.
+q7e c16 q7b c8. q7e c16 q7b c16 q7e c8 q7b c8 q7e c8 q7b c8q7e c8 q7b c8 q7e c16c16 q7b c8 *1 q7e c16 q7b c16
+[q7e c8c16 q7b c16]7
+Har v130 y5 $dc $70 $0f $f4$03
+o3e16a+16>c+16e16g16a+16>c+16e16g2
+Sn $f4$03 y10 v120
+o5 [q7e c16 q7b c16c16 q79 c16 ]3 q7e c16 q7b c16 q7e c8
+
+#3
+r4
+y10 v180 Obo $de $30 $0a $20
+o4d+16e16f+16a16/$de $30 $0a $20 y10 v180 Obo g16b16a16b16g16b16a16b16
+a16>c16<b16>c16<a16>c16<b16>c16<b16>d16c16d16<b16>d16c16d16
+<b16>d16c16d16<b16>d16c16d16c16e16d16e16c16e16d16e16<a16>c16<b16>c16<a16>c16<b16>c16<v160a2r8
+Str y7 v100 $df
+g8f+8d+8
+[y13 $f4$01 v100
+g16a16g16f+16g16r16g16a16g16f+16g16r16g16a16g16f+16g16a16g16f+16g16r16g16a16
+g16f+16g16r16g16a16g16f+32 $f4$01 ^32 $e6$00 r4 $f4$01 f+16g16a16g32 $f4$01 ^32 $e6$01 r8f+8g8a8g8f+8e8d8
+$f4$01 c16d16e16d16c16d16e16d16c16d16e16d16c16d16e16c16d16e16f+16e16d16e16f+16e16
+d16e16f+16e16d16e16f+16d16e16g16f+16g16e16g16f+16g16e16g16f+16g16e16g16f+16g32 $f4$01 ^32]
+a8f+8a8>c8d+8c8<b8a8 *1 f+4d+4f+4a4g4a+4>c+4e4d+4<b4f+4d+8c8
+
+#4
+r2/^4 v110 y11 o5 Cym
+c2c2c2c2c2c2
+Hor v130 y10
+<<b8>c+32d+32f+32g+32b2
+Cym v110 y11
+o5 [c1^1c2c2c1c1c1c1] c4c4c4c4 *1 c2.
+Str y9 v100
+e16f+16g16a16
+Cym v110 y11
+o5c1c4c4c4c4^		;Shh. This didn't happen.
+
+#5 v130 y10 Tim $f4$03
+o3b16b16b16b16b4/e4.e16e16f+4.f+16f+16g4.g16g16g+4.g+16g+16a4.a16a16f+4.f+16f+16b8f+8f+8b8f+8f+8b16b16b8>
+[c4.c4.c8<g8>c4.c4.c8<g8b8b4.b8b4.e4>e4d4<b4a8a4a4a4a8b8b4b4b4b8] >c8c4c4c4c8<b8f+8b8f+8>c+8c+8d+8d+8 *1 c4c4
+c4c4<b4b8b8>c+8c+8d+8d+8
+Hor v160 $f4$03
+e16g16a+16e16g16a+16e16g16a+2
+v130 Tim $f4$03
+<b4a4g4f+4
+
+#6
+r4 v110 y10 Bas $f4$03
+o3b4/e2f+2g2g+2a2f+2b2^8f+8<b4>>c8r4c8 [r4c8<g8>c8r4c8r4c8<g8b8b8r4b8b8
+Str y9 v90 $f4$03
+>>d16e16f+16g16<<
+v110 y10 Bas $f4$03
+e4>e4d4<b4a16.r32a16.r8r32a8r8a8r8a8b16.r32b16.r8r32b8r8b8r8b8>c16.r32c16.] r8r32c8r8c8r8c8<b8..r32b4
+>c+4d+4c8r4c8 *1 r32c16.r32c16.r32c16.r32c16.r32c16.r32c16.r32<b16.r32b16.r32b16.r32b16.r32
+>c+16.r32c+16.r32d+16.r32d+16.r32c+1<b4a4g4f+4
+
+#7 
+r2/Str y13 v140 o4e16g16f+16g16e16g16f+16g16f+16a16g16a16f+16a16g16a16g16b16a16b16g16b16a16b16
+g+16b16a16b16g+16b16a16b16a16>c16<b16>c16<a16>c16<b16>c16<f+16a16g16a16f+16a16g16a16d+2
+r8 y10 v100 >e8d+8<b8
+y7 [$f4$01 e16f+16e16d16e16r16e16f+16e16d16e16r16e16f+16e16d16e16f+16e16d16e16r16e16f+16
+e16d16e16r16e16f+16e16d32 $f4$01 ^32 $e6$00 r4 $f4$01 d16e16f+16e32 $f4$01 ^32 $e6$01 r8<a8>d4<b4g4a8g8a8g8
+a8g8a8g8b8a8b8a8b8a8b8a8>c8<b8>c8<b8>c8<b8>c8<b8] >d+2f+4
+Hor v130 y10
+f+4 
+Str y7 v100
+*1 a4f+4a4>d+4c+4e4g4a+4r4
+Hor v150 y10
+<f+8g16a16b2

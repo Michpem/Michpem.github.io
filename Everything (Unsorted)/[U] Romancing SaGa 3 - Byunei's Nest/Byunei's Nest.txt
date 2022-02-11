@@ -1,0 +1,198 @@
+;Insert size: 0x0475 (1141) bytes
+
+#amk 2
+
+#spc
+{
+	#title "Byunei's Nest"
+	#game "Romancing SaGa 3"
+	#author "Keji Ito"
+	#comment "'Wind' Abyss Gate"
+}
+
+#instruments
+{
+@1 $fa $e0 $b8 $03 $00		;Strings
+@14 $ff $ed $b8 $07 $00		;Fingered Bass
+@10 $ff $f8 $b8 $08 $00		;Tom
+n1e $f5 $e0 $b8 $00 $00		;Slow Noise
+@0 $df $73 $00 $0c $00		;Harp
+@6 $fd $e0 $b8 $03 $00		;Trumpet - I used @4 here originally, but because of the FIR filter, it sounded really really bad.
+@15 $ff $e0 $b8 $03 $00		;Not a gong...
+@22 $ff $e0 $b8 $07 $00		;Low Tambourine
+@29 $ff $e0 $b8 $03 $00		;Timpani
+}
+
+"Str=@30 $de$0c$0d$20"
+"Bas=@31"
+"Tom=@32"
+"Noi=@33"
+"Har=@34"
+"Tru=@35"
+"Gon=@36 v220 y11"
+"Tam=@37 v255 y6"
+"Tim=@38"
+
+#0 r128 $f4$02/ t34 w200
+
+$ef $71 $2e $2e
+$f1 $03 $61 $01
+
+Str v130 y13 $e8$01$82
+
+[o4a+2^8a8a+8>c8
+d16r8<a16>d2d16.d+16.f16
+d+16r8<g+16>d+2d16.c16.<b16
+>d1
+<a+2^8a8a+8>c8
+d16r8<a16>d2d16.d+16.f16
+d+16r8<g+16>d+4.d8c12<a+12g+12
+g2.r4]2
+>
+[r8 v130 $e8$48$a0 <f24c24f24g+24f24g+24>c24<g+24>c24
+r8 v130 $e8$48$a0 <d+24c24d+24g24d+24g24>c24<g24>c24
+r8 v130 $e8$48$a0 <d24<a24>d24f+24d24f+24a24f+24a24]
+>c4<b4
+*
+>c8<b8>c8d8
+[v130 $e8$60$b0 c24<g24>c24e24c24e24g24e24g24>c24<g24>c24]2
+v130 $e8$60$b0 <c24<g24>c24d+24c24d+24g24d+24g24>c24<g24>c24
+v130 $e8$60$b0 <c24<g24>c24d+24c24d+24r4
+
+#1 r128/ Bas v190 y10
+o2
+(10)[c16<g16>c16g16]8
+(11)[c16<f16>c16f16]4
+(12)[d16<g16>d16g16]4
+(10)8
+(11)3
+(13)[<a+16f16a+16>f16]
+(10)2
+c16<g16>c16f+16
+c16<f16>d16g16
+(10)8
+(11)4
+(12)4
+(10)8
+(11)3
+(13)
+(10)3
+c16.d16.d+16
+(14)[c16<f16>c16f16]2
+(15)[c16<g16>c16g16]2
+(16)[d16<f+16>d16f+16]2
+(12)2
+(14)2
+(15)2
+(16)2
+(12)2
+(10)7
+r4
+
+
+#2 r128/ Tom v150 y10
+o3
+(20)[y12 e16 y5 c16c8 y10 d16 y5 c16c8]31
+(21)[y12 e16 y5 c16c3r24]
+(20)11
+(21)
+
+
+#3 r128/$df
+
+(30)[v70 Noi q2f
+y18 c8. y2 c8.r1.
+r8
+y18 c8. y2 c8.r1
+r8] $f4$03
+(31)[Har  v150 y13 $dc$60$03 q7f
+o1g+32b32>d32f32d32f32g+32b32g+32b32>d32f32d32f32g+32b32]
+$f4$03
+(30)
+Har $f4$03 v150 y13 $dc$60$03 q7f
+o1g32>c32d+32g32a32>d32f+32a32g+32f32c32<g+32g32d32<b32g32
+$f4$03
+(30)
+$f4$03
+(31)
+$f4$03
+(30)
+r4
+
+t32 $f4$03 Tru $de$10$12$1a y10 v140
+o5c16.d16.d+16
+t34
+f4d+8d8d+2
+d8<a8>d16.d+16.f16d+4d4
+f4d+8d8d+2
+d8<a8>d16.d+16.f16d+8d8d+8a+8
+g1..
+r4
+
+
+#4 r128/
+Str y11 v120
+o4
+[d+1
+f+8r8f+2^6r12
+f8r8f2.
+g+1
+d+1
+f+8r8f+2^6r12
+f8r8f2.]
+d+2^8d8f8d8
+*
+e2.r4
+<g+2g2
+<a2>f2
+g+2g2
+<a2>>
+v130
+f4.g8
+e8g8>c8e8<e8g8>c8e8
+<d+8g8>c8d+8<d+8g8r4
+
+
+#5 r128/
+Str v130 y7
+o3
+[g1
+a8r8a2^6r12
+g+8r8g+2.
+b1
+g1
+a8r8a2^6r12
+g+8r8g+2.]
+>c2^8<f+8g+8f8
+*
+>c2.r4
+<c1
+f+2>d2
+<c1
+f+2g4a8b8
+g8>c8e8g8<g8>c8e8g8
+<g8>c8d+8g8<g8>c8r4
+
+
+#6 r128/o1
+[Gon d+1..
+Tam d+4]7
+Gon d+1^1
+d+1..
+Tam d+4
+Gon d+1..
+Tam d+4
+Gon d+1..
+Tam d4
+
+
+#7 r128/Tim v190 y9
+o3
+[[
+[c4c2c4]7
+c4c4.c24c24c24c16.c16.c16
+]]2
+[c4c4r8c8c8c8
+d4d4r8d8d8d8]2
+c4c2c4
+c4c2.

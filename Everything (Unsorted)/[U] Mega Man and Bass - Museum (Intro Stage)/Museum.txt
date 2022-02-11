@@ -1,0 +1,130 @@
+;Insert Size: 0x0c36 (3126) bytes
+
+#amk 2
+
+#SPC
+{
+	#title "Museum"
+	#game "Mega Man and Bass"
+	#comment "Intro Stage theme"
+}
+
+#instruments
+{
+@21 $ff $e0 $00 $07 $96		;Kick
+@10 $ff $e0 $00 $09 $00		;Snare
+@22 $fd $80 $00 $06 $80		;Closed Hi-hat
+@8 $ff $e0 $b8 $1e $00		;Finger Bass
+@8 $00 $00 $bd $1e $00		;^ Release GAIN
+@1 $ff $b1 $b8 $03 $02		;Slightly detuned Electric Piano
+@1 $00 $00 $b6 $03 $02		;^ Release GAIN
+@1 $ff $cc $b8 $03 $02		;SD EP w/ longer Release
+@1 $fd $e0 $b8 $03 $00		;Synth Strings
+@1 $00 $00 $bc $03 $00		;^ Release GAIN
+@0 $fe $e0 $b8 $03 $00		;Square Wave
+@0 $00 $00 $bc $03 $00		;^ Release GAIN
+}
+
+"K=@30 v250"
+"S=@31 v210"
+"H=@32"
+
+(!100)[@33]		;Bass remote commands
+(!101)[@34]		;
+
+(!200)[@35]		;Electric Piano remote commands
+(!201)[@36]		;
+(!202)[@37]
+
+(!300)[@38]		;Synth Strings remote commands
+(!301)[@39]		;
+
+(!400)[@40]		;Square Wave remote commands
+(!401)[@41]		;
+
+#0 w160 t37 r128 $f4$02/ o3$fa$03$30
+$ef $fd $c8 $38
+$f1 $01 $d0 $01
+[K c16 v120 H c16 S c16 K c16 H v150 c16 v100 c16 S c16 K c16 H v150 c16 v100 c16 S c16 H v100 c16 v150 c16 
+K c16 S c16 K v210 c16]43
+
+#1 r128/ v255 $fa$03$40
+(!100, -1)(!101, 3)
+o1
+(60)[>c8<a+16>c16r8.<a+16>c16r8<a+16r16>c8<a+16>c8<a+16>c16r8.c16r8.<g16.r32g16a+16g16]3
+(61)[>c8<a+16>c16r8.<a+16>c16r8<a+16r16>c8<a+16>d8c16d16r8.g12r6<g16.r32g16a+16g16]
+(60)(61)
+f8>c16f16r16c16f16r4c16<f8>c16<f16>c+8g+16>d+16r16c+16<g+16r4g+16c+8g+16c+16c8g16>d16r16<g16>c16r4<g16c8<a+8
+a8>e16a16r16e16a16r4e16<a8a8g+8>d+16a+16r16d+16g+16r4d+16<g+8>d+16<g+16f8>c16g16r16c16f16r4c16<f8>c8
+<f8>c16g16r16c16f16r4c16<f8>d+8d8a24r48>e16r16<d16<g16g16r4..a+16 (60) >c8<a+16>c16r8.<a+16>c16r8<a+16r16>c8<a+16
+>d8c16d16r16f16f+16g16r8.<g16.r32g16a+16g16>c8<a+16>c16r8.<a+16>c16r8<a+16r16>c8<a+16
+a8g16a16r8.a8r8a16.r32a16>g16<a16g+8g16g+16r8.g8r8g16>d8<g8[f8d+16f12r6d+16f16r8d+16r16f8d+16
+f8d+16f16r8.f12r6] d+12r24f8d+16 * d+16f8f+8 [g8f16g12r6f16g16r8f16r16g8f16g8f16g16r8.g12r6f12r24g8f16]2
+d+8d16d+12r6d16d+16r8d16r16d+8d16d+8d16d+16r8.d+12r6d+12r24d+16d8>c8<a+16>c12r6<a+16>c16r8<a+16r16>c8<a+16
+>c8<a+16>c16r8.c12r6c16.r32c16<a+8a8g16a12r6g16a16r8g16r16a8g16a8g16a16r8.a12r6a16.r32a16g8
+f8d+16f12r6d+16f16r8d+16r16f8d+16g8>f16g16r16f16g16g16r8.<g16.r32g24r48a+24r48g24r24
+
+#2 r128/
+[r2]7 r4.
+v210
+(!300, -1)(!301, 3)
+$de$10$13$25
+o3g8 [>c2r16c16d8d+8g8f8g16c2^8.c16d16d+2^8d8c8<a+8] g4.f16g4.r16g8 * >c8g24r48g2.^16 v160 [g2^8d+6r48f6r48]
+g2^8g8d+8c8d2^8<a+6r48>c6r48d2.c4 * g2^6r12d+8c8g2^6r12c4e4.d+8v0r4. v200 g8 (50)[>c2r16c16d8d+8g8]
+f8g16c2.d16 (51)[d+2^8d8c8<a+8] g8f16g2^6r48g8 (50) >f8g16c2^8.c16d16 (51) c1 [r2]5 r16 
+v170 <<a+16>c16f16a+16f16a+16>c16f4.g16d2 [r2]6 r16 v160 <[r4<g4>c4d4g1]2 r4c4f4g4>c2<g4d+4c1<a4..r2^16
+
+#3 r128/
+[r2]10 r4..
+(!400, -1) (!401, 3) v140 $de$08$17$25
+o3 (40)[g16f8g16c3] [r2]6 r4^6 (40) r2...r24e4..d+2^16 v190 (41)[>a+2^8g6r48g+8.a+2^8a+8g8d+8f2^8d6r48d+6r48
+f2.d+4a+2^8g6r48g+8.a+2.g8d+8>c2.d8d+8d8.c8.<g2r8]
+v140 <g1a4..a+16a8a+16a8f8.g1a4..a+2^16 v170 >d+2r16d+16f8g8>c8c4..g16f8g16c4d16g2^8f8d+8d8
+v185 (42)[<c4..g16f8g16d4...r32d16<a+16g12r24>c4.d16d+16f4d+8.d8c8.<a+8>c16d16c8
+<f16r16f3r24f16a+16>c16f16c16f16a+16>c4.d24r48<b8..r32g8.d8f4f16r16g16d4..r16g16>c4^16d16r16<b4.>c16d16e4^16
+c16<g16r16>f4d8<g16r16>g4.f16d+16d3r24d+16f16f4d+8.d8c8.<g8.>c16d16g4.f16d+16d8.c4d16d+8.f8.d8c8.<g8.>c16d16
+g4.f16d+16d6r48d+6r48f8f8.d+8.d8c8.<g8.>c8a+8.g+8.g8f8.c8.f8g2^8] r4.
+
+#4 r128/ v230
+(!200, -1)(!201, 3)
+o3[d+8r16d+6r12d+8r16d+8r16d+8r16f8r16f6r12] f8r16f8r16f8r16 * a8r16a8r16a8r16 (30)[o3a+8r16a+6r12a+8r16a+8r16a+8r16
+>c8r16c6r12] (31)[c8r16c8r16c8r16] (30)f8r16f8r16f8r16 (30)(31) [<a+8r16a+6r12a+8r16a+8r16a+8r16]
+>c8r16c6r12d+8r16d+8r16d+8r16g8r16g6r12g8r16g8r16g8r16d+8r16d+6r12d+8r16d+8r16d+8r16 *
+f8r16f6r12f8r16f8r16f8r16c8r16c6r12c8r16c8r16c8r16 [d+8r16d+6r12d+8r16d+8r16d+8r16]2 c8r16c6r48f24r48f16r2
+(30)(31)(30) d+8r16d+8r16d+8r16 (30)(31) d+8r16d+6r12f8r16f8r16f8r16
+(!202, -1) v210
+<[a+4.r16a4.r8a+4..r16a8r8a4r16]2 [>c4.r16<b4.r8>c4..r16<b8r8b4r16]2 >[f4.r16d4.r8f4..r16d8r8d4r16]2 f4.r16f4.r8f4..
+r16f8r8f4r16d+4.r16c4.r8c8.r16c16r8c16c16r2
+
+#5 r128/ v230
+(!200, -1)(!201, 3)
+$e6$00 o3 (20)[g8r16g6r12g8r16g8r16g8r16a8r16a6r12] (21)[a8r16a8r16a8r16] (20) >c8r16c8r16c8r16 $e6$01
+<(20)(21)(20) b8r16b8r16b8r16>d+8r16d+6r12d+8r16d+8r16d+8r16<b8r16b6r12b8r16b8r16b8r16[g8r16g6r12g8r16g8r16g8r16]
+>c8r16c6r12c8r16c8r16c8r16<a+8r16a+6r12a+8r16a+8r16a+8r16>d8r16d6r12d8r16d8r16d8r16<g+8r16g+6r12g+8r16g+8r16g+8r16
+a8r16a6r48>d+24r48d+16r2< * 
+$e6$00 [a8r16a6r12a8r16a8r16a8r16] g8r16g6r12g8r16g8r16g8r16 $e6$01
+* >c8r16c6r12c8r16c8r16c8r16
+(!202, -1) v210
+<[g4.r16g4.r8g4..r16g8r8g4r16]2 [a4.r16a4.r8a4..r16a8r8a4r16]2 [>d4.r16<a+4.r8>d4..r16<a+8r8a+4r16]2
+>c4.r16c4.r8c4..r16c8r8c4r16c4.r16<g+4.r8a8.r16a16r8a16a16r2
+
+#6 r128/ v230
+(!200, -1)(!201, 3)
+o4[<a+8r16a+6r12a+8r16a+8r16a+8r16>c8r16c6r12] c8r16c8r16c8r16 * f8r16f8r16f8r16
+<(10)[d+8r16d+6r12d+8r16d+8r16d+8r16f8r16f6r12f8r16f8r16f8r16]4 >c8r16c6r12c8r16c8r16c8r16
+<f8r16f6r12f8r16f8r16f8r16d+8r16d+6r12d+8r16d+8r16d+8r16 [g8r16g6r12g8r16g8r16g8r16]2 a8r16a6r12a8r16a8r16a8r16 *
+f8r16f6r48b24r48b16r2 (10)3 g8r16g6r12a8r16a8r16a8r16
+(!202, -1) v210
+(11)[d+4.r16d+4.r8d+4..r16d+8r8d+4r16]2 [f4.r16f4.r8f4..r16f8r8f4r16]2 a+4.r16g4.r8a+4..r16g8r8g4r16 (11)
+g4.r16g4.r8g4..r16g8r8g4r16g+4.r16d+4.r8f8.r16f16r8f16f16r2
+
+#7 y13
+[r2]8
+(!300, -1)(!301, 3) v110 $de$10$13$25
+o3g8 [>c2r16c16d8d+8g8f8g16c2^8.c16d16d+2^8d8c8<a+8] g4.f16g4.r16g8 * >c8g24r48g2.^16
+(!400, -1) (!401, 3) v100 $de$08$17$25
+(41)
+(!300, -1)(!301, 3) v110 $de$10$13$25
+(50) >f8g16c2.d16< (51) g8f16g2^6r48g8 (50) >f8g16c2^8.c16d16 (51)
+(!400, -1) (!401, 3) v100 $de$08$17$25
+(42) r4

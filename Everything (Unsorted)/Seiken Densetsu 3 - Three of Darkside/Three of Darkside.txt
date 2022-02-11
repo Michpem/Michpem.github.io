@@ -1,0 +1,159 @@
+;Insert size: 0x0330 (816) bytes
+;Length: 1:47.
+
+#amk 2
+#path "Three of Darkside"
+#spc
+{
+	#title "Three of Darkside"
+	#game "Seiken Densetsu 3"
+	#author "Hiroki Kikuta"
+}
+
+
+#samples
+{
+	#optimized
+"Snare Reverb.brr"
+"Timbale.brr"
+"Door Slam.brr"
+"Low Strings.brr"
+"Wind.brr"
+"Clavichord Chorus.brr"
+"Pan Flute.brr"
+}
+
+
+#instruments
+{
+"Snare Reverb.brr" $ff $ea $b8 $04 $4c
+"Timbale.brr" $ff $f2 $b8 $04 $8e
+"Timbale.brr" $ff $f2 $b8 $04 $90
+"Door Slam.brr" $ff $e0 $b8 $04 $8e		;que es esta wea
+"Low Strings.brr" $f9 $e7 $b8 $04 $8a
+"Wind.brr" $f7 $ec $b8 $04 $8f
+"Clavichord Chorus.brr" $ff $ec $b8 $04 $7f
+"Pan Flute.brr" $f9 $ed $b8 $04 $27
+"Low Strings.brr" $f0 $e5 $b8 $04 $2d
+}
+
+
+"Rev=@30"
+"Tim=@31"
+"Tim2=@32"
+"Doo=@33"
+
+"Str=@34"
+"Win=@35"
+"Cla=@36"
+"Flu=@37"
+"Str2=@38"
+
+
+#0 $f4 $02 / w180 t32
+
+$ef $39 $47 $47
+$f1 $05 $38 $01 
+$f5 $20 $0c $10 $0c $20 $0c $0c $0c
+
+Rev y10 v255 $fa $03 $a0
+[[o2a1
+a1
+a1^16
+a2...
+a2^8 q73 e4e8
+q7f a1]]2
+[[a1]]9
+[[a1e1]]4
+
+
+
+#1 Tim y7 v255
+o2
+(10)[q7e a4 q7b a4 q77 a8.a48 q79 a48 q7b a48 q7f a16 q7e a16 q7b a16 q77 a16]
+(11)[q7e a4 q77 a4 q7e a8 q77 a16a16 q7b a8 q77 a16a48 q79 a48 q7b a48
+q7e a4 q7b a4 q77 a4 q7f a16 q7e a16 q7b a16 q77 a16]
+(10)
+(12)[q7e a8 q77 a16a16 q7b a8 q77 a8 q7e a8 q77 a8 q7e a8 q77 a8]
+(10)2
+(11)
+(10)
+(12)
+(10)
+r1
+(10)
+[[ (11) (10)2 ]]3
+(11)
+q7e a4 q7b a4 q77 a4r4
+
+
+
+#2 r64 Tim2
+o2 y8 v255 $fa $03 $20
+(20)[q7e g4 q7b g4 q77 g4 q7f g16 q7e g16 q7b g16 q77 g16]
+(21)[q7e g4 q77 g4 q7f g8 q7c g16g16 q7b g8 q77 g8]
+(20)2
+(22)[q7e g8 q77 g16g16 q7b g8 q77 g8 q7e g8 q77 g8 q7e g8 q77 g8]
+(20)2
+(21)
+(20)2
+(22)
+(20)
+r1
+(20)
+[[(21)(20)3]]3
+(21)
+(20)
+q7e g4 q7b g4 q77 g4
+r8...
+
+
+
+#3 r64 Doo y13 v255 $fa $03 $34
+o2
+[a1^1
+c1^1]
+c1^1
+*
+c1......
+a1
+Str y10 $fa $03 $89
+[[d2.e4
+r1
+d2.f4
+e4r2.]]2
+(30)[r2]16
+
+
+
+#4 r64 Win y12 v255 $fa $03 $47
+o2
+[g+1^1
+c1^1]
+c1^1
+*
+c1......
+g+1
+Cla
+[[d2.e1^4
+d2.f4
+e1]]2
+(30)16
+
+
+
+#5 Rev y10 v255 $fa $03 $a0
+[o3
+[[d1
+<e2.e4]]2
+>d2d4d4
+d2.<e4]2
+d1
+r1^8
+Flu y12 v235 $fa $03 $04
+[e16f16b4.f24b24f24e8r1^4
+e16f16b16>c16e16f16b8f24b24f24e8r1^8]
+r8
+*
+Str2 y10 v196 $fa $03 $00
+<<e1^1^1^1^1^1^1

@@ -1,0 +1,238 @@
+;Insert size: 0x08fe (2302) bytes
+;Length: 1:12
+;Incompatible with SMW! The samples are far too big.
+
+#amk 2
+#path "First Contact"
+#spc
+{
+	#title "First Contact"
+	#game "Metal Slug 2/X"
+	#author "Takushi Hiyamuta"
+	#comment "Marcianitos cumbieros"
+}
+
+#samples
+{
+;	"../optimized/00 SMW @0.brr"
+;	"../optimized/01 SMW @1.brr"
+;	"../optimized/02 SMW @2.brr"
+;	"../optimized/03 SMW @3.brr"
+;	"../optimized/04 SMW @4.brr"
+;	"../optimized/05 SMW @8.brr"
+;	"../optimized/06 SMW @22.brr"
+;	"../optimized/07 SMW @5.brr"
+;	"../optimized/08 SMW @6.brr"
+;	"../EMPTY.brr"
+;	"../optimized/0A SMW @9.brr"
+;	"../optimized/0B SMW @10.brr"
+;	"../optimized/0C SMW @13.brr"
+;	"../EMPTY.brr"
+;	"../optimized/0E SMW @29.brr"
+	"../default/0F SMW @21.brr"
+;	"../EMPTY.brr"
+;	"../EMPTY.brr"
+;	"../EMPTY.brr"
+;	"../EMPTY.brr"
+"MM Timpani.brr"
+"MS Strings.brr"
+"MS Orchestra Hit.brr"
+"MS FM Bell.brr"
+"L-A-L Brass Section (Opt).brr"
+"SC French Horn.brr"
+"RnH Crash Cymbal.brr"
+"MM March Snare.brr"
+"MM Electric Snare.brr"
+"XG Rock Snare.brr"
+"MS FM Brass 2.brr"
+"HGnB Piano (V Low).brr"
+"MM Open Hi-Hat.brr"
+"MS FM Bass.brr"
+}
+
+
+#instruments
+{
+"MM Timpani.brr" $8f $d1 $b8 $04 $00
+"MS Strings.brr" $00 $00 $7f $02 $1a
+"MS Orchestra Hit.brr" $00 $00 $7f $03 $98
+"MS FM Bell.brr" $ff $f4 $b8 $03 $4d
+"L-A-L Brass Section (Opt).brr" $00 $00 $7f $05 $43
+"SC French Horn.brr" $00 $00 $7f $05 $73
+"RnH Crash Cymbal.brr" $ff $f3 $b8 $07 $a8
+"RnH Crash Cymbal.brr" $00 $00 $c7 $07 $a8
+"RnH Crash Cymbal.brr" $ff $ef $b8 $04 $8d
+"../default/0F SMW @21.brr" $00 $00 $7f $03 $c9
+"MM March Snare.brr" $ff $f7 $00 $05 $00
+"MM Electric Snare.brr" $af $b7 $b8 $06 $00
+"XG Rock Snare.brr" $00 $00 $7f $07 $a8
+"MS FM Brass 2.brr" $00 $00 $7f $03 $82
+"HGnB Piano (V Low).brr" $ff $ef $b8 $04 $e3
+"MM Open Hi-Hat.brr" $ff $fb $b8 $06 $80
+"MS FM Bass.brr" $ff $ee $b8 $03 $00
+"MM Open Hi-Hat.brr" $af $33 $b8 $06 $80
+"MM Open Hi-Hat.brr" $fd $fb $b8 $06 $80
+}
+
+
+"Tim=@30"
+"Str=@31"
+"Hit=@32"
+"Bel=@33"
+"Bra=@34"
+"Hor=@35"
+"FBra=@43"
+"Pia=@44"
+"Bas=@46"
+
+
+"Cr=@36 q7f"
+"Rev=@37 q7b"
+"LC=@38 v180 y10"
+"CH=@45 y8 v140"
+"CH1=@45 q7f"
+"OH=@47 q7f"
+"PH=@48"
+
+"Ki=@39 v200"
+"MSn=@40 v170"
+"ESn=@41 v190"
+"ASn=@42 v115"
+"ASn1=@42 v125"
+"MSn1=@40 v180"
+
+
+"_48==3 q7f ^=1"
+"_32==5 q7f ^=1"
+"_24==7 q7f ^=1"
+"_16==11 q7f ^=1"
+
+
+(!100)[$f4 $09]
+(!101)[$fa $01 $b8]
+(!102)[$fa $01 $ba]
+
+
+#0 w200 t52
+
+$f4 $02
+
+Tim y10 v190
+o3 d16d16/v190
+[g4. g24g24g24 g48 g2^6^16 f48f6^16 b+16b+16f8b+8d16d16]2 $fa $02 $02 *2 $fa $02 $00
+Pia y9 v150
+[[o3 q7e d8 q7d e8 q7c f8 q7d g8]]38
+Bas y10 v110 q5f (!100, -1) (!101, 3)
+o5 [[c2]]8 [[c+2]]8
+[[Bas y10 v110 q5f d16d16d8. r4^16 [d16]8 q4f d4
+Tim y10 v210 o3 q7f d16d16d2]]2
+
+
+
+#1 r8/
+Str y10 q7d
+[[v90 $e8 $c0 $82 [o4 g16a+16a16b+16a+16>d16c16d+16]2 $e8 $c0 $b3 *2]]2
+[[v90 $e8 $c0 $82 $fa $02 $02 *2 $e8 $c0 $b3 *2]]2 $fa $02 $00
+Pia y11 v150 r16
+[[o3 q7b f8 q7c g8 q7d g+8 q7f a+8]]38 r8.
+Str y10 v150 (!100, -1) (!101, 3)
+[q7b g4f+4a+4 q7a a4 q7d >c+4 q7f c4e4r4]2 $fa $02 $04 * $fa $02 $00
+; If I break down the loop to leave the rest outside of it, the remote commands won't work
+q7b <b4a+4>d4 q7a c+4 q7d f4 q7f e4 q7d g+4
+v160 [[q7c d+16d16 q7a c16 q7b f+16 q7c f16a16g+16 q7f >d16]]8
+
+
+
+#2 r8/
+(!100, -1) (!101, 3) $fa $02 $00
+[Hit y10 v150 q7f o4g4
+Bra y13 v125 q4f g16g16g16g16 q7f f8 q4f g16 q48 g16r2
+Hor y10 v135 q7f o3c4 $ed $7f $ec ^4 $ed $7f $ef ^4]2 
+$fa $02 $02 *2 $fa $02 $00
+(20)[r2]8 r4
+; I have no clue why, but I had to disable remote commands here and re-enable them, otherwise the channel would glitch out lol
+Hor (!0,0) (21)[d4g+4.g+8a+1b8] f2. (!100, -1) (!101, 3) v120 (22)[d4d+4f8b2. [[r2]]4
+a2.b+8d+2^8f8c-2.c+8<g1^4 [[r4]]5
+>g2^=47 q7f ^=1g2.r2g2^=47 q7f ^=1g2.r4]
+[[Bel y10 v130 o3c4
+(23)[Str y13 v130 q7b o5c4c-4d+4 q7a d4 q7d f+4 q7f f4a4]
+]]2
+[[Bel y10 v130 $fa $02 $00 o3c+4
+$fa $02 $04 (23)
+]]2
+(!102, 3) $fa $02 $00
+[Bra y13 v120 q5f o5d16d16d16r4.. [[d16]]9 r16
+Hor y10 v145 q7f o3d4d+2 ]2
+
+
+
+#3 r8/
+(!100, -1) (!101, 3)
+[Bel y10 v110 o3g4
+r64 Bra y7 v110 $ee $15 q4f o4g16g16g16g16 q7f f8 q4f g16 q48 g16r4....
+Hor y10 v135 $ee $00 q7f o3f4 $ed $7f $ec ^4 $ed $7f $ef ^4]2
+$fa $02 $02 *2 $fa $02 $00
+(20)13 r4.
+Hor (30)[g4g+4a+8>e2. [[r2]]4
+d2.f8<g+2^8a+8e2.f+8c1^4 [[r4]]5 ]
+b+1.r2b+1.r16^48
+Hit o4g+_24a_24a+_24b_24
+[[Hit y10 v150 o4c4
+(31)[Str y7 v130 q7b g4f+4a+4 q7a a4 q7d >c+4 q7f c4e4] ]]2
+[[Hit y10 v150 $fa $02 $00 o4c+4
+$fa $02 $04 (31)]]2
+(!102, 3)
+$fa $02 $00 
+Hit y10 v130 $fa $02 $00
+[[o5 d16d16d2 [d16]8 d2.. ]]2
+
+
+
+#4 r8/
+Cr v180 o4
+[[y9 c1^4 y11 c+2.]]3
+y9 c1^4 Rev c2 Cr c4 y11 c+2^8
+CH [c4]9 c8 LC c2^8 CH *18 c8 LC c2^8 CH *20 c8 LC c2^8 CH *15 c8 Rev y9 c2
+[[Cr y9 v180 c4. 
+y11 v120 [OH c8 CH1 c_16c_16 OH c4]3 c8 ]]3
+Cr y9 v180 c4. y11 v120 * c4 PH c4c8
+Rev v180 y9 c2 Cr [[c1^1]]2
+
+
+
+#5 r8/
+r2 o4
+[[ [Ki c8 MSn c_16 v105 c_16 v160 c_48 v115 c_24 v160 c_16c8] c_32 v115 c2^8.. 
+v160 c_48 v115 c_24 v105 c_16 v115 c_16 v160 c2^16]]3
+* ESn c_32 v115 $ed $2f $b3 c2.^16. ASn q7f c_16 v90 c_16
+[[ (50)[Ki c_16 MSn c_16 v140 c8 ASn c8. MSn c_16 Ki c_16 MSn c_16 v130 c_32 v105 c_32 v115 c_16 ASn c8. MSn c_16 Ki c_16] 
+(51)[ASn c_16 MSn c24 v105 c24 v130 c24 ASn c8.c_16]
+(52)[Ki c_16 ESn c8 MSn c_32 v115 c_32 ASn c8. MSn c_16] (50) (53)[ESn c8 MSn c_16 ASn c8. ESn c_16] (52) ]]2
+(50) (51) (52)
+[[ (50) (51) (52) (50) (53) (52) ]]2
+Ki c_16 MSn c_16 v130 c8 ASn c8. MSn c_16 Ki c4 ESn c_16c_16 Ki c_16 ASn c_16
+[[ (54)[Ki c4 ASn1 c8. MSn v150 c_16 Ki c_16 MSn c8. ASn1 c8. MSn c_16] Ki c4 ASn1 c8. MSn v130 c_16
+(55)[Ki c_16 MSn c_16 v150 c8 ASn1 c8. MSn c16] ]]3 (54) (55)
+Ki c4 ESn c_16c_16 Ki c_16 ASn1 c_16
+[[MSn1 c_24c_24c_24 Ki c8 MSn1 c8 Ki c8 MSn1 c8 Ki c8 MSn1 c_16c_16 Ki c8]]4
+
+
+
+#6 r8/ 
+(!100, -1) (!101, 3)
+y15 v80 o5 (60)[FBra r1^4 c4 $ed $7f $ec ^4 $ed $7f $ef ^4]2 $fa $02 $02 (60)2 $fa $02 $00
+(20)8 r4 $ee $10
+r64 FBra v60 $fa $02 $18 (21) $ee $00 o3f2^=45 (22) r4
+(20)15 r4
+$fa $02 $00
+[Str y7 v120 q5f o5a16a16a16 r4.. [[a16]]9 r16
+FBra y10 v75 q7f d4d+2]2
+
+
+
+#7 r8/ 
+(!100, -1) (!101, 3)
+y5 v80 y4 $fa $02 $05 (60)2 $fa $02 $07 (60)2 $fa $02 $00
+(20)8 r4 
+FBra v60 $fa $02 $18 (21) o3f2. (30) [[b+2.b+2.r2]]2
+(20)23 r4
