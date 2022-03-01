@@ -1,0 +1,237 @@
+;Insert size: 0x081a (2074) bytes
+;Length: 2:40.
+
+#amk 2
+
+#path "Devil's Peak"
+
+#spc
+{
+	#title "Devil's Peak"
+	#game "Odallus: The Dark Call"
+	#author "Tiago Santos"
+}
+
+
+#samples
+{
+	#default
+"@0 minor 3rd.brr"
+"@0 major 3rd.brr"
+}
+
+
+#instruments
+{
+@8 $ff $e7 $b8 $1e $00						;Acoustic Bass
+@1 $fc $e4 $b8 $03 $00						;Sawtooth
+@6 $cf $ac $b8 $03 $00						;Low Square
+@22 $00 $00 $4a $05 $e3						;Closed Hi-Hat
+@10 $00 $00 $7f $04 $80						;Electric Snare	
+@21 $00 $00 $7f $03 $c9						;Kick
+@1 $cb $8e $b8 $03 $00						;Fast Saw
+@0 $ff $f5 $b8 $03 $00						;High Square
+"@0 minor 3rd.brr" $ff $f5 $b8 $03 $00		;High Square (1+3)
+"@0 major 3rd.brr"	$ff $f5 $b8 $03 $00 	;High Square (1+4)
+}
+
+
+"Bas=@30"
+"Saw=@31 $de $18 $11 $1a"
+"Squ=@32 $de $06 $08 $0a"
+"Squ2=@37"
+"SquMn=@38"
+"SquMj=@39"
+
+
+"CH=@33 v170 o4"
+"Sn=@34 v190 o4"
+"Ki=@35 v220 o4"
+
+
+(!100)[$f4 $09]
+(!101)[$fa $01 $b5]
+(!102)[$fa $01 $b8]
+
+
+"_16= =11 q7f ^=1"
+"_32= =5 q7f ^=1"
+
+
+#0 w170 t49
+
+$ef $fe $15 $15
+$f1 $05 $55 $01
+$f4 $02
+/
+
+Bas (!100, -1) (!101, 3) y10 v220
+(1)[o2 e2..r8e2..r8g2a2b4b+4a8>d8d16c16c-16c16]4
+(2)[o2e2..r8e2..r8g2a2b4b+4a8>d8d16c16c-16<a16]2
+(1)4 (2) (1)2
+[ [[o2e8]]7 f+8 [[g8]]5 a8b+8b8 [[f8]]8 b8b8b+8b+8a8>d8d16c16c-16c16]2
+$fa $02 $02 *2
+$fa $02 $00
+(1)2 (2)
+
+
+
+
+#1 Saw y9 v170 (!100, -1) (!101, 3)
+(10)[o4 q7f e2..r8e2..r8e2f+2g4a4b+8a8a16e16d16e16]4
+(11)[q6f d4r2.d4r2.d4r4f+4r4f+8r8e8r8g8r8a8r8]2
+
+v180
+(12)[q7f @36 o4e4b4e8b8g8>e8
+a8g16c-16r8b8a16e16r8b+8b16g16
+@31 q7c d4e4c4g4d4c4e4e16d16c16d16
+g4d4a4c4g4d4a4c-4
+q6c f+8r8e8r8c8r8c-8r8f+8r8e8r8g8r8 @36 q7f a16a16a16a16]2
+
+[[(13)[q7f d16d16d16d16r4] r2]]2 (13) $fa $02 $04 (13) $fa $02 $00
+(14)[q6c @31 f+8r8e8r8g8r8a8r8]
+v180
+(10)2
+[q7f o4c-1c-1c1f+4g4e8f+8f+16e16d16e16]2 $fa $02 $02 *2 $fa $02 $00
+
+(12) [[(13) r2]]2 (13) $fa $02 $04 (13) $fa $02 $00
+(14)
+
+
+
+#2 Saw v170 (!100, -1) (!101, 3) q7f
+(21)[o4 y11 c-2..r8c-2..r8 y10 c-2c2d4e4g8f+8f+16c16c-16c16]3
+o4 y10 c-2..r8c2..r8 c-2c2d4e4g8f+8f+16c16c-16c16
+o4 y11 [q6f c-4r2.c4r2.c-4r4d4r4d8r8c8r8e8r8f+8r8]2
+
+v180
+[[ (!0,0) r8 (!100, -1) (!101, 3) (20)[@36 o4 q7f g4>e8.<g8>g8c-8g16
+c8r32e16<g16.r16 >d8r32g16c-16.r16 e8r32a16e_32
+@31 q7c <g1a1
+>e4c-4f+4<a4>e4c-4f+4<g4
+q6c a8r8g8r8e8r8g8r8>d8r8c8r8e8r8 @36 q7f f+16f+16f+16f+16] ]]2
+
+$fa $02 $fd (13) r2 $fa $02 $fe (13) r2 $fa $02 $fd (13) $fa $02 $00 (13)
+(22)[q6c @31 d8r8c8r8e8r8f+8r8]
+v180
+(21)2
+[q7f o3 y11 v200 e1g1 y10 a1 v180 >d4e4c8d8d16c16c-16c16]2 $fa $02 $02 *2 $fa $02 $00
+
+(!0,0) r8 (!100, -1) (!101, 3) (20)
+$fa $02 $fd (13) r2 $fa $02 $fe (13) r2 $fa $02 $fd (13) $fa $02 $00 (13)
+(22)
+
+
+
+#3 Squ y10 v170
+(30)[ [[o3e4b+4b4b+4]]2 e8b8b+8e8a8b8e8g8a8e8a8b8b+8>d8d16c16c-16c16]3
+
+(40)[CH y9 o4c8c16c16c8c4c4c8
+c8c8c8c4c4.
+c8c16c16c8c8c8c4c8
+c8c8c4c8c8c16c16c16c16]
+
+Squ y10 v170
+(32)[o3e8e8b+8e8a8b8b4e16d16e8b+16b16b+8b16a16b8b+8>d8
+o3e16d16e8g8e8a8f+8b8b+8e8g8b8e8g8a8e8f+8]2
+
+(30)
+(31)[v190 o2g8b8>e8<g8b8>e8<g8b8o2g8>c8e8<g8>c8e8<g8>c8
+o3c-8e8g8c-8<a8>c8f+8c8<g8b8a8b+8b8>d8d16c16c-16c16]
+(30) (31)
+
+v170 (32)
+(30)2
+
+v180
+[Squ2 o5 q7f e8 q76 c-8 q7f f+8 q76 c-8 q7f g8 q76 f+8 q7f a4
+SquMj e4 SquMn a4 SquMj b4 SquMn b+4]4
+[Squ2 a8 q76 e8 q7f b8 q76 e8 q7f >c+8 q76 <e8> q7f d4
+SquMj c+4 SquMn d4 SquMn e4 SquMj f+4]4
+
+Squ v170 (30) (31) v170 (32)
+
+
+
+#4 (!100, -1) (!101, 3)
+
+(42)[r1r1 Saw y11 v170 o3g2a2b4b+4>e8d8d16<a16g16a16]3
+o3 g2..r8g2..r8g2a2b4b+4>e8d8d16<a16g16a16
+
+CH y9 (40)2
+(41)[c4]16 
+
+[[ (40) (41)16 ]]2
+
+(42)2
+Squ y10 v180
+(30)2
+[ [[o3a4>d4c+4d4]]2 <f+8>c+8d8<f+8b8>c+8<f+8b8>c+8<f+8>c+8d8c-8e8e16d16c+16d16]2
+
+CH y9 (41)16 (40) (41)16
+
+
+
+
+#5 (200)[r2]8
+CH y9 o4c8c2..c8c2..c8c4.c8c4.
+c4c4c8 Sn y10 c8 [[c_16]]4
+
+(50)[Sn c8c_16c_16c8c4c4c8
+c8c8c8c4c4.
+c8c_16c_16c8c8c8c4 Ki c8
+Sn c8c8c4c8c8 [[c16]]4 ]4
+
+(200)4
+(51)[Saw v140
+o5b4. $fa $01 $b2 ^2^8r1]
+(50)
+
+(200)4 (51) (50)
+
+
+[[Sn (52)[c_16]4 ^2.]]2
+(52)4 r4 (52)4 r8 Ki c8
+(53)[Sn c8c8 [[c_16]]4 ]2
+[Ki c4 q7d c4 Sn q7f c4 Ki c8 Sn c_16c_16]24
+
+(200)4 (51) (50)
+[[Sn (52)4 ^2.]]2
+(52)4 r4 (52)4 r8 Ki c8
+(53)2
+
+
+
+#6 (200)15 r8
+
+CH y9
+c8c16c16c16c16
+
+(40)
+(200)64
+(60)[CH q7f c8 q7c c8 q7f c8 q79 c8]16
+[r1r1 Saw y11 v180 q7f o3e1a4b+4a8b8b16a16g16a16]2 $fa $02 $02 *2 $fa $02 $00
+
+(200)24
+
+
+
+#7 r8 y9 $ee $10 (!100, -1) (!101, 3)
+[[Squ v140 (70)[o3e4b+4b4b+4]2
+(71)[Saw v120
+o4e2f+2g4a4b+8a8a16e16] d16e16]]3
+(10)
+(11)2
+Squ v140
+(70)2
+(200)12
+
+Squ v140
+(70)2
+(200)20
+(70)2 (71) o4d16e16 (70)2 (71)
+(60)32
+
+r8 Squ v140
+(70)2
+(200)20
