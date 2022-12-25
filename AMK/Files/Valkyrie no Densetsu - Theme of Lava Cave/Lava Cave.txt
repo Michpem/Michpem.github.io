@@ -1,0 +1,320 @@
+;Insert size: 0x0c7c (3196) bytes
+;Length: 2:14.
+;Icompatible with:
+;	- Yoshi
+;	- Thunder / Blargg
+;	- Goal Tape
+
+#amk 2
+#path "Lava Cave"
+#spc
+{
+	#title "Theme of Lava Cave"
+	#game "Valkyrie no Densetsu"
+	#author "Hiroyuki Kawada"
+	#comment "Brutal Mario"
+}
+
+
+#samples
+{
+	#ValkyrieLava
+"choir.brr"
+"fmbell.brr"
+"fmguitar.brr"
+"Hat32k.brr"
+"Kick32k.brr"
+"Snare28k.brr"
+"Synth Bass.brr"
+"Synth Strings Shortish.brr"
+"Tom32k.brr"
+"vibe.brr"
+"vibe +3.brr"
+"vibe +4.brr"
+"vibe +5.brr"
+"vibe +7.brr"
+}
+
+
+#instruments
+{
+"vibe.brr" $cf $52 $80 $06 $00
+"vibe +3.brr" $cf $52 $80 $07 $23
+"vibe +4.brr" $cf $52 $80 $07 $9c
+"vibe +5.brr" $cf $52 $80 $08 $00
+"vibe +7.brr" $cf $52 $80 $09 $03
+"Synth Bass.brr" $ff $e6 $b8 $05 $81
+"Kick32k.brr" $00 $00 $7f $07 $a8
+"Hat32k.brr" $00 $00 $7f $07 $a8
+"Tom32k.brr" $00 $00 $7f $07 $95
+"fmbell.brr" $f7 $f0 $b8 $03 $4b
+"choir.brr" $ff $e9 $b8 $02 $ac
+"Synth Strings Shortish.brr" $ff $e8 $b8 $03 $d3
+"fmguitar.brr" $ff $e8 $b8 $03 $ae
+"Snare28k.brr" $00 $00 $7f $06 $60			;Lower pitch (orig: $06.b3) to give it more body since I can't fit the Toms alongside it
+"fmbell.brr" $ff $f0 $b8 $03 $4b
+}
+
+
+"Vib=@30"
+"Vib3=@31"
+"Vib4=@32"
+"Vib5=@33"
+"Vib7=@34"
+"Bas=@35"
+"SBel=@39"
+"Ahh=@40"
+"Str=@41"
+"Gui=@42"
+"SBel2=@44"
+
+
+"Ki=@36 v200 o4"
+"Hi=@37 v170 o4"
+"To=@38 v200"
+"Sn=@43 v190 o4"
+
+
+(!100)[$f4 $09]
+(!101)[$fa $01 $b9]
+(!102)[$fa $01 $b6]
+
+
+"_16= =11 h0 ^=1"
+"_24= =7 h0 ^=1"
+"_32= =5 h0 ^=1"
+"_48= =3 h0 ^=1"
+"_64= =2 h0 ^=1"
+
+
+"%eT=$f4 $03"
+"%h=$fa $02 $"
+"%f=$ee $"
+
+
+#0 t61 w180
+
+$ef $c3 $25 $25
+$f1 $03 $65 $01
+$f4 $02
+
+y10 v180
+(1)[$dc $60 $07 Vib5 o5e12 Vib3 <a12 Vib4 b+12g12 Vib3 a12 Vib5 e12 
+ $dc $60 $0d Vib5 o5e12 Vib3 <a12 Vib4 b+12g12 Vib3 a12 Vib5 e12]4
+/ (!0,0)
+$ef $3b $25 $25 q7f
+(1)6
+(2)[$dc $60 $07 Vib7 o5d12 Vib4 <g12 Vib3 b12 Vib5 e12 Vib4 g12 Vib5 d12
+$dc $60 $0d Vib7 o5d12 Vib4 <g12 Vib3 b12 Vib5 e12 Vib4 g12 Vib5 d12]2
+[[(1)2 (2)2]]2
+(1)2 
+$dc $60 $07 Vib5 o5d12 Vib4 <g12 Vib3 b12 Vib5 e12 Vib4 g12 Vib5 d12
+$dc $60 $0d [Vib5 o5d12 Vib4 <g12 Vib5 b12e12 Vib4 g12 Vib5 d12]
+$dc $60 $07 *
+$dc $60 $0d Vib4 o5e12 Vib3 <g+12b12f+12g+12 Vib4 e12
+(1)10 (2)2
+(1)2
+(4)[$dc $60 $07 Vib5 o5d12 Vib4 <g12 Vib3 b12 Vib7 d12 Vib4 g12 Vib5 d12
+$dc $60 $0d Vib5 o5d12<g12b12 Vib7 d12 Vib4 g12 Vib5 d12]
+(5)[$dc $60 $07 Vib5 o5d12<g12b12 Vib5 e12 Vib4 g12 Vib5 d12
+$dc $60 $0d Vib4 o5e12 Vib3 <g+12b12f+12g+12 Vib4 e12]
+Vib q5d (!100, -1) (!101, 3)
+(3)[$dc $60 $07 o5a12c12e12c-12c12<a12 $dc $60 $0d o5a12c12e12c-12c12<a12]2
+[$dc $60 $07 o5a12c-12d12<a12b+12g12 $dc $60 $0d o5a12c-12d12<a12b+12g12]2
+(3)2 
+$dc $60 $07 o5g12c-12d12<a12b12g12
+$dc $60 $0d (6)[o5g12c12e12<a12b12g12]
+$dc $60 $07 (6)
+(7)[$dc $60 $0d o5g+12c-12d12<a12b12g+12]
+(!0,0)
+(1)10 (2)2 (1)2 (4) (5)
+(1)10 (2)2 (1)2 (4) 
+Vib q5d (!100, -1) (!101, 3)
+$dc $60 $07 (6) (7)
+(!0,0) (1)4
+
+
+ 
+#1 Bas y10 v230
+
+(10)[o2 $dc $60 $07 a2 $dc $60 $0d ^2 $dc $60 $07 ^2 $dc $60 $0d ^2 $dc $60 $07 ^2 $dc $60 $0d ^2 $dc $60 $07 ^2 $dc $60 $0d ^2]
+/
+(10)2
+$dc $60 $07 a2 $dc $60 $0d ^2 $dc $60 $07 ^2 $dc $60 $0d ^2
+(!100, -1) (!101, 3) %eT
+y10 v255 q4f g4g4g4g4 q7f g8r24g24r24g8r24g24r24 >(12)[g12]6
+(11)[q5f f8r24 q2f f12]8 %h02 (11)8 %h00 (11)8 %h02 (11)6 %h00
+g+12g+12g+12g+12g+12g+12
+%eT (10)2
+[o2 $dc $60 $07 f2 $dc $60 $0d ^2 $dc $60 $07 ^2 $dc $60 $0d ^2]
+%h02 * %h00 *
+%eT y10 v255 q4f g4g4g4g4>g8r24g12g8r24g12g+8r24g+12g+12g+12g+12
+(11)8 %h02 (11)8 %h00 (11)8
+g6r8^12g6r8^12g6r12g8r24g12g12g12g12g+12g+12g+12r12g+12g+12
+%h04 (11)32 %h00 (11)8 %h02 (11)8 %h00 (11)8 %h02 (11)6 %h0 (12)6
+%h04 (11)32 %h00 (11)8 %h02 (11)8 %h00 (11)8 %h02 (11)6 %h0
+o4 q4f d6c6d6 v230 (10)
+
+
+
+#2 y10
+
+Ki (20)[o4c4]12
+(51)[To o3 y12 g+_24g+_24g+8 y10 d+6d+8 y8 c6 y6 <g+6g+6]
+/
+Ki y10 (20)29 o4c8.^48
+To y12 o3g+_24g+6 y8 c6c12 y12 g+12
+Ki y10 (20)8
+(30)[To y14 o3a+12a+6 y12 g+6g+12 y10 d+12d+6 y8 c6c12
+y12 o3g_48g16g12g12 y10 d+_48d+16d+12d+12 y8 c48c16c12c12 y6 <g+_48g+16g+12g+12]
+y10 (22)[Ki c4 Sn %eT c4 %eT]14
+(23)[To y12 o3g+_24g+8g+12 y10 d+12d+12d+12 y8 c_24c8 y6 o2g+_24g+8 y5 e12e12]
+Ki y10 (20)56 (30)
+y10 (22)12 Ki o4c4 Sn %eT c6 Ki %eT c4c12 Sn %eT c4 %eT (23)
+y10 (22)30 Ki c4 Sn %eT c8.^48
+To %eT y12 o3c_24c6c12 y8 <g+12g+12g+12
+y10 (22)29 o4 Ki c4 Sn %eT c6c12
+To %eT (23)
+Ki y10 (20)12 (51)
+
+
+
+#3 y10
+
+Hi (20)12
+Ki (20)4
+/
+(!0,0)
+Ahh y11 v130 o4a1^1^1 $ed $71 $ea c1^1^1 $f4 $09 d1^1
+SBel v110 y12 a4.e2^8
+Ahh y11 v130 $ed $74 $ea o3a1
+Str v190 y11 o3g4.g1^8g4g4
+y10 a1^1g4.>d1.^8
+<a1.e2g2b1b2
+(60)[b+4.^24a12e2.c4e6a6b+6b4.b1.^8]
+Str v180 y11 $df
+o3a4.^24e12c2.<a4>c6e6a6a4.>f+1.^8
+v190 y10 <a1.e4a4g4.^24g12g1.
+b+1.e4b+4b4.^24b12b1b2.
+(!100, -1) (!102, 3)
+[f4g6a4f4^12f4g6] a4^16^48r4
+f4f6g4g4^12a4a6b4^16^48r4
+* a4^12b4.b4^24b12b1b4
+(60) (54)[o3b+4.^24a12e2.c4e6a6b+6>d4.a1.^8]
+(61)[o3a1.e4a4g4^6g12 q6f g1.q7f b+1.e4b+4b4^6b12b1] b2
+(60) (54) (61) q4f b6b+6b6
+%eT
+Hi (20)12 Ki (20)4
+
+
+
+
+#4 To y12 h-1
+o2d2>f6d6f6^1
+
+(41)[SBel %eT v100 h0
+o5a4.e2^8^1]
+/
+$df (!0,0)
+Ahh y9 v130 o5e1^1^1 $ed $71 $ea a1^1^1 $f4 $09 c-1^1
+To y12 %eT
+o2d1
+Ahh y9 v130 %eT o5 $ed $74 $ea e1
+Str v210 o4e4.d1^8e4d4
+Gui y10 v145 $de $30 $09 $20	;This instrument had portamento in the original. No fucking way I'm manually adding it here. Nope.
+o5c1.<a4>c4c-4.c-2 $dd $00 $04 g ^8.^48<b12b+12b12g12d12c12<b12a12b12>c12d12
+<e6a6e6b+6a6b6b+6>d6e6a6b6b+6
+a6 $dd $03 $06 b >g6c-6<a+6 $dd $03 $06 >c a6c6c6 $dd $03 $06 d b6d6 >c4 $dd $06 $18 d ^16^48c12c-12
+c1^1^1^1
+Str v210 y9 $df
+(40)[o4e4.^24c12<a2.e4a6b+6>e6f+4.>d1.^8]
+Gui y10 v145 $de $30 $09 $20 (!100, -1) (!101, 3)
+q5f o5c1.<a4>c4 q7f c4.^24c-12 q6f c-1 q7f c6d6<g6
+q6f o5g1 q7f g4. q5f f4. q7f e4e4.^24d12 q4f d2..r8 q7f e12r6
+d24^24 $dd $00 $08 e ^24 $dd $00 $08 d+ ^24 $dd $00 $08 d c12r4
+(!102, 3)
+[<a12r6b12r12b+12r6a4^24r24a12r6b12r12] b+12r2
+a12r6a12r12b12r6b4^24r24b+12r6b+12r12>d4^24r24r4
+* <b+12r4o5e4.g4.d2^8r24<e12g+12e12g+12b12>c12d12
+[e4^6c12<a2.e4a6>c6e6d4.g1.^8
+e4^6c12<a2.e4a6>c6e6f+4.>d1^4.^12<c12c-12
+q5f o5c1.<a4>c4 q7f c4.^24c-12] c-1^4r12c12c-12
+q5f o5c1.<a4>e4 q7f e4.^24d12 q6f d1 q7f d6c6d6
+* q6f c-1 q7f c6d6<g6> q6f g1 q7f g4.f4.e4
+e4^6d12 q6f d1 q7f d6c6d6c1^1
+%eT y12 (41)
+
+
+
+#5 To y8 h-1
+r64o2c-2>f+6d+6f+=29^1
+
+(53)[SBel %f10 %eT v80 h0
+r8o5a4.e2^1] %f00
+/ 
+h0
+q7f Ahh y10 v130 o5c1^1^1 $ed $71 $ea <e1^1^1 $f4 $09 g1^1
+To y8 %eT r64o2c-=189
+Ahh y10 v130 %eT o5 $ed $74 $ea c1
+Str v190 y10 o4c-4.c-1^8c-4c-4
+v210 y9 c1^1c-4.g1.^8
+c1.<a2>e2d1d2
+(50)[e4.^24c12<a2.e4a6b+6>e6d4.g1.^8]
+y10 v190 (54)
+y9 v210 o4c1.<a4>c4c4.^24c-12c-1.
+e1.<a4>e4e4.^24d12d1d2.
+(!100, -1) (!102, 3)
+[<a4b6b+4a4^12a4b6] b+4^16^48r4
+a4a6b4b4^12b+4b+6>d4^16^48r4
+* <b+4^12>e4.e4^24d12d1d4
+(50) (40)
+(52)[o4c1.<a4>c4c4^6c-12 q6f c-1.q7f e1.<a4>e4e4^6d12d1] d2
+(50) (40) (52) q4f d6d6d6
+
+To %eT y10 h-1 (!0,0)
+o2d_64d+=93>f_64f+=29d_64d+=29f_64f+=29^1
+y8 (53)
+
+
+
+
+#6 (900)[r2]8
+/
+To y10 h-1 (!0,0)
+o2d_64d+=93^2 [>f_64f+=29d_64d+=29f_64f+=29]
+(900)5
+o2d_64d+=93 * (900)6
+r8 SBel %eT v80 y8 h0
+o4 y8 a4.e2
+To y10 %eT * r2
+Ahh y9 v120 %eT o5e4.d1^8
+(!100, -1) (!101, 3)
+Gui y10 v145 o5 q2f c-4 $dd $00 $06 e d4
+Ahh y9 v120 q7b a1^1 q7f c-1^1
+e1^1d1.d2e1^1r1
+SBel2 v120 y10
+o5g4.>g2^8
+(900)6
+<f+4.>d4..^48
+Gui y10 v145 o4b+12b12
+Ahh y9 v120 q7b o5a1^1 q7f c-1^1
+e1^1d1.d1^1.
+c-1^1e1^1d1..d4 (70)[e1^1r1
+SBel2 v120 y10
+o5g4.>g2^8
+[[r2]]6
+<f+4.>d2^8
+Ahh y9 v120 q7b o5a1^1 q7f c-1^1e1^1d1.] d2
+(70) q4f d6d6d6 q7f c1^1^1^1
+
+
+
+#7 (900)8
+/
+Hi y10 (20)30 Ki (20)2
+Hi (20)8 Ki (20)4 (21)[c6c12]4
+Hi (21)30 c4c6c12
+(20)56 Ki (20)4 (21)4
+Hi (21)30 c4c6c12
+[[(21)62 c4c6c12]]2
+(900)8
