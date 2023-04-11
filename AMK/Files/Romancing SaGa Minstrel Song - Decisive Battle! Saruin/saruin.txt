@@ -1,0 +1,412 @@
+;Insert size: 0x1851 (6225) bytes.
+;Length: 3:17
+;Incompatible with SMW, at least this definitive version. The original was sort of compatible, but with drawbacks.
+
+#amk 2
+
+#spc
+{
+	#title   "Decisive Battle! Saruin"
+	#game    "Romancing SaGa: Minstrel Song"
+	#author  "Kenji Ito"
+	#comment "For /v/orld 2, from !RieszWt1bc"		;aka Masterlink
+}
+
+#path "saruin"
+
+#samples
+{
+;#saruin
+"closed hat.brr"
+"crash.brr"
+"distorted guitar mute.brr"
+"distorted guitar power.brr"
+"guitar2.brr"
+"guitar4.brr"
+"kick.brr"
+"kick snare.brr"
+"open hat.brr"
+"saw lead.brr"
+"slap bass.brr"
+"snare.brr"
+"square lead.brr"
+"string ensemble.brr"
+"tom.brr"
+}
+
+#instruments
+{
+"slap bass.brr" $ff $ec $b8 $02 $81
+"string ensemble.brr" $00 $00 $7f $03 $1e
+@0 $00 $00 $00 $00 $00								;padding
+"distorted guitar power.brr" $00 $00 $7f $03 $00
+"distorted guitar mute.brr" $ff $f4 $b8 $03 $00
+"tom.brr" $00 $00 $7f $04 $3e
+"crash.brr" $ff $ef $b8 $05 $5a
+"kick.brr" $00 $00 $7f $05 $0c
+"snare.brr" $00 $00 $7f $04 $b0
+"kick snare.brr" $00 $00 $7f $07 $a8
+"open hat.brr" $00 $00 $7f $03 $00
+"closed hat.brr" $00 $00 $7f $03 $00
+"guitar2.brr" $00 $00 $7f $04 $fa
+"guitar4.brr" $00 $00 $7f $04 $00
+"saw lead.brr" $ff $e0 $b8 $03 $02
+"square lead.brr" $00 $00 $ff $04 $01
+}
+
+
+;lazy shit
+".slur=$f4$01"		;it's not what you think :^) look it up
+".echo=$f4$03"
+"_64==2q7f^=1"
+"_32==5q7f^=1"
+"_24==7q7f^=1"
+"_16==11q7f^=1"
+"_8==23q7f^=1"
+".wipmarker=[[r2]]255"
+".release=(!100,-1)(!101,3)"
+".releaselong=(!100,-1)(!102,3)"
+".insreset=$f4$09"
+".norelease=(!0,0)"
+".novibrato=$df"
+".transpose=$fa$02$"
+".penvoff=$ec$00$00$00"
+".stoff=$f4 $01 (!103, -1)"
+".ston=$f4 $01 (!103, 0)"
+
+
+;instruments
+".bass=@30"
+".strings=@31"
+".stringsoctave=@32"	;dummy
+".distguitar=@33"
+".distmute=@34"
+".leadgt2=@42"
+".leadgt4=@43"
+".saw=@44 $de$18$0e$b0$ea$60"
+".square=@45"
+
+
+;percussion
+".k=@37 v170"
+".ks=@39 v200"
+".s=@38 v180"
+".o=@40 y12 v100"
+".c=@41 y12 v110"
+".t=@35 v200"
+".r=@41 y8 v180"
+".crash=@36 v150"
+
+
+;remote commands
+(!100)[$f4$09]
+(!101)[$fa$01$b9]
+(!102)[$fa$01$b3]
+(!103)[$f4 $01 $f4 $01]
+
+
+;reference stuff for myself
+;th > o4c+ y12
+;tm > o3a+ y10
+;tl > o3g y8
+;cm > o4c y8
+;ch > o4c+ y12
+
+
+
+
+#0 w255 t61
+
+$f4$02
+
+$ef$fe$29$29
+$f1$03$60$01
+
+.bass .release y10 v190 o5
+
+r4 c1^1^1^1^4
+c2c+2d+4c+4r2
+c2c+2d+4c+4c8.g8.b+8
+c1.
+(7)[c8c8c8c8c+8c+8c+8c+8c8c8c8c8c+8.d+8.c+8]4 c+8.d+8.c+8 r2 
+/$ef$ae$29$29
+(14)[c8]16 < (15)[f8]16 > (16)[d8]8 < (17)[g8]8 (14)12 o4a+8.a+8.a+8
+(18)[g+8]8 (17)8 (19)[f8f8f8f8a+8a+8a+8a+8g8g8g8g8b+8b+8b+8b+8
+>f4f4d+4d+4d4d4<g8.>g8.<g8] (18)8 (31)[a+8]4 a+4r4
+(39)[o5c8c8c8c8c+8c+8c+8c+8c8c8c8c8c+8.d+8.c+8]2
+(14)16 (15)16 (16)8 (17)8 (14)8 
+(40)[o5c8.g8.b+8b+8.g8.c8]
+(18)8 (17)8 (19) (14)4 (38)[c+8]4 (14)4 c4<g4
+[[ (18)8 (31)8 > [c8.c+8.d+8]3 c4r4]]2
+(15)4 (31)4 (52)[d+8]4 (14)4 (16)4 (17)4 (38)4 (14)4
+(53)[f4f4e4e4d4d4d2 [[g8.g8.g8]]2 g8.g8.g2^8]
+(14)16 (15)16 (16)8 (17)8 (14)12 o4a+8.a+8.a+8
+(18)8 (17)8 (19) (18)8 (31)4 a+4r4 (39)2
+(14)16 (15)16 (16)8 (17)8 (14)8 (40)
+(18)8 (17)8 (19) (14)4 (38)4 (14)4 o5c4<g4
+[[ (18)8 (31)8 > [c8.c+8.d+8]3 c4r4]]2
+(15)4 (31)4 (52)4 (14)4 (16)4 (17)4 (38)4 (14)4 (53) r2
+
+
+
+#1 .strings .releaselong y11 v150
+r4 o4 c4d4d+4f4 d4d+4f4g4 d+4f4g4g+4 f4g4b4
+v130 [[ (6)[.slur <a+16>c16d16d+16f16g16g+16a+16] b+1 .slur ^2]]2
+r1. [[(6) b+1 .slur ^2]]4 r1.
+/v130
+(43)[o3d+4.d2^8d+4.d4.d+4<g+2g+8.g8.g+8>d+2
+d4c4f4.d+4d8c4c-8.c8.d8g8.f8.d8d+4.d_16d+_16f4.d+_16f_16] (44)[g4
+>c4d4d+4c2^8d+8d8c8<a+2^8>c+8c8<a+8g+4f4a+4f4g8.d8.
+>c+8c8c+8c8<a+8f8.b+8.g+8d+8.b+8.g+8f8g+8b+8f8>d2
+v150 <g+8.d+8.g+8b+8.g+8.b+8a+8.f8.a+8]
+v130 [[(6) >b+1 .slur ^2]]2 r2
+(43) (45)[v150 o3g8.g+8.a+8a+8.>c8.c+8 
+v130 c2^8d+8d8c8<a+2^8>c+8c8<a+8g+4f4a+4f4g8.d8.>c+8c8c+8c8<a+8
+f8.b+8.g+8d+8.b+8.g+8f8g+8b+8f8>d+2]
+(22)[<d+8.c8.d+8f8.c+8.f8d+8.c8.d+8] 
+v140
+(30)[o5c4d4d+4.c4d8d+4f8.d+8.f8d8.c8.<a+8>c1.
+c4d4d+4.c4d8d+4f8.d+8.f8d8.d+8.f8g1.
+<g+4a+4b+2a+8.f8.g+8g2
+e8.f8.g8g+8.a+8.>c8c-8.c8.d8<g2
+a+8g+8g8 [[f8g8.g+8.]]3 a+8b+8a+8g+8a+8] g1. r4
+
+.leadgt4 .release v130 y10
+o4g8 b+8 $dd$0c$0c g $ec$00$08$0c b+4 $dd$18$18 c .penvoff
+g8>d+8 $dd$0c$0c <g> $ec$00$08$0c d+4 $dd$18$18 <d+ .penvoff
+g8>f8 $dd$0c$0c <g> $ec$00$08$0c $de$30$0d$80 f2 .penvoff
+f8. f8. $dd$18$03 d+ ;f8d+16 
+g8 $de$18$0d$e0$ea$40 q5f d+2. q7f
+c8 d+16g16a+16g+16g16f16g+16g16f16d+16g16f16d+16d16f16d+16d16c16
+d4 $dd$18$18 <d> $ec$00$08$03 f4 .penvoff
+d+16c16d16d+16c16d16c16<a+16a16g+16f16e16d+16d16 .leadgt2 c-16 .leadgt4 d16
+$ec$00$08$05 g8. .penvoff f8.d+8f8g8f16g16f16d+16 .leadgt2 v140 c16 v150 <a+16g16f+16f16d+16f16g16
+$ec$00$08$03 a+4 .penvoff >c8d+8 
+.leadgt4 v130 $ec$00$08$04 g8. .penvoff a+8.>d+8c2 $dd$54$0c <c
+$ec$00$08$04 g8. .penvoff a+8.>d+8 $ec$00$08$04 g2 $dd$48$18 <g> .penvoff
+c12d+12g12a+12a12g+12g12f12e12g12f12e12d+12c+12d12f12d+12d12c12<a+12g12f+12f12d12
+e8 $de$10$0e$e0$ea$00 b+4. $ec$00$30$04 $de$18$0d$e0$ea$40 b+4. .penvoff b+8
+a+12g+12g12f+12f12d+12f12f+12f12d+16 .leadgt2 c16 .leadgt4 f16d+16
+< .leadgt2 v140 b+12 v150 a+12b+12g12a+12g12 q5f d+1 q7f
+v130 > .leadgt4 d+8r16g8r16d+16<a+16>a+8g+8> q7d d+8r8 q7f
+$ec$00$08$04 d2. .penvoff d+8 $de$30$0c$e0$ea$d0 c1^1^4.^8 $dd$00$18 <c> r2
+
+.square v120 $de$10$0d$40$ea$00
+.slur o4g32a+32>d32d+32 
+$ec$00$08$02 f8 .slur ^16 .penvoff d+16f8 $ec$00$08$02 g4 >d8. .penvoff c16<a+16>c16 $ec$00$08$02 <a+8 .penvoff 
+g16g+16g16f+16f16d+16d16f16d+16d16c16<a+16g16b+16a+16g16f16e16d+16c16f16c16d16d+16f16g16d+16c16f16c16
+d16d+16d16c16<a+16g16a+16>c16 $ec$00$08$02 g8. $de$00$0e$80 .penvoff f4^16 $dd$00$0c <f>r8 
+$de$18$0d$60 g+16g16f16g16g+16a+16b+16f16>d+16<f16>d16<f16b+16f16b8g24b24>d24
+$ec$00$08$02 g4. .penvoff f8d+8d8
+$ec$00$08$02 f8 .penvoff d+16d16r16c16r16 $ec$00$08$02 d+8 .penvoff d16c16 $de$00$0e$80 <g4r16
+$de$10$0d$40 >$ec$00$08$02 c8. .penvoff d8.e8 $ec$00$08$02 e8. .penvoff f8.g8
+[[$ec$00$08$02 g8 .penvoff a+16 $ec$00$08$02 g8> .penvoff c16]]4 $ec$00$08$02 <g8. .penvoff $de$00$0e$80 f8.
+$de$10$0d$40 d+16f16g16g+16g16f16f+16f16d+16d16f16d16d+16d16c16<a+16a16b16>d8<g8>f8d8
+<e16g16a+16>c+16c16<g16a+16g16g+16g16f16g16
+g+24a+24>c24d24d+24c24d24d+24f24g24g+24a+24g+24g24f24g24g+24a+24f24g24g+24a+24>c24d24d+24f24c24d24d+24f24
+$de$00$0e$80 g4 $de$10$0d$40 <g4> $ec$00$08$02 $de$20$0e$60 d2.. .penvoff
+d+16d16c16<a+16>c16<a+16g16f+16f16d+16
+.norelease .slur c4.^32<a+64g+64g64f64d+64d=2 .slur ^=1
+.strings .novibrato .release y11 v120
+(47)[o3g4.d+4.g4a+2f4d4>] (34)[ [[c8.c+8.d+8]]3 c2] (48)[<g4.d+4.g4a+2f4g+4] (34) 
+(49)[>d+8.d8.c8d4<a+8>c8d8.c8.<a+8g8.g+8.a+8>c4f4d4c-4
+c+8c8<a+8g+8g4f8e8f4b+4e4b+4d4b+4d4b+4
+v160 g8. q5f a8. q7f b8b8.>q5f c8. q7f d8d8. q5f d+8. q7f f8] r1
+
+
+
+#2 .strings y11 v140
+r4 o3d+4f4g4g+4 f4g4g+4a+4 g4g+4a+4b+4 g+4a+4>d4
+.crash y8
+o4c2c2c2c4c2.
+c2c2c4c4c2c1.
+.strings y11 v130 .release
+[[o3d+8.c8.d+8f8.c+8.f8d+8.c8.d+8f8.g8.f8]]4 f8.g8.f8 r2
+/
+.crash .norelease y8 o4c1^1r2
+(23)[.strings .release y11 v130
+o3g+8.g8.g+8>d+2]
+(200)[r2]8
+.crash .norelease
+(12)[y8 c8. y12 c+8. y8 c8c1.] ^1^1^8
+c4. y12 (27)[c+4]6 (26)[y8 c8. y12 c+8. y8 c8] c1^4 c2.c1. (26) c1
+(26) c2c1^1.
+o3 .release (23) (200)6
+r8 .crash .norelease y8 o4c4.
+.strings .release y11 v150 e8.f8.g8g8.g+8.a+8 
+.crash .norelease y8 c1. (200)5 y12 (27)6 (26) c1. c2
+.strings .release y11 v120 <
+(47) (34) (48) (34)
+(49) r2
+v130 (43) (44) v130 [[(6) >b+1 .slur ^2]]2 r2
+(43) (45) (22) .norelease
+(30) g1.
+
+r8 .square y4 v90 $dc $a0 $10 .stoff	;copium rock organ cuz no aram
+o1c32e32g32b32>d32f32a32>c32e32g32b32>d32f32a32>c32e32g32b32.f64d64<b64g64e64c64<a64f64d64<b64g64e64c64<a64f64 .ston d24^64.
+
+
+
+#3 .strings .release y10 v130
+r4 o3 q6f c1^1^1^1^4 q7f
+
+.releaselong v150
+[b+8.g8.b+8>c+8.<g+8.>c+8] d+4c+4r2
+* d+4c+4 .release q6f c1^1 q7f
+(200)8
+.leadgt4 y8 v90 $de$18$0e$40 .slur
+o5 $ec$00$18$18 $e8$18$64 g1 $ec$00$06$02 g1g2g2g4 .slur ^4 .penvoff
+.leadgt2 v130 < c+8.d+8.c+8c+8.d+8.c+8 .leadgt4 > $de$18$0e$80 y5 $dc$40$0f c+4 $fa$01$b6 ^4
+/
+.saw y10 v130 .releaselong
+(13)[o5 g4.f4g8a+4g8.f8.d+8d4c4<a+8.g8.g+8>q5f d+1 q7f
+d8d+8f8g8g+4.g4f8d+4d8.d+8.f8 .slur g+32a+8 .slur ^32g+8.a+8] q4f g1. q7f
+g8.f8.d+8d4.d+8c4.r8c4.d8<a+4..r16g+8.a+8.>c8d8.d+8.f8 q5f <a+4...> q7f
+.slur g64g+64a+16 .slur ^16 q7f g+8g8f8g8.g+8. q2f f8 q7f f8.g8. d+8d8.d+8.f8g8.a+8.g8 
+[q7f .slur a+32 q4f b+1 .slur ^4...] r2 q7f
+.strings .novibrato y11 
+[[o3 (22) f8.g8.f8]]2
+.saw y10
+(13) q5f o5g1 q7f e8.f8.g8
+g8.g+8.a+8 q6f b+2 q7f g+8.a+8.b+8a+8.b+8.a+8g4..r16
+f8.g8.g+8a+8.f8.g+8 .slur f32 q4f g4 .slur ^8.. q7f a+8g+8g8f8
+g8.g+8. q2f f8 q7f f8.g8.d+8d8.d+8.f8g8.a+8.>d8< 
+*
+.strings .novibrato y10 v120
+.transposef4
+(30)
+.transpose00
+(50)[v160 q7f <<d8. q5f d+8. q7f f8g8. q5f a8. q7f b8b8.> q5f c8. q7f d8] r2
+.crash .norelease y8 (46)[o4 c1^1. 
+.strings .release y11 v130 o3 g+8.g8.g+8>d+2 r2] (200)7 
+.crash .norelease y8 o4 (26) c1^1^1.^8 c4. [[c4]]6 (26) c1^4c2. c1. (26) c1 (26) c2
+(46) (200)5 r8 .crash .norelease y8 o4 c4.
+.strings y11 v150 o4e8.f8.g8g8.g+8.a+8
+.crash y8 o4 c1^1^1^1 y12 (27)6 (26) c1.
+
+;.strings .release y10 v130
+;.transposef4
+;(30) 
+;.transpose00
+;(50) ;r1
+
+.leadgt4 v120 y10 $de$18$0e$40 .release
+o5q7d c4 q7e d4 q7f d+4.c4d8d+4 d+16 $dd$06$06 f ^4 $dd$18$06 d+ ^16 f8d8.c8.<a+8> q5f c1^2 $dd$30$30 <c>
+.saw v140
+q7f o5c4d4 $de$06$0e$b0 d+4. $de$18$0e$b0$ea$60 c4d8d4 $dd$00$0c d+ e8. $dd$00$0c f d+8.f8d8.d+8.f8 q5f f+2 $dd$00$0c g ^1
+.leadgt4 v115 $de$18$0e$40 q7f
+o5g4 $dd $00 $0c g+ a+4 $de$0c$0e$80 b2 $dd $00 $0c b+ $de$18$0e$40 a+8.f8.g+8 $de$00$0e$80 g4.r8
+$de$18$0e$40 e8.f8.g8g+8. a8. $dd$00$0c a+ b8 $dd$00$0c b+ b8. b8. $dd$00$0c b+ >d8
+$de$18$0e$80 <g4..r16 
+$de$18$0e$40 a8 $dd$00$0c a+ g+8g8 [[f8g8.g+8.]]3 a+8 b+4 $dd$18$06 a+ g+8a+8
+$de$20$0c$80 .slur f+=30 $dd$00$0c g f+16. $dd$00$0c g .slur ^1 $fa$01$b0 ^4
+
+r8^48 .norelease .square y4 v90 $dc $a0 $10 .novibrato .stoff
+o1d32f32a32>c32e32g32b32>d32f32a32>c32e32g32b32>d32f32a32>c48^64<e64c64<a64f64d64<b64g64e64c64<a64f64d64<b64g64e64 .ston r24^96
+
+
+#4 .echo .t
+o4 y12 c+24c+24 < y10 a+24a+24 y8 g24g24
+o4 .echo .crash y8 c1..
+.s .echo y10 [[d_8]]12
+[[o4 .s y10 d_16 .t y12 c+_16 < y10 a_16 y8 g_16]]2 
+o4 .k y10 c8 .t y12 c+_16c+_16 < y10 a_16a_8 y8 g_16
+[ [[o4 .s y10 d8. < .t a8. y8 g8]]2 [[o4 .t y12 c+_16 < y10 a_16 y8 g_8]]2 ]
+o4 .k y10 c8 .s d8 < .t a_16a_8 y8 g_16
+* o4 .s y10 d8. .t y12 c+8. < y10 a2^8
+o4 .s [[d_16]]16
+[[ (9)[.k c_16c_16 .ks c_8]6 (10)[.s d_8 .k c_16 .s d_8 .k c_16 .s d_8] ]]4 *
+.s d_8 .k [[c_24]]3 .s d4
+/
+(9)30 (10) (9)16
+(24)[.s d8. .k c_16]6 (25)[.s d_8 .k c_16 .s d_8 .k c_32c_32 .s d_8]
+(9)6 .k c4c4 (9)6 (10) (9)4 (10) .k c4c_8 .s d_8
+(9)28 (10)2 (9)16 (24)6 (25) (9)5 (42)[.k c_16 [[.ks c_16]]3 .k c4c4]
+(9)8 (10)3 (35)[.s d8 .k c8 .s [[d_16]]4 ] (9)8 (10)3 (35)
+(9)16 (24)6 (54)[.s d8 [[d_16]]6 d8. .k c8.c8 .s d8. .k c4c_16 .s d8. .k c8.c8
+.t y12 c+_16c+_16 < y10 a_16a_16 y8 g_16g_16] o4 .s y10 d8
+(9)30 (10) (9)16 (24)6 (25) (9)6 .k c4c4 (9)6 (10) (9)4 (10) .k c4c4
+(9)28 (10)2 (9)16 (24)6 (25) (9)5 (42)
+(9)8 (10)3 (35) (9)8 (10)3 (35)
+(9)16 (24)6 (54) y6 o3d+_16d+_16 y10 (10)
+
+
+
+#5 .distguitar .release y10 v140
+r4 o4 q6f c1^1^1^1^4 q7f
+.releaselong
+c2c+2d+4c+4r2
+c2c+2d+4c+4 .release q6f c1^1 q7f
+(8)[.distguitar c8 .distmute [[c16]]6 
+ .distguitar c+8 .distmute [[c+16]]6
+ .distguitar c8 .distmute [[c16]]6
+ .distguitar c+8.d+8.c+8]4 c+8.d+8.c+8 r2
+/y10
+(1)[.distguitar o4c8 .distmute [[c16]]6 ]4
+(2)[.distguitar o3f8 .distmute [[f16]]6 ]4
+(3)[.distguitar o4d8 .distmute [[d16]]6 ]2
+(4)[.distguitar o3g8 .distmute [[g16]]6 ]2 (1)3 
+.distguitar q5f a+8.a+8.a+8 q7f
+(20)[.distguitar o3g+8 .distmute [[g+16]]6 ]2 (4)2 (2)
+(5)[.distguitar o3a+8 .distmute [[a+16]]6 ] (4) (1)
+(21)[.distguitar q5f >f4f4d+4d+4d4d4<g8.g8.g8] q7f (4)2 (5) .distguitar a+4r4
+(8)2 (1)4 (2)4 (3)2 (4)2 (1)2
+(41)[.distguitar q5f >[[c8.c8.c8]]2 ] q7f (20)2 (4)2 (2) (5) (4) (1) (21) 
+(1) (33)[q7f .distguitar o4c+8 .distmute [[c+16]]6 ] (1) q7f .distguitar c4r4
+(20)2 (5)2 (32)[.distguitar q5f [[c8.c+8.d+8]]3 c2] (20)2 (5)2 (32)
+(2) (5) (37)[q7f .distguitar o4d+8 .distmute [[d+16]]6 ] (1) (3) (4) (33) (1)
+(51)[.distguitar q5f f4f4e4e4d4d4d2 < [[g8.g8.g8]]2 g8.g8. y5 q7c $dc$78$0f >g=120 $dd$00$78 <g q7f]
+y10
+(1)4 (2)4 (3)2 (4)2 (1)3 .distguitar q5f a+8.a+8.a+8 q7f 
+(20)2 (4)2 (2) (5) (4) (1) (21) q7f (20)2 (5) .distguitar a+4r4
+(1) (33) (1) .distguitar o4c+8.d+8.c+8 (1) (33) (1) .distguitar o4c+8.d+8.c+8
+(1)4 (2)4 (3)2 (4)2 (1)2 (41) q7f (20)2 (4)2 (2) (5) (4) (1) (21)
+(1) (33) (1) .distguitar q7f c4r4
+(20)2 (5)2 (32) (20)2 (5)2 (32)
+(2) (5) (37) (1) (3) (4) (33) (1) (51) r2
+
+
+#6 .strings .release y9 v130
+r4 o2 q6f g1^1^1^1^4 q7f
+(200)7 r4.
+.crash y12 o4c+1.^8
+.echo
+[[ (11)[o4 .c a+_16a+_16 .o a+8]6 r2]]4 r1
+/
+(11)30 r2 (11)16
+.t (28)[y12 c+_16 < y10 a+_16 y8 g_8]6 (200)4
+(29)[.s y10 o4 d_8 .t y12 c+_24 < y10 a+_24 y8 g4^24]
+(11)6 r2 (11)4 r2 (29)
+(11)28 .crash .echo (26)2 .echo (11)16 .t (28)6 r2 (11)6 .t (29) .echo
+[[.r .echo (36)[o4d8]15 .crash .echo [y8 c8c8. y12 c+8.]3 y8 c8c2]]2
+.r .echo (36)32 .t (28)6 r2 .crash .echo (26)2 c8. y12 c+2^16
+.k .echo y10 c4 
+(11)30 r2 (11)16 .t (28)6 r2
+(11)6 (29) (11)6 
+r2 (11)4 r2
+.s y10 o4 d_8 .t y12 c+_24 < y10 a+_24 y8 g_24> y10 .s d4
+(11)28 .crash .echo (26)2 .echo (11)16 .t (28)6 r2 (11)6 (29) .echo
+[[.r .echo (36)15 .crash .echo [y8 c8c8. y12 c+8.]3 y8 c8c2]]2
+.r .echo (36)32 .t (28)6 r2 .crash .echo (26)2 c8. y12 c+2.^16 (26)
+
+
+
+#7 .echo
+(200)4 .t y10 [[o3g_8]]12 (200)5 r8
+> y12 c+8 (200)10 r4
+.crash .echo
+(12)3 
+y8 c8. y12 c+8. y8 c8c8. y12 c+8. y8 c2^8
+/
+(200)27 .release
+(55)[.leadgt4 v110 o5 $de$18$0e$80 y5 $dc$40$0f d4 $fa$01$b3 ^4]
+(200)39 (55) (200)4 
+o4 .crash .novibrato y8 c1... .r d8 (200)3
+(56)[.leadgt4 v110 o5 $de$18$0e$80 y5 $dc$40$0f c4 $fa$01$b3 ^4
+o4 .crash .novibrato y8 c1^1^1.
+.leadgt4 v100 o5 $de$20$0d$f2 y5 $dc$40$0f >e4 $fa$01$b3 ^4<
+o4 .crash .novibrato y8 c1^1^1... c8 y12 [[c+4]]6 c+1...] y8 c2^8
+(200)67
+(55) (200)3
+o4 .crash .novibrato y8 c2 c1^1^1.
+(56) y8 c1^8
