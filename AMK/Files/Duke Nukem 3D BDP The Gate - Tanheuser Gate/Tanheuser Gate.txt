@@ -1,0 +1,316 @@
+;Insert size: 0x0e3c (3644) bytes
+;Length: 3:18
+
+#path "Tanheuser Gate"
+
+#amk 2
+
+#spc
+{
+	#title   "Tanheuser Gate"
+	#game    "Duke Nuken 3D: The Gate"
+	#author  "Jenna Ramsey, Simon Castles"
+	#comment "E3L6"
+}
+
+
+#samples
+{
+#optimized
+"@1 c d.brr"
+"@1 c d+.brr"
+"@1 c e.brr"
+"@1 c f a+.brr"
+"@1 c f.brr"
+"@1 c g+ c+.brr"
+"@1 c g+.brr"
+"@1 octave.brr"
+"@1 power chord.brr"
+"@4 c f.brr"
+"@4 power chord.brr"
+"@5 octave.brr"
+"@6 c a.brr"
+"@6 c d+.brr"
+"@6 c e.brr"
+"@6 c f.brr"
+"@6 octave.brr"
+"@6 power chord.brr"
+"@6 power chord (full).brr"
+"@13 c e.brr"
+"@13 c f.brr"
+"@13 power chord.brr"
+}
+
+
+#instruments
+{
+@5 $df $0d $b8 $07 $00								;Pizzicato Strings
+"@1 c g+ c+.brr" $fa $e0 $b8 $03 $00				;Strings c g+ >c+ Chord
+"@1 c f a+.brr" $fa $e0 $b8 $03 $00					;Strings c f a+ Chord
+@10 $00 $00 $7f $05 $00								;March Snare
+@0 $fe $72 $b8 $03 $00								;Orchestral Harp
+"@1 octave.brr" $f7 $e0 $b8 $03 $00					;Slow Strings Octave Chord
+@4 $f9 $e0 $b8 $03 $00								;Contrabass
+@29 $ff $f1 $b8 $05 $80								;Timpani
+"@1 c e.brr" $fa $e0 $b8 $03 $00					;Strings c e Chord
+"@1 c d+.brr" $fa $e0 $b8 $03 $00					;Strings c d+ Chord
+"@1 c f.brr" $fa $e0 $b8 $03 $00					;Strings c f Chord
+"@1 c g+.brr" $fa $e0 $b8 $03 $00					;Strings c g+ Chord
+"@1 power chord.brr" $fa $c0 $b8 $03 $00			;Strings Power Chord
+"@6 c d+.brr" $fb $e0 $b8 $03 $00					;Cello c d+ Chord
+"@6 c e.brr" $fb $e0 $b8 $03 $00					;Cello c e Chord
+"@6 c a.brr" $fb $e0 $b8 $03 $00					;Cello c a Chord
+"@6 power chord.brr" $fb $e0 $b8 $03 $00			;Cello Power Chord
+"@6 octave.brr" $fb $e0 $b8 $03 $00					;Cello Octave Chord
+"@6 power chord (full).brr" $fb $e0 $b8 $03 $00		;Cello Power Chord (Full)
+@1 $f7 $e0 $b8 $03 $00								;Slow Strings
+"@1 c f.brr" $f7 $e0 $b8 $03 $00					;Slow Strings c f Chord
+"@1 c d+.brr" $f7 $e0 $b8 $03 $00					;Slow Strings c d+ Chord
+"@1 c d.brr" $f7 $e0 $b8 $03 $00					;Slow Strings c d Chord
+"@1 power chord.brr" $f7 $c0 $b8 $03 $00			;Slow Strings Power Chord
+"@1 c g+.brr" $f7 $e0 $b8 $03 $00					;Slow Strings c g+ Chord
+"@1 c e.brr" $f7 $e0 $b8 $03 $00					;Slow Strings c e Chord
+"@6 c f.brr" $fc $e0 $b8 $03 $00					;French Horn c f Chord
+"@4 power chord.brr" $fb $e0 $b8 $03 $00			;Trombone Power Chord
+"@4 c f.brr" $fb $e0 $b8 $03 $00					;Trombone c f Chord
+"@6 power chord.brr" $fc $e0 $b8 $03 $00			;Trumpet Power Chord
+"@6 c f.brr" $fc $e0 $b8 $03 $00					;Trumpet c f Chord
+"@6 c e.brr" $fc $e0 $b8 $03 $00					;Trumpet c e Chord
+"@5 octave.brr" $df $0d $b8 $07 $00					;Pizzicato Octave Strings
+"@13 c f.brr" $fa $e0 $b8 $07 $5a					;Ahh Choir c f Chord
+"@13 c e.brr" $fa $e0 $b8 $03 $00					;Ahh Choir c e Chord
+"@13 power chord.brr" $fa $c0 $b8 $03 $00			;Ahh Choir Power Chord
+}
+
+
+"Piz=@30"
+"SSp1=@31"
+"SSp2=@32"
+"Har=@34"
+"SStr=@49"
+"SStrO=@35"
+"SStr2=@50"
+"SStr3=@51"
+"SStr4=@52"
+"SStr5=@53"
+"SStr6=@54"
+"SStr7=@55"
+"CoBa=@36"
+"Tim=@37"
+"Str1=@38"
+"Str2=@39"
+"Str3=@40"
+"Str4=@41"
+"Str5=@42"
+"Cel1=@43"
+"Cel2=@44"
+"Cel3=@45"
+"Cel4=@46"
+"Cel5=@47"
+"Cel6=@48"
+"Hor=@56"
+"Tro1=@57"
+"Tro2=@58"
+"Tru1=@59"
+"Tru2=@60"
+"Tru3=@61"
+"PizO=@62"
+"Ahh1=@63"
+"Ahh2=@64"
+"Ahh3=@65"
+
+"Sn=@33"
+
+
+"%eT=$f4 $03"
+"%h=$fa $02 $"
+"%stoff=$f4 $01 (!102, -1)"
+"%ston=$f4 $01 (!102, 0)"
+
+
+(!100)[$f4 $09]
+(!101)[$fa $01 $b8]
+(!102)[$f4 $01 $f4 $01]
+
+
+
+#0 $f4 $02 / w200 t32
+
+$ef $ff $15 $15
+$f1 $06 $60 $01
+
+Piz v170
+(1)[y9 o4a+8 Piz v170 y11 f8 y8 f+8 y12 d+8]44 y9 a+1
+y11 v160 $de $18 $0f $1a (!100, -1) (!101, 3)
+SStr2 q7d o4a+2 SStr3 q2d >c+8 SStr4 q2e <f8 SStr5 q2f a+8 SStr4 q7f f8
+SStr5 q7e a+4. SStr q3b a8 q7e a2 
+SStr2 a+1 SStr5 q7f a+4. SStr6 q3f a8 SStr q7d a4 q7f a+4 
+q7e a+2 SStr2 f4 q7f f4 
+SStr7 q7e a+4. SStr3 q7d a8 SStr7 q7c a+4 q7f b+4
+SStr3 >c+2.. q7c c8 q7d c+1
+y11 v180
+[[o3 q7f [Tro2 f+2 Tro1 f16r4^16f32r16.]2 Tro2 f+2f+2f+4 Tro1 q7e f2^16r16 q7f f16r16]]2 r1
+Str5 v180 y10
+[o4 q1f a+8 q1e a+24 q1d a+24 q1e a+24 q1f a+8a+8 q1e a+24 q1d a+24 q1c a+24 q1f a+8a+8a+8]8
+PizO v255
+(1)34 $e8 $60 $64 [y9 o4a+8 y11 f8 y8 f+8 y12 d+8] $e8 $60 $30 *		;Optimization tricks side effects lmao
+
+
+
+#1 r2. v180 y10 (!100, -1) (!101, 3) $df
+(10)[SSp1 o5 q74 e16r8. 									;... not optimal at all, but long volume fades are wonky
+SSp2 q35 d+16r8. q36 d+16r8. q37 d+16r8. SSp1 q78 e16r8. 
+SSp2 q39 d+16r8. q3a d+16r8. q3b d+16r8. SSp1 q7c e16r8. 
+SSp2 q3d d+16r8. q3e d+16r8. q3f d+16r8. SSp1 q7f e16r8.]
+(11)[SSp2 q3f d+16r8. q3f d+16r8. q3f d+16r8. SSp1 q7f e16r8.]11
+v180 $de $18 $0f $1a
+[o4 Str1 f2. Str2 f+4 Str3 f1 Str1 f1. Str2 d+2 Str1 f2. Str2 d+4f+1 Str1 f2 Str4 f2 Str5 f1]2
+(1000)[r2]7 r4.
+v155 Tru1 $de $18 $14 $1a o5b+32r16.
+[[Tru2 a+2a+16r4^16 Tru1 b+32r16.]]2 Tru2 a+2 Tru3 a+2a+4 Tru2 q7d >f2.r2.
+y11 $de $18 $0f $1a
+v170 [o4 Str5 q2f a+16. Str3 q1d f16.d+16] q1c v140 f8r2^8
+* f8r2^8 *
+q7f SStr2 v160 f2f+2g+2 SStr5 a+2 SStr >c2c+2 SStr2 d+1 SStrO q7c f1^1
+r2. v180 y10 (10) (11)11 (1000)6
+
+
+
+#2 %stoff / (1000)4 y10 v200
+[[ (25)[o4 Sn q7e c8 q7c c24 q7d c24 q7c c24 q7e c8 q7c c8 q7d c24 q7c c24c24 q7e c8c12 q7d c12 q7c c12]
+(20)[q7f c8 q7c c24c24 q7d c24 q7f c8 q7e c8c24 q7c c24 q7d c24 q7f c8 q7d c24 q7c c24c24 q7f c8] ]]2
+(26)[q7e c8 q7c c24c24 q7d c24 q7f c8 q7c c8 q7d c12 q7c c12 q7b c12 q7a c12 q7d c12 q7b c12]
+(21)[q7f c8 q7c c24c24 q7b c24 q7e c8c8 
+q7d c24 q7c c24 q7b c24 q7e c24 q7b c24 q7a c24 q7e c24 q7a c24 q7d c24 q7c c24 q7b c24 q7c c24]
+(20)
+(27)[q7e c24 q7c c24 q7a c24 q7e c8c8 q7d c8 q7e c24 q7c c24c24 q7f c8 q7d c24 q7b c24 q7c c24 q7e c8]2
+(28)[q7d c8 q7c c24c24c24 q7e c8c8 q7d c12 q7a c12 q7d c12 q7e c8 q7c c24 q7b c24 q7e c24]
+q7f c8 q7c c24c24 q7d c24 q7f c8 q7c c8 q7d c12 q7c c12 q7b c12 q7a c12 q7d c8 q7c c24
+(21)
+(22)[q7f c8 q7e c24 q7a c24 q7d c24 q7e c8 q7f c8c8 q7d c24 q7c c24 q7d c24 q7e c24 q7c c24 q7a c24 q7d c24 q7c c24c24
+q7f c8 q7c c24 q7b c24 q7c c24 q7f c8 q7c c8 q7d c24 q7b c24 q7c c24 q7d c8c24 q7b c24 q7c c24c24 q7d c24c24]
+[[q7f c8 q7d c24 q7a c24 q7d c24]]2 [[q7f c8 q7d c24 q7c c24 q7d c24]]2 
+[[ q7f c8 q7c c24c24 q7b c24 q7f c8 q7d c24 q7c c24c24
+q7e c24 q7c c24c24 q7e c24 q7b c24 q7d c24 q7f c24 q7c c24 q7d c24 q7e c24 q7f c24 q7d c24
+q7f c8 q7c c24 q7a c24 q7c c24 q7f c8 q7c c24c24c24 q7f c8 q7c c8 q7e c24 q7b c24 q7c c24 q7f c8
+q7e c8 q7d c24c24c24 q7f c8 q7d c8 q7e c8 q7d c24 q7c c24c24 q7f c8 q7d c24c24c24
+(20)2
+q7e c24 q7d c24c24 q7e c8 q7f c24 q7b c24 q7d c24 q7e c8 q7f c24 q7c c24 q7d c24 q7e c24 q7d c24 q7c c24 q7e c8c24 q7c c24 q7d c24]]2
+(22)
+(24)[ [[q7f c8 q7d c24 q7b c24 q7c c24]]3 c12 q7d c24 q7c c24 q7d c24 q7c c24] (22)
+(24) (22)
+(24) (22)
+(24) (22) 
+(24) (22)
+(24) q7f c8
+Tim v180 o2g24g24g24 [[o2a8g24g24g24]]2 a8c-24d24c24
+Sn v200 o4
+[[ (25) (20) ]]3 (26) (21) (20) (27)2 (28)
+q7f c24 q7a c24 q7b c24 q7c c24 q7f c24 q7c c24 q7e c8 q7c c8c12c12 q7b c12c12 q7c c8 q7b c24
+q7f c12 q7d c12c24c24 q7e c8c8 q7d c24c24 q7c c24 q7e c24 q7c c24c24 q7e c24 q7c c24 q7d c24c24 q7c c24 q7d c24
+(22) (24) c1
+
+
+
+#3 (1000)8
+(30)[Har y9 v170
+o2f16>c16a+16>d+16a+16>d+16d+16<a+16d+16<a+16a+16>d+16a+16>c16f16b16f16c16<f16c16<f16a+16>f16a+16>f16a+16>c16d+16f4]
+SStrO y11 v160 $de $18 $0f $1a
+(32)[o3a+2..f8f+2..c8c+2^8d+8f4] <a1 (32) a2a+1.
+[o4 Cel1 v140 q7f c+8 q7d c+8 q7c c+8c+8 q7b c+8 q7a c+8 Cel2 q7f <a+8 q7d a+8 
+q7f a8 q7d a8 q7c a8 q7f a8 q7d a8 q7c a8 q7f a8 q7d a8
+q7f a+8 q7d a+8 q7f a+8a+8 Cel1 q7c f+8 q7d f+8 q7f f+8 q7d f+8
+Cel3 q7f a+8 q7d a+8 q7c a8a8 q7b a8 q7d a8a8 q7f a8
+Cel1 q7f >c+8 q7c c+8c+8 q7d c+8 q7c c+8 q7f c+8 Cel2 q7f <a8 q7d a8
+q7f a+8 q7d a+8a+8 q7c a+8a+8 q7f a+8 q7d a+8a+8
+Cel4 q7c a+8 Cel3 q7f a+8a+8 q7d a+8a+8 Cel5 q7c a8a8 q7b a8
+Cel6 q7c a+8 q7d a+8 q7f a+8a+8a+8 q7c a+8 q7d a+8 q7f a+8]2
+Tim y10 v180 $df %stoff q7f
+o1g2^8a24a24a24g2..a24g24g24g1^4b+8g2>a24g24a24g12g12g12
+<g2^8b+24a24g24g2^8.>a32g32f8c16<g32a32g1^4a8b8g4.>a24g24g24a8a24g24a24 r1 %ston
+CoBa y9 v160 $de $18 $0f $1a
+o2 q7c c4 q7d c4 q7e c+4 q7f c+4d+4 q7e d+4 q7d d+4 q7c d+4
+q7f y10 v220 (!100, -1) (!101, 3)
+[o5 Ahh1 <a+8.a8. Ahh2 a+8.a8. Ahh3 g+4 Ahh1] c2..r8
+* c1^1^1r2
+(1000)11
+SStrO y11 v160 q7f
+(32) o2a1 (32) a2a+1.r2
+(1000)5
+
+
+
+#4 (1000)8 r32
+(31)[Har y9 v170
+o2a+16>f16>c16f16>c16f16c16<f16c16<f16>c16f16f16>d+16a+16a+16d+16<a+16d+16<a+16>c16a+16>c16d+16d+16f16a+16>c16r8..]
+CoBa y9 v160 $de $18 $0f $1a
+(40)[o2 a+2..f8f+2..c8c+2^d+8f4] <a1 (40) 
+(30)
+(1000)8 r4
+SStr y11 v180 (!100, -1) (!101, 3)
+o1 q78 a+8>a+8> q77 d+8 q7e <a+8> q7c f8 q7d d+8a+8 q7c f8> q7d d+8 q7f <a+8 q7d >f+8 q7b d+8 q7f a+8 q7e f8 
+q7c b+8 q7d a+8> q7e d+8c8f8d+8 q7f a+8 q7e f8 SStrO q7a a+2.r4
+(1000)10 r4.
+Hor y9 v165
+o3 q1c a+24a+24a+24 q1d a+8 q1f a+24 q1e a+24 q1d a+24 q1e a+8 q1f a+8
+a+8 q1e a+24 q1d a+24 q1c a+24 q1e a+8 q1f a+24 q1d a+24 q1c a+24 q1f a+8a+24 q1d a+24 q1c a+24 q1d a+8 q1f a+24 q1d a+24 q1c a+24
+q1d a+8r24 q7f a+48r16 q1f a+8 q1e a+24 q1d a+24 q1c a+24 q1e a+8a+24 q1d a+24 q1c a+24 q1e a+8 q1f a+24 q1d a+24 q1c a+24
+v155 [q1f a+8a+8 [[q1f a+8 q1e a+24 q1d a+24 q1c a+24]]3 ]17 r2
+(1000)11
+CoBa y9 v160 q7f
+(40) o1a1 (40) o1a2a+1.r2
+(1000)5
+
+
+
+#5 %stoff / (1000)13 r4
+Tim y10 v180 $df 
+o1g8.g16g2g12g12g12g8.b+16b+2g12g12g12g8.b+16b+2^8.>a48g48g48a4
+(50)[<g2g12g12g12g8.b+16g4..b+16g12g12g12g8.b+16g4..b+16g12g12g12] %ston g4
+r32 (31)
+CoBa y9 v150 $de $18 $0f $1a [>a+2.f+4f2.f4f+2.d+4c+4c2.a+2.f4f+2.c4c+2<a2a+1]2
+(1000)13
+PizO y10 $df v255
+o3 q7c a+8> q7b c8 q7e d+8 q7b c8 q7d f8 q7c d+8 q7b g+8 q7a f8 q7f a+8 q7d g+8 q7e b+8 q7f a+8
+[<q7e a+8 q7b >c8 q7f d+8 q7e c+8 q7d f8 q7e d+8 q7c g+8 q7e f8]6
+< q7e a+8 q7d >c8 q7e d+8 q7b c8 q7e f8g8 q7f a+8 q7e g8
+< q7e a+8 q7d >c8 q7e d+8f8g8a+8b+8 q7f a+8
+> q7e d8 q7d c8 q7e d+8 q7c c8 q7e f8 q7d d+8 q7f g+8 q7c f8
+Tim y10 v180 %stoff
+q7f o1g8.g2^16 [[g12]]6 g2^6>d24c24d2.<g12g12g12g2> [[d12]]6 <g2^8.^48>d48c48c4<g4..>a48g24g12g12g12g8.g16
+<g2.g8.g16g2^8g8.g8g16g2...g16g2^8>d32c32c16d12c12d12<g2g12^48g12g16g12^48g12g16g4.>c24c24c24c8.d16d4
+<g2...g16g4..>a32g32g6^24d48c48c8.<a48g24g2^8.g16g12g12g12 [[g2^8.>d32c32<g12g12g12]]2 g1
+
+
+
+#6 (1000)26
+CoBa y9 v160 $de $18 $0f $1a o1a2a+1.
+Tim y10 v180 %stoff $df
+(50) o1 g8. b+32b32 g2>c12c12^48a32g32a4
+<g2g12g12g12g4g4..b+16g12b+12b+12g4g2g12g12b12b+4g4..>a32g32g8.a32g32g8a8
+<g2g12g12g12g8.b+16g4.g24g24g24g8.b+16b+4g4..b+16g12g12g12g8.b+16g2^8>a32g32g16a8.<g16
+g4..g16g12g12g12b+12b+12b+12g4.^24b+24b24b12b+12b+12g8.b+16g2g8.g16b+8.g16g4.>a32g32g16a12a12a12a12e12c12
+(1000)16
+o2 a8a24g24a24a8g24g24g24 [[a8g24g24g24a8g8]]4 a8g24g24g24a8g12c-24
+%ston CoBa y9 v160 $de $18 $0f $1a
+o2 q7d c4c4c+4c+4 q7c d+4 q7e d+4d+4 q7f d+4 q7e c4c4 q7d c+2 q7e d+4 q7f d+4 q7e f4f4
+$df (30)
+(1000)36
+
+
+
+#7 (1000)26 Tim y10 v180  %stoff
+o1g2>c8.a48g48g48a4<g4..g16g4g12b+12g12 %ston
+(1000)18 r4.
+SStr y11 v160 $de $18 $0f $1a (!100, -1) (!101, 3)
+q3b o4d+8 q7e d+2
+r1. q7d c4 q7f c4 q7e c2r2
+(1000)5 r4.
+Tro1 y11 v180 o3f32r16. $df
+(1000)22
+Tim y10 v180 %stoff
+o1g8>a24g24g24 [a8g8a8g24g24g24]3 a6^24<a24
+g8>a16g16 * a8g8a6^24g24a8g8a8d24c24c24c8<a24g24g24
+%ston
+r32 (31)
+(1000)36
