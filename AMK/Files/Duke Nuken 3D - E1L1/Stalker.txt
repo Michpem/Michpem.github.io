@@ -1,0 +1,469 @@
+;Insert size: 0x0f27 (3879)
+;Length: 2:43
+
+#path "Stalker"
+
+#amk 2
+
+#spc
+{
+	#title   "Hollywood Holocaust"
+	#game    "Duke Nukem 3D"
+	#author  "Lee Jackson"
+	#comment "Stalker.mid"
+}
+
+
+#samples
+{
+#default
+"@6+@1.brr"
+"@1 octave.brr"
+"@21+@23.brr"
+"@29+@23.brr"
+"@6 octave c-g.brr"
+"@4 octave.brr"
+"@1 octave power chord.brr"
+"@1 octave c-g.brr"
+"@4 octave c-g.brr"
+"@0+@1o-1.brr"
+"@0+@1.brr"
+"@1 c-f.brr"
+"@1 power chord.brr"
+"@1 c-d+.brr"
+}
+
+
+#instruments
+{
+"@6+@1.brr" $fe $ef $b8 $03 $82						;Synth Bass
+@1 $f9 $e0 $b8 $03 $00								;Strings
+"@1 octave.brr" $f9 $e0 $b8 $03 $00					;Octave Strings
+@22 $00 $00 $66 $04 $80								;Ride Cymbal
+@10 $ff $f4 $b8 $05 $00								;Tom
+@6 $ac $67 $b8 $03 $00								;Polysynth
+@21 $00 $00 $7f $03 $c9								;Kick
+@29 $ff $f2 $b8 $02 $86								;Hard Snare
+"@21+@23.brr" $ff $e0 $b8 $07 $a8					;Kick + Shaker
+"@29+@23.brr" $ff $e0 $b8 $07 $a8					;Snare + Shaker
+@23 $8c $e0 $b8 $05 $e3								;Shaker
+n1d $ff $f2 $b8 $00 $00								;Crash Cymbal 1
+n1e $ff $f2 $b8 $00 $00								;Crash Cymbal 2
+n1a $ff $f2 $b8 $00 $00								;Chinese Cymbal
+"@6 octave c-g.brr" $ac $67 $b8 $03 $00				;Full Power Chord Polysynth
+@22 $00 $00 $66 $05 $00								;Ride Bell
+"@4 octave.brr" $8c $67 $b8 $03 $00					;Octave Synth Brass
+"@1 octave c-g.brr" $f9 $e0 $b8 $03 $00				;Full Power Chord Strings
+"@1 octave power chord.brr" $f9 $e0 $b8 $03 $00		;Octave Power Strings
+@0 $00 $00 $7f $06 $00								;Square
+@4 $8c $67 $b8 $03 $00								;Synth Brass
+"@4 octave c-g.brr" $8c $67 $b8 $03 $00				;Full Power Synth Brass
+"@0+@1o-1.brr" $00 $00 $7f $03 $c2					;Square + Saw o-1
+@2 $ff $f9 $b8 $13 $58								;Closed Triangle
+@2 $ff $f5 $b8 $13 $58								;Open Triangle
+@29 $ff $f1 $b8 $05 $80								;Timpani
+"@4 octave c-g.brr" $fd $f2 $b8 $03 $00				;Full Power Chord Brass Section
+"@0+@1.brr" $00 $00 $7f $03 $82						;Square + Saw
+"@1 c-f.brr" $f9 $e0 $b8 $03 $00					;Major Strings
+"@1 power chord.brr" $f9 $e0 $b8 $03 $00			;Power Strings
+"@1 c-d+.brr" $f9 $e0 $b8 $03 $00					;Minor Strings
+}
+
+
+"Bas=@30"
+"Str=@31"
+"StrOct=@32"
+"Pol=@35"
+"PolFP=@44"
+"SBO=@46"
+"StrPF=@47"
+"StrPO=@48"
+"Squ=@49"
+"SyB=@50"
+"SFP=@51"
+"SqSa=@52"
+"Tim=@55"
+"Bra=@56"
+"SqSa2=@57"
+"StrMj=@58"
+"StrP=@59"
+"StrMn=@60"
+
+
+"RC=@33 y9 v160 o4"		;This originally had a y11 panning, but I inverted it to balance volumes at the beginning
+"T=@34 v190 o4"
+"Ki=@36 v220 o4"
+"Sn=@37 v200 o4"
+"KiS=@38 v170 o4"
+"SnS=@39 v200 o4"
+"Sh=@40 v140 o4"
+"Cr1=@41 y8 v85 o4"
+"Cr2=@42 y12 v85 o4"
+"CC=@43 y11 v85 o4"
+"RB=@45 y11 v150 o4"
+"CT=@53 v70"
+"OT=@54 v80"
+
+
+(!100)[$f4 $09]
+(!101)[$fa $01 $b8]
+
+
+"_16= =11 h0 ^=1"
+"_32= =5 h0 ^=1"
+"_48= =3 h0 ^=1"
+
+
+"%eT=$f4 $03"
+"%h=$fa $02 $"
+
+
+
+#0 $f4 $02 w220 t45
+
+$ef $1f $18 $18
+$f1 $06 $44 $01
+$f5 $7f $01 $01 $01 $01 $01 $01 $01
+
+r4.
+Bas v160 y12 (!100, -1) (!101, 3)
+(1)[o3 q7c f+4 q6d g4 q7d f+4 q6e g4 q7d f+4 q6f g8] q7f e4 r4.
+(1) q7f b8g8 r4.
+(1) q7f e4 r4.
+(2)[q7c f+4 q6d g4 q7d f+4 q7e g8e8 q7d f+8g8 q6f e8 q7f b8g8]
+/
+Bas v160 y12 $ef $1f $18 $18
+[[r4.  (1) q7f e4 r4.
+(1) q7f b8g8 r4.
+(1) q7f e4 r4.
+(2) ]]2
+r4. 
+
+SBO y10 v150
+ 
+(1) q7f e4 r4.
+(1) q7f b8g8 r4.
+(1) q7f e4 r4.
+(2) r4.
+(1) q7f e4 r4.
+(1) q7f b8g8 r4.
+(1) q7f e4 r8
+(3)[q7d e4f+4 q6e g4 q7e f+4 q7f g8e8 q7e f+8g8 q6f e8 q7f b8 r8]
+
+Bas v160 y12 o3 r4.
+(1) q7f e4 r4.
+(1) q7f b8g8r4.
+(1) q7f e4 r4.
+(2)
+
+v180
+(30)[o2 q7d f+8r16 q7a f+16> q7f f+8< q7e e16 q7d f+16r16 q7b f+16 q7c e16 q7a f+16 q7d >f+16< q7c f+16 q7a e16 q7d f+8
+q7b f+16 q7d e16 q7a f+16> q7d g16 q7c f+16 q7a <e16 q7d f+16r16 q7b f+16 q7c e16 q7a f+16 q7d >f+16 q7e g16 q7d e16 q7c <g16
+q7e f+16 q7d e16 > q7e e16 < q7d f+16 > q7e f+8 < q7d e16 q7f f+16r16 q7b f+16 q7c e16 q7a f+16 > q7c f+16 < q7b c+16 q7a e16
+q7c f+8
+q7b f+16 q7d e16 q7a f+16> q7d g16 q7c f+16 q7a <e16 q7d f+16r16 q7b f+16 q7c e16 q7a f+16 q7d >f+16 q7e g16 q7d e16 q7c <g16]6
+
+Tim o1 y13 v200
+f+1... f+8f+8f+8f1^4
+(71)[%eT Cr2 c4 CC c4 %eT]
+
+
+
+#1 Str y11 %h00
+
+$de $10 $12 $20
+
+(10)[o5 v50 $e8 $bf $50 f+1 $e8 $bf $78 ^1 $e8 $bf $50 ^1 $e8 $bf $32 ^1]
+StrOct
+(10)
+/
+StrOct %h00 o2 y9,0,1 v140 [[f+1^1]]8
+Str y11
+(10)
+StrOct
+(10)
+StrPF %h07
+(10)
+StrPO
+(10)
+
+StrOct %h00
+(10)
+StrPO %h07
+(10)
+
+StrOct %h00 o2 y9,0,1 v140 [[f+1^1]]2
+[[f+2]]8
+
+c+1g1b1>d1
+
+StrMj y11 o4
+
+v80 $e8 $c0 $55 f+1 $e8 $c0 $5a g1 $e8 $c0 $5f b1
+StrP $e8 $c0 $64 >d1 $e8 $c0 $69 c+1 $e8 $c0 $6e d1
+StrMn $e8 $c0 $73 d1 
+StrMj $e8 $c0 $78 g1<f+1g1b1
+StrP >d1< StrOct f+1 $e8 $c0 $50 ^1 $e8 $c0 $3c ^1 $e8 $c0 $28 ^1
+
+
+
+#2 r4
+RC [o4 q7c c2]11 c8. q7b c_48 q7c c_48 q7d c_48 
+q7e c4 q7b c4 q7c c4 q7d c4 q7e c4 q7f c_16
+
+(20)[T y8 q7f c_16c_16 y9 <a_16 y11 c8. y9 a8. y10 f_16 y11 c16]
+/
+%eT
+Cr1 c1 (1000)[r2]12 r4^16
+%eT
+(20)
+
+r4.
+Pol y10 v160 (!100, -1) (!101, 3) $de $10 $0a $15
+
+(21)[o4 q7c c+4 q6d c-4 q7d c+4 q6e d4 q7d c+4 q6f d8 q7f c-4] (22)[r4.
+q7c c+4 q6d d4 q7d c+4 q6e c-4 q7d c+4 q6f d8] q7f e8d8
+(22) (23)[q7f c-4r8 q7d c-4c+4 q6e c-4 q7e c+4 q7f d8c-8 q7e c+8d8 q6f e8 q7f f+8] q6f PolFP g8 q7f
+f+1^1
+
+StrOct
+o2 y9,0,1 v140 [[f+1^1]]3
+r4.
+
+SyB y10 v130 o4
+(21) (22) q7f e8d8
+(22) (23) q6f SFP g8 q7f
+f+1^1
+
+Pol y10 v160 o4
+(22) q7f e8d8
+(22) (23) q6f PolFP g8 q7f
+f+1^1r1.
+
+Tim o2 y13 $df
+v80 $e8 $60 $dc d16d16d16d16d16c+16c+16c+16<f+4
+
+Bra o5 y8 $de $10 $0a $15 v170
+q4f f+8. r2.^16 q7f g16 q3f f+8r8. q7f  e16f+16r16g16r16e16r8e16r16 q3f f+8. r2.^16
+q7f g16 q3f f+8r8. q7f e16f+16r16g16e16r16f+8r8
+(1000)13 r4
+
+v95 $e8 $c0 $64 r4 Str y11 o5e4f+4g4
+$e8 $c0 $69 f+1 $e8 $c0 $6e ^1 $e8 $c0 $73 ^1
+$e8 $c0 $78 r4 f+4a4b4>c+1^1^1^4
+StrP <b4>c+4 q7d d4 $fa $01 $b6 ^1r1
+StrOct o2 y9,0,1 v140 q7f
+f+1^1
+
+
+
+#3 (1000)8 r4.
+
+Pol y10 v160 (!100, -1) (!101, 3) $de $10 $0a $15
+o3 (1) q7f e4 r4. (2) 
+/
+r4.
+Pol y10 v160 $de $10 $0a $15
+(1) q7f e4 r4.
+(1) q7f b8g8 r4.
+(1) q7f e4 r4.
+(2) 
+
+r4.
+(1) q7f e4 r4. 
+(1) q7f b8g8 r4.
+(1) q7f e4 r8 
+(3)
+
+Squ $df v220
+(30)4
+
+r4.
+Pol v160 $de $10 $0a $15 o3
+(1) q7f e4 r4.
+(1) q7f b8g8 r4.
+(1) q7f e4 r8
+(3)
+
+SqSa $df v220 %h0c
+
+(30)5
+
+SqSa2 v180
+(30)
+
+Squ %h00 v220
+o2 q7d f+8r16 q7a f+16> q7f f+8< q7e e16 q7d f+16r16 q7b f+16 q7c e16 q7a f+16 q7d >f+16< q7c f+16 q7a e16 q7d f+8
+$e8 $c0 $a0 q7b f+16 q7d e16 q7a f+16> q7d g16 q7c f+16 q7a <e16 q7d f+16r16 q7b f+16 q7c e16 q7a f+16 q7d >f+16 q7e g16 q7d e16 q7c <g16
+$e8 $c0 $60 q7e f+16 q7d e16 > q7e e16 < q7d f+16 > q7e f+8 < q7d e16 q7f f+16r16 q7b f+16 q7c e16 q7a f+16 > q7c f+16 < q7b c+16 q7a e16
+q7c f+8
+r2...
+
+
+
+#4 (1000)14 r4
+
+o4 Ki q7e c8.c_16 q7f c_16 Sn q7d c_16 q7f c_16 Ki c_16 Sn c_16c_16 Ki c8
+/
+q7f
+(40)[KiS c_16 Sh c_16c_16 KiS c_16 SnS c_16 Sh c_16c_16 KiS c_16c_16 Sh c_16c_16 KiS c_16]
+(41)[SnS c_16 Sh c_16 KiS c_16 Sh c_16]
+(40) (42)[SnS c_16c_16 KiS c_16 Sh c_16]
+(40) (41)
+(40) SnS c_16c_16 KiS c_16 SnS c_16
+(40) (41)
+(40) (42)
+(40) (41)
+(43)[KiS c_16 Sh c_16c_16 KiS c_16 SnS c_16 Sh c_16c_16 KiS c_16] [[KiS c_16 SnS c_16c_16]]2 KiS c_16 Sh c_16
+
+[[(40) (41)
+(40) (42)]]3
+(40) (41)
+(43) (44)[KiS c_16 SnS c_32 Sn c_32 SnS c_16 KiS c=10 Sn $ed $7f $e0 c=1 h0 ^=1 SnS c_16c_16 KiS c_16 Sh c_16]
+
+[[(40) (41)
+(40) (42)]]3
+(40) (41)
+(43) KiS c_16 SnS c_32 Sn c_32 SnS c_16 KiS c_16 SnS c_16 Sh c_16 KiS c_16 Sh c_16
+
+[[(40) (41)
+(40) (42)]]3
+(40) (41)
+(43) KiS c_16 SnS c_16 Sh c_16 KiS c_16 SnS c_16 Sh c_16 KiS c_16 Sh c_16
+
+[[(40) (41)
+(40) (42)]]3
+(40) (41)
+(43) (44)
+
+[[(40) (41)
+(40) (42)]]2
+
+(40) (41)
+(40) (42)
+(40) (41)
+(43) SnS c_16c_16 Sh c_16 KiS c_16 SnS c_16c_32 Sn c_32 Sn c_16c_16
+
+[[(40) (41)
+(40) (42)]]3
+(40) (41)
+(43) (44)
+
+[[(40) (41)
+(40) (42)
+(40) (41)
+(43) (44)]]3
+
+
+
+
+#5 o4 (1000)16
+/
+(1000)15
+Cr2 c2
+
+[[Cr1 c2 %eT
+RB (50)[q7f c4 q7a c4]6 (51)[q7f c_16c_16
+T q7f y8 o4c_16 y10 o3f_16]
+(53)[RB q7a o4c4
+%eT CC q7f c2 %eT]
+RB (50)5 q7f c4c_16
+(52)[T y8 o4c_32c_32c_16 < y9 a4a8. y10 f_16 y11 c16] %eT]]2
+Cr1 c2 %eT 
+RB (50)3 
+%eT Cr2 c2 %eT
+RB (50)2 (51)
+RB q7a c4
+%eT CC q7f c2 %eT
+RB (50)3
+%eT Cr1 q7f c2 %eT
+RB (50) q7f c4c_16
+T y8 c_16c_16 < y9 a8.a_16 y10 f8f_16f_16 y11 c16
+
+r4.
+Pol y10 v160 o4
+(21)
+
+RB (50)3 (51)
+(53)
+RB (50)5 q7f c4c_16
+(52)
+
+%eT Cr1 c2 %eT
+RB (50)6 (51)
+RB q7a o4c4
+
+q7f 
+%eT CC c4 Cr1 c2 %eT
+RB c4
+Tim o1 y13 v200
+f+8f+8f+4
+RB c8
+%eT Cr1 c4. %eT
+Tim o1 y13 v200
+f+4
+%eT Cr1 c2 %eT
+RB q7a c8 q7f
+Tim o1 y13 v200
+g8f+8f+8f+4
+RB c8
+%eT Cr1 c4 %eT
+Tim o1 y13 v200 g8
+
+
+%eT Cr1 c2 %eT
+RB (50)6 (51)
+RB q7a o4c4
+
+[[q7f %eT CC c2 %eT
+RB (50)5 q7f c4 q7a c_16
+(52)]]3
+
+q7f %eT Cr1 c2 %eT
+RB (50)5 q7f c4 q7a c_16
+(52)
+
+
+
+#6 (1000)16
+/
+(1000)31
+Cr2 c4 CC c4
+%eT
+StrOct
+o2 y9,0,1 v140 f+1^1
+(1000)12
+[[f+1^1]]8
+
+y13 o4
+[[OT c8 CT c8 OT c8 CT [c16 OT c8. CT c16c16 OT c16 CT c16c16] OT c8. 
+CT c16c16 OT c16 CT c16 * c16]]4
+
+(1000)8
+
+StrOct o2 y9,0,1 v140
+[[c+1g1b1>d1]]3
+<f+1^1 (1000)4
+
+
+
+#7 (1000)16
+/
+(1000)47
+Cr2 c4 CC c1^4
+(1000)13
+Cr2 c4 CC c4 Cr1 c2 %eT
+RB (50)3 
+(1000)11
+%eT Cr2 c4 CC c4
+(1000)10 r4
+Cr1 c4.. Cr2 c8. Cr1 c8 CC c1^4 Cr1 c4.. Cr2 c4^16
+%eT Tim o1 y13 v200 f+1
+(1000)6
+(70)[f+8f+8f+2.g8g8g2^8f+8b8b8b1^4
+%eT Cr2 c4 CC c4 %eT]
+Tim o1 y13 v200 (70)
+Tim o1 y13 v200
+f+8f+8f+2.g8g8g2^8f+8b8b8b1^4
+(71)
+(1000)8 
